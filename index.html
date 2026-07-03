@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d7188" />
+  <meta name="color-scheme" content="light" />
+
+  <title>OpenTrust Group · Conocimiento abierto para construir confianza digital</title>
+
+  <meta name="description" content="OpenTrust Group es un ecosistema gratuito de conocimiento abierto sobre GRC, fraude digital, regulación, tecnología, arquitectura y ciberseguridad. Recursos para profesionales sin barreras, sin coste." />
+
+  <meta name="keywords" content="GRC, fraude digital, ciberseguridad, regulación, tecnología, arquitectura empresarial, confianza digital, conocimiento abierto" />
+  
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  
+  <link rel="canonical" href="https://opentrust.group/" />
+
+  <!-- Preload de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://opentrust.group/" />
+  <meta property="og:title" content="OpenTrust Group · Conocimiento abierto para construir confianza digital" />
+  <meta property="og:description" content="Ecosistema gratuito de conocimiento abierto sobre GRC, fraude digital, regulación, tecnología y ciberseguridad. Sin barreras, sin coste." />
+  <meta property="og:image" content="https://opentrust.group/favicon-32x32.png" />
+  <meta property="og:site_name" content="OpenTrust Group" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="OpenTrust Group · Conocimiento abierto" />
+  <meta name="twitter:description" content="Ecosistema gratuito de GRC, fraude digital, regulación, tecnología y ciberseguridad." />
+  <meta name="twitter:image" content="https://opentrust.group/favicon-32x32.png" />
+  <meta name="twitter:creator" content="@macarriazo" />
+
+  <!-- FAVICON -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- DATOS ESTRUCTURADOS -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "OpenTrust Group",
+    "url": "https://opentrust.group/",
+    "description": "Ecosistema gratuito de conocimiento abierto sobre GRC, fraude digital, regulación, tecnología, arquitectura y ciberseguridad.",
+    "inLanguage": "es",
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenTrust Group"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OpenTrust Group",
+    "url": "https://opentrust.group/",
+    "logo": "https://opentrust.group/favicon-32x32.png",
+    "description": "Ecosistema gratuito para construir confianza digital.",
+    "sameAs": [
+      "https://www.linkedin.com/in/macarriazo/",
+      "https://grcreal.com/",
+      "https://fraudedigital.es/",
+      "https://lexradar.es/",
+      "https://technology-advisory.es/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "email": "support@opentrust.group"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "OpenTrust Group",
+        "item": "https://opentrust.group/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+
+  <style>
+    /* Estilos específicos para contacto */
+    .contact-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 24px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--brand);
+      background: rgba(13, 113, 136, 0.08);
+      border-radius: 20px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact-link:hover {
+      background: var(--brand);
+      color: #fff;
+      transform: translateX(4px);
+    }
+
+    .pillar-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 220px;
+      height: 100%;
+    }
+
+    .pillar-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 8px;
+      margin-bottom: 0;
+      flex-grow: 0;
+    }
+
+    .pillar-card h3 {
+      margin: 12px 0 0;
+      font-size: 1rem;
+    }
+
+    .pillar-card svg {
+      width: 54px;
+      height: 54px;
+      stroke: var(--brand);
+      fill: none;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    .pillar-card .contact-link {
+      margin-top: auto;
+    }
+
+    /* Asegurar que todas las tarjetas tengan el mismo tamaño */
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      max-width: 1080px;
+      margin: 0 auto 22px;
+    }
+
+    .pillars .pillar-card {
+      height: 100%;
+      min-height: 220px;
+    }
+
+    /* Contacto en 2 columnas centradas */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      max-width: 600px;
+      margin: 0 auto 22px;
+    }
+
+    .contact-grid .pillar-card {
+      height: 100%;
+      min-height: 220px;
+    }
+
+    @media (max-width: 960px) {
+      .pillars {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .pillars {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor del menú dinámico -->
+  <header class="site-header" id="site-header"></header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-logo" aria-hidden="true">
+          <svg viewBox="0 0 96 96">
+            <path d="M48 6 80 18v25c0 22-13.2 38.7-32 47C29.2 81.7 16 65 16 43V18L48 6Z"/>
+            <path d="M34 50.5 43.8 60 64 35"/>
+            <path d="M33 26h30M28 38h40"/>
+          </svg>
+        </div>
+        <div>
+          <h1>OpenTrust Group</h1>
+          <p>Conocimiento abierto para construir confianza digital.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-nosotros" class="section intro-section">
+      <h2>Nuestra Misión</h2>
+      <p>Vivimos en un entorno donde la tecnología, la ciberseguridad, la regulación y el fraude digital evolucionan muy rápido.</p>
+      <p>OpenTrust Group nace con un objetivo sencillo: poner ese conocimiento al alcance de cualquier persona, sin barreras y sin coste.</p>
+      <p><strong>OpenTrust Group es una iniciativa abierta orientada a compartir conocimiento y ayudar a la comunidad profesional.</strong></p>
+    </section>
+
+    <section class="section philosophy-section">
+      <h2>Nuestra Filosofía</h2>
+      <div class="pillars">
+        <article class="pillar-card">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 16h40v30H12z"/><path d="M20 24h24M20 32h18M20 40h12"/><path d="M26 52h12"/></svg>
+          <h3>Compartir conocimiento abierto</h3>
+        </article>
+        <article class="pillar-card">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 46c0-9 20-9 20 0"/><circle cx="32" cy="24" r="8"/><path d="M47 20l5-5M49 29h8M45 38l6 6"/></svg>
+          <h3>Ayudar a profesionales y organizaciones</h3>
+        </article>
+        <article class="pillar-card">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8 52 16v15c0 13-8 22-20 27-12-5-20-14-20-27V16l20-8Z"/><path d="M24 33l6 6 12-15"/></svg>
+          <h3>Promover la confianza digital</h3>
+        </article>
+        <article class="pillar-card">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="20"/><path d="M12 32h40M32 12c7 7 10 14 10 20s-3 13-10 20M32 12c-7 7-10 14-10 20s3 13 10 20"/></svg>
+          <h3>Mantener el acceso gratuito a todos los contenidos</h3>
+        </article>
+      </div>
+      <p class="manifesto">Creemos que compartir conocimiento fortalece a los profesionales, ayuda a las organizaciones y contribuye a construir un ecosistema digital más seguro. No vendemos formación obligatoria. No ocultamos el conocimiento detrás de un muro de pago. Simplemente creemos que una comunidad mejor informada es una comunidad más segura.</p>
+    </section>
+
+    <section id="ecosistema" class="section ecosystem-section">
+      <h2>Nuestro ecosistema</h2>
+      <div id="ecosystem-grid" class="ecosystem-grid" aria-live="polite"></div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section id="contacto" class="section philosophy-section">
+      <h2>Cómo contactar</h2>
+      <div class="contact-grid">
+        <article class="pillar-card">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M12 16h40v30H12z"/>
+            <path d="M20 24h24M20 32h18M20 40h12"/>
+            <path d="M26 52h12"/>
+          </svg>
+          <h3>LinkedIn</h3>
+          <p>Donde publicamos y respondemos</p>
+          <a href="https://www.linkedin.com/in/macarriazo/" target="_blank" class="contact-link">Explorar →</a>
+        </article>
+        
+        <article class="pillar-card">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="20"/>
+            <path d="M12 32h40M32 12c7 7 10 14 10 20s-3 13-10 20M32 12c-7 7-10 14-10 20s3 13 10 20"/>
+          </svg>
+          <h3>Email</h3>
+          <p>Para conversaciones más directas</p>
+          <a href="mailto:support@opentrust.group" class="contact-link">Explorar →</a>
+        </article>
+      </div>
+    </section>
+    <!-- FIN SECCIÓN DE CONTACTO -->
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> OpenTrust Group · El conocimiento solo genera valor cuando se comparte.</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

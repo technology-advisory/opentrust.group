@@ -1,0 +1,30 @@
+[
+  {
+    "name": "GRCREAL",
+    "url": "https://grcreal.com/",
+    "tagline": "Gobierno, Riesgo, Cumplimiento e Inteligencia Artificial.",
+    "description": "Guías, herramientas, marcos de referencia y recursos prácticos para profesionales de GRC.",
+    "icon": "shield"
+  },
+  {
+    "name": "FraudeDigital",
+    "url": "https://fraudedigital.es/",
+    "tagline": "Concienciación frente al fraude digital.",
+    "description": "Phishing, smishing, vishing, ingeniería social, estafas, simuladores y radar de fraudes.",
+    "icon": "alert"
+  },
+  {
+	  "name": "LexRadar",
+	  "url": "https://lexradar.es/",
+	  "tagline": "El radar jurídico para anticipar la evolución de la jurisprudencia.",
+	  "description": "Motor de vigilancia y análisis de sentencias del CENDOJ y del Tribunal de Justicia de la Unión Europea (TJUE), orientado a detectar cambios con impacto en cumplimiento, regulación, ciberseguridad, privacidad e inteligencia artificial.",
+	  "icon": "radar"
+  },
+  {
+    "name": "Technology Advisory",
+    "url": "https://technology-advisory.es/",
+    "tagline": "Arquitectura empresarial, infraestructura, cloud y ciberseguridad.",
+    "description": "Análisis técnico, buenas prácticas, automatización, observabilidad, seguridad y estrategia tecnológica.",
+    "icon": "network"
+  }
+]
