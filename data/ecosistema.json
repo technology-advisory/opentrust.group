@@ -3,28 +3,28 @@
     "name": "GRCREAL",
     "url": "https://grcreal.com/",
     "tagline": "Gobierno, Riesgo, Cumplimiento e Inteligencia Artificial.",
-    "description": "Guías, herramientas, marcos de referencia y recursos prácticos para profesionales de GRC.",
+    "description": "Guías, marcos de referencia, herramientas y recursos prácticos para profesionales de gobernanza, gestión del riesgo, cumplimiento normativo e IA.",
     "icon": "shield"
   },
   {
     "name": "FraudeDigital",
     "url": "https://fraudedigital.es/",
     "tagline": "Concienciación frente al fraude digital.",
-    "description": "Phishing, smishing, vishing, ingeniería social, estafas, simuladores y radar de fraudes.",
+    "description": "Información, alertas, simuladores y recursos para prevenir phishing, smishing, vishing, ingeniería social y otras estafas digitales.",
     "icon": "alert"
   },
   {
     "name": "LexRadar",
     "url": "https://lexradar.es/",
     "tagline": "El radar jurídico para anticipar la evolución de la jurisprudencia.",
-    "description": "Motor de vigilancia y análisis de sentencias del CENDOJ y del Tribunal de Justicia de la Unión Europea (TJUE), orientado a detectar cambios con impacto en cumplimiento y regulación. <strong>Próximamente, con búsqueda de IA</strong>",
+    "description": "Plataforma de investigación y análisis jurídico orientada a facilitar el acceso, la comprensión y el seguimiento de la evolución jurisprudencial. <strong>Actualmente en fase beta privada. Próximamente, con búsqueda inteligente mediante IA y acceso gratuito.</strong>",
     "icon": "radar"
   },
   {
     "name": "Technology Advisory",
     "url": "https://technology-advisory.es/",
     "tagline": "Arquitectura empresarial, infraestructura, cloud y ciberseguridad.",
-    "description": "Análisis técnico, buenas prácticas, automatización, observabilidad, seguridad y estrategia tecnológica.",
+    "description": "Arquitectura tecnológica, infraestructura, cloud, automatización, observabilidad, resiliencia y estrategia de ciberseguridad para organizaciones.",
     "icon": "network"
   }
 ]
