@@ -4,21 +4,24 @@
     "url": "https://grcreal.com/",
     "tagline": "Conocimiento especializado en Gobernanza, Riesgo, Cumplimiento y Ciberseguridad.",
     "description": "Plataforma abierta con guías, marcos de referencia, comparativas, checklists, formación y recursos prácticos para profesionales de GRC, seguridad, cumplimiento normativo e inteligencia artificial.",
-    "icon": "shield"
+    "icon": "shield",
+    "category": "docs"
   },
   {
     "name": "FraudeDigital",
     "url": "https://fraudedigital.es/",
     "tagline": "Concienciación frente al fraude digital.",
     "description": "Información, alertas, simuladores y recursos para prevenir phishing, smishing, vishing, ingeniería social y otras estafas digitales.",
-    "icon": "alert"
+    "icon": "alert",
+    "category": "docs"
   },
   {
-    "name": "LexRadar",
-    "url": "https://lexradar.es/",
-    "tagline": "Inteligencia jurídica para comprender el cambio normativo.",
-    "description": "Plataforma de investigación y análisis jurídico que centraliza y relaciona información legal para facilitar su consulta, interpretación y seguimiento mediante inteligencia artificial. <strong>Actualmente en fase beta privada.</strong>",
-    "icon": "radar"
+    "name": "Technology Advisory",
+    "url": "https://technology-advisory.es/",
+    "tagline": "Arquitectura empresarial, infraestructura, cloud y ciberseguridad.",
+    "description": "Arquitectura tecnológica, infraestructura, cloud, automatización, observabilidad, resiliencia y estrategia de ciberseguridad para organizaciones.",
+    "icon": "network",
+    "category": "docs"
   },
   {
     "name": "CyberLibrary AI",
@@ -26,13 +29,33 @@
     "tagline": "Arquitectura, seguridad, auditoría y GRC de sistemas de inteligencia artificial.",
     "description": "Guías con criterio, artefactos descargables y herramientas que se pueden utilizar de verdad. Contenido especializado, práctico y sin humo: lo que una respuesta genérica de IA no te va a dar.",
     "icon": "ai",
-    "status": "coming-soon"
+    "status": "coming-soon",
+    "category": "docs"
   },
   {
-    "name": "Technology Advisory",
-    "url": "https://technology-advisory.es/",
-    "tagline": "Arquitectura empresarial, infraestructura, cloud y ciberseguridad.",
-    "description": "Arquitectura tecnológica, infraestructura, cloud, automatización, observabilidad, resiliencia y estrategia de ciberseguridad para organizaciones.",
-    "icon": "network"
+    "name": "LexRadar",
+    "url": "https://lexradar.es/",
+    "tagline": "Inteligencia jurídica para comprender el cambio normativo.",
+    "description": "Plataforma de investigación y análisis jurídico que centraliza y relaciona información legal para facilitar su consulta, interpretación y seguimiento mediante inteligencia artificial. <strong>Actualmente en fase beta privada.</strong>",
+    "icon": "radar",
+    "category": "apps"
+  },
+  {
+    "name": "Arq Studio",
+    "url": "#",
+    "tagline": "Diseño y documentación profesional de arquitecturas de soluciones.",
+    "description": "Plataforma para crear, versionar y revisar HLD y futuros LLD mediante asistentes guiados, generación automática de diagramas C4, vistas lógicas e infraestructura editable. Incorpora un arquitecto IA que analiza la solución, detecta incoherencias, propone componentes, riesgos y mejoras, y transforma la información del proyecto en documentación técnica reutilizable.",
+    "icon": "diagram",
+    "status": "coming-soon",
+    "category": "apps"
+  },
+  {
+    "name": "Auditoria365",
+    "url": "#",
+    "tagline": "Auditoría, cumplimiento y gestión de riesgos en un único espacio.",
+    "description": "Auditoria365 centraliza controles, evidencias, hallazgos, acciones y seguimiento para facilitar el trabajo de auditores, responsables de seguridad y organizaciones.",
+    "icon": "clipboard",
+    "status": "coming-soon",
+    "category": "apps"
   }
 ]

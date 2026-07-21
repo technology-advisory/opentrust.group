@@ -1,4 +1,3 @@
-
 .hero{
   position:relative;
   min-height:230px;
@@ -47,9 +46,7 @@
   font-size:clamp(.95rem,1.45vw,1.12rem)
 }
 
-.hero-art{
-  display:none
-}
+.hero-art{display:none}
 
 .intro-section p,.manifesto,.simple-section p{
   max-width:980px;
@@ -59,9 +56,7 @@
   font-size:.96rem
 }
 
-.philosophy-section{
-  background:#fff
-}
+.philosophy-section{background:#fff}
 
 .pillars{
   display:grid;
@@ -101,13 +96,53 @@
   font-size:.96rem
 }
 
-.ecosystem-grid{
-  display:grid;
-  grid-template-columns:repeat(5,minmax(0,1fr));
-  gap:16px;
-  max-width:1600px;
+#ecosystem-grid{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
   margin:0 auto;
+  max-width:1600px
+}
+
+.ecosystem-group{
+  display:flex;
+  flex-direction:column;
+  gap:12px
+}
+
+.ecosystem-group-title{
+  position:relative;
+  margin:0;
+  padding-left:18px;
+  font-size:1.55rem;
+  line-height:1.2;
+  color:var(--brand-dark);
+  text-align:left
+}
+
+.ecosystem-group-title::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.18em;
+  width:5px;
+  height:1.1em;
+  border-radius:999px;
+  background:var(--brand)
+}
+
+.ecosystem-grid-list{
+  display:grid;
+  gap:16px;
   align-items:stretch
+}
+
+.ecosystem-grid-list--docs{
+  grid-template-columns:repeat(4,minmax(0,1fr))
+}
+
+.ecosystem-grid-list--apps{
+  grid-template-columns:repeat(3,minmax(0,1fr))
 }
 
 .ecosystem-card-link{
@@ -229,42 +264,25 @@
   flex-shrink:0
 }
 
-.simple-section{
-  background:#eef5f8
-}
+.simple-section{background:#eef5f8}
 
 @media (max-width:1280px){
-  .ecosystem-grid{
-    grid-template-columns:repeat(3,minmax(0,1fr))
-  }
+  .ecosystem-grid-list--docs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ecosystem-grid-list--apps{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
 @media (max-width:1024px){
-  .hero{
-    min-height:auto
-  }
+  .hero{min-height:auto}
 }
 
 @media (max-width:960px){
-  .hero{
-    background:#f9fcfe
-  }
-  
-  .pillars,
-  .ecosystem-grid{
-    grid-template-columns:repeat(2,1fr)
-  }
+  .hero{background:#f9fcfe}
+  .pillars{grid-template-columns:repeat(2,1fr)}
 }
 
 @media (max-width:700px){
-  .hero-content{
-    padding:30px clamp(16px,5vw,40px)
-  }
-  
-  .hero-logo svg{
-    width:68px;
-    height:68px
-  }
+  .hero-content{padding:30px clamp(16px,5vw,40px)}
+  .hero-logo svg{width:68px;height:68px}
 }
 
 @media (max-width:560px){
@@ -273,36 +291,18 @@
     background:#f9fcfe;
     padding:20px 0
   }
-  
+
   .hero-content{
     gap:14px;
     padding:22px 14px
   }
-  
-  .hero-logo svg{
-    width:60px;
-    height:60px
-  }
-  
-  .hero h1{
-    font-size:clamp(1.55rem,4vw,2.05rem)
-  }
-  
-  .hero p{
-    font-size:clamp(.88rem,2vw,.98rem)
-  }
-  
-  .pillars,.ecosystem-grid{
-    grid-template-columns:1fr;
-    gap:12px
-  }
-  
-  .project-card{
-    text-align:left;
-    min-height:auto
-  }
-  
-  .section h2{
-    font-size:clamp(1.15rem,4vw,1.4rem)
-  }
+
+  .hero-logo svg{width:60px;height:60px}
+
+  .hero h1{font-size:clamp(1.55rem,4vw,2.05rem)}
+  .hero p{font-size:clamp(.88rem,2vw,.98rem)}
+  .pillars,.ecosystem-grid-list--docs,.ecosystem-grid-list--apps{grid-template-columns:1fr}
+  .project-card{text-align:left;min-height:auto}
+  .section h2{font-size:clamp(1.15rem,4vw,1.4rem)}
+  .ecosystem-group-title{font-size:1.2rem}
 }
