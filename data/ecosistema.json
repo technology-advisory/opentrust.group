@@ -2,8 +2,8 @@
   {
     "name": "GRCREAL",
     "url": "https://grcreal.com/",
-    "tagline": "Gobierno, Riesgo, Cumplimiento e Inteligencia Artificial.",
-    "description": "Guías, marcos de referencia, herramientas y recursos prácticos para profesionales de gobernanza, gestión del riesgo, cumplimiento normativo e IA.",
+    "tagline": "Conocimiento especializado en Gobernanza, Riesgo, Cumplimiento y Ciberseguridad.",
+    "description": "Plataforma abierta con guías, marcos de referencia, comparativas, checklists, formación y recursos prácticos para profesionales de GRC, seguridad, cumplimiento normativo e inteligencia artificial.",
     "icon": "shield"
   },
   {
@@ -14,11 +14,19 @@
     "icon": "alert"
   },
   {
-  "name": "LexRadar",
-  "url": "https://lexradar.es/",
-  "tagline": "Inteligencia jurídica para comprender el cambio normativo.",
-  "description": "Plataforma de investigación y análisis jurídico que centraliza y relaciona información legal para facilitar su consulta, interpretación y seguimiento mediante inteligencia artificial. <strong>Actualmente en fase beta privada.</strong>",
-  "icon": "radar"
+    "name": "LexRadar",
+    "url": "https://lexradar.es/",
+    "tagline": "Inteligencia jurídica para comprender el cambio normativo.",
+    "description": "Plataforma de investigación y análisis jurídico que centraliza y relaciona información legal para facilitar su consulta, interpretación y seguimiento mediante inteligencia artificial. <strong>Actualmente en fase beta privada.</strong>",
+    "icon": "radar"
+  },
+  {
+    "name": "CyberLibrary AI",
+    "url": "https://ai.opentrust.group/",
+    "tagline": "Arquitectura, seguridad, auditoría y GRC de sistemas de inteligencia artificial.",
+    "description": "Guías con criterio, artefactos descargables y herramientas que se pueden utilizar de verdad. Contenido especializado, práctico y sin humo: lo que una respuesta genérica de IA no te va a dar.",
+    "icon": "ai",
+    "status": "coming-soon"
   },
   {
     "name": "Technology Advisory",

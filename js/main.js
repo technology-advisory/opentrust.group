@@ -1,26 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Cargar el menú superior dinámico
   renderHeader();
-  
-  // 2. Establecer el año actual en el pie de página
   initYear();
-  
-  // 3. Cargar las tarjetas consumiendo el archivo JSON real
   loadEcosystem();
-  
-  // 4. Inicializar interacciones del menú
   initMenuToggle();
-  
-  // 5. Cerrar menú al hacer clic en links
   initMenuLinks();
 });
 
-// Función para inyectar el menú de navegación dinámicamente con SVG hamburguesa
 function renderHeader() {
   const headerContainer = document.getElementById('site-header');
-  
+
   if (!headerContainer) {
-    console.warn("No se encontró el contenedor #site-header en el HTML.");
+    console.warn('No se encontró el contenedor #site-header en el HTML.');
     return;
   }
 
@@ -45,20 +35,18 @@ function renderHeader() {
   `;
 }
 
-// Función para manejar el toggle del menú hamburguesa
 function initMenuToggle() {
   const toggle = document.getElementById('menu-toggle');
   const nav = document.getElementById('main-nav');
-  
+
   if (!toggle || !nav) return;
-  
+
   toggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('active');
     toggle.setAttribute('aria-expanded', isOpen);
   });
 }
 
-// Función para inicializar el año del footer
 function initYear() {
   const yearSpan = document.getElementById('year');
   if (yearSpan) {
@@ -66,12 +54,11 @@ function initYear() {
   }
 }
 
-// Función para cerrar el menú al hacer clic en los links
 function initMenuLinks() {
   const nav = document.getElementById('main-nav');
   const toggle = document.getElementById('menu-toggle');
   const links = nav ? nav.querySelectorAll('a') : [];
-  
+
   links.forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('active');
@@ -80,49 +67,47 @@ function initMenuLinks() {
   });
 }
 
-// Lógica original: Realiza la petición asíncrona al JSON y mapea los datos reales
 async function loadEcosystem() {
   const grid = document.getElementById('ecosystem-grid');
   if (!grid) return;
 
-  // Diccionario con los trazados geométricos de los SVGs originales
   const iconMap = {
-    "shield": `<path d="M32 8 52 16v15c0 13-8 22-20 27-12-5-20-14-20-27V16l20-8Z"/><path d="M24 33l6 6 12-15"/>`,
-    "alert": `<circle cx="32" cy="32" r="20"/><path d="M32 19v16"/><circle cx="32" cy="45" r="2"/>`,
-    "radar": `<circle cx="32" cy="32" r="20"/><circle cx="32" cy="32" r="12"/><circle cx="32" cy="32" r="5"/><path d="M32 12v20l14 7"/>`,
-    "network": `<circle cx="32" cy="32" r="20"/><path d="M12 32h40M32 12c7 7 10 14 10 20s-3 13-10 20M32 12c-7 7-10 14-10 20s3 13 10 20"/>`
+    shield: `<path d="M32 8 52 16v15c0 13-8 22-20 27-12-5-20-14-20-27V16l20-8Z"/><path d="M24 33l6 6 12-15"/>`,
+    alert: `<circle cx="32" cy="32" r="20"/><path d="M32 19v16"/><circle cx="32" cy="45" r="2"/>`,
+    radar: `<circle cx="32" cy="32" r="20"/><circle cx="32" cy="32" r="12"/><circle cx="32" cy="32" r="5"/><path d="M32 12v20l14 7"/>`,
+    network: `<circle cx="32" cy="32" r="20"/><path d="M12 32h40M32 12c7 7 10 14 10 20s-3 13-10 20M32 12c-7 7-10 14-10 20s3 13 10 20"/>`,
+    ai: `<path d="M20 18h24a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6H20a6 6 0 0 1-6-6V24a6 6 0 0 1 6-6Z"/><path d="M25 38V27l7-4 7 4v11l-7 4-7-4Z"/><path d="M32 23v19M25 27l14 11M39 27 25 38"/><path d="M25 12v6M39 12v6M25 46v6M39 46v6M8 27h6M8 37h6M50 27h6M50 37h6"/>`
   };
 
   try {
-    // Ajusta la ruta según tu estructura
     const response = await fetch('data/ecosistema.json');
     if (!response.ok) throw new Error('No se pudo recuperar el JSON del ecosistema');
-    
+
     const data = await response.json();
-    
-    // Renderizado dinámico usando las clases de tu CSS
+
     grid.innerHTML = data.map(item => {
       const svgContent = iconMap[item.icon] || '';
-
-      return `
-        <a href="${item.url}" target="_blank" rel="noopener" class="ecosystem-card-link">
-          <article class="project-card">
-            <div class="project-head">
-              <div class="project-icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3">
-                  ${svgContent}
-                </svg>
-              </div>
-              <h3>${item.name}</h3>
+      const isComingSoon = item.status === 'coming-soon';
+      const card = `
+        <article class="project-card${isComingSoon ? ' project-card--coming-soon' : ''}">
+          <div class="project-head">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3">
+                ${svgContent}
+              </svg>
             </div>
-            <p class="tagline"><strong>${item.tagline}</strong></p>
-            <p>${item.description}</p>
-            <span class="visit">Visitar →</span>
-          </article>
-        </a>
+            <h3>${item.name}</h3>
+          </div>
+          <p class="tagline"><strong>${item.tagline}</strong></p>
+          <p>${item.description}</p>
+          ${isComingSoon ? '<span class="project-status">Próximamente</span>' : '<span class="visit">Visitar →</span>'}
+        </article>
       `;
-    }).join('');
 
+      return isComingSoon
+        ? `<div class="ecosystem-card-link ecosystem-card-link--disabled" aria-label="${item.name}, próximamente">${card}</div>`
+        : `<a href="${item.url}" target="_blank" rel="noopener" class="ecosystem-card-link">${card}</a>`;
+    }).join('');
   } catch (error) {
     console.error('Error al cargar el ecosistema dinámico:', error);
     grid.innerHTML = '<p class="error-msg">Error al conectar con el ecosistema de conocimiento.</p>';
