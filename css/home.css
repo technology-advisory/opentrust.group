@@ -1,6 +1,7 @@
+
 .hero{
   position:relative;
-  min-height:260px;
+  min-height:230px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -16,15 +17,15 @@
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  gap:22px;
-  padding:44px clamp(18px,6vw,96px);
+  gap:18px;
+  padding:36px clamp(16px,5vw,80px);
   width:100%;
   text-align:center
 }
 
 .hero-logo svg{
-  width:96px;
-  height:96px;
+  width:84px;
+  height:84px;
   stroke:var(--brand);
   fill:none;
   stroke-width:4;
@@ -35,15 +36,15 @@
 
 .hero h1{
   margin:0;
-  font-size:clamp(2.2rem,5vw,4.2rem);
+  font-size:clamp(2rem,4.2vw,3.6rem);
   letter-spacing:-.04em
 }
 
 .hero p{
-  margin:8px 0 0;
+  margin:6px 0 0;
   color:var(--muted);
   font-weight:600;
-  font-size:clamp(1rem,1.6vw,1.25rem)
+  font-size:clamp(.95rem,1.45vw,1.12rem)
 }
 
 .hero-art{
@@ -51,10 +52,11 @@
 }
 
 .intro-section p,.manifesto,.simple-section p{
-  max-width:1000px;
+  max-width:980px;
   margin:0 auto;
   color:var(--muted);
-  line-height:1.65
+  line-height:1.6;
+  font-size:.96rem
 }
 
 .philosophy-section{
@@ -64,9 +66,9 @@
 .pillars{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:18px;
-  max-width:1080px;
-  margin:0 auto 22px
+  gap:16px;
+  max-width:1040px;
+  margin:0 auto 20px
 }
 
 .pillar-card{
@@ -74,7 +76,7 @@
   border:1px solid var(--line);
   box-shadow:var(--shadow);
   border-radius:var(--radius);
-  padding:22px 16px;
+  padding:20px 14px;
   transition:transform .2s ease, box-shadow .2s ease
 }
 
@@ -85,8 +87,8 @@
 }
 
 .pillar-card svg{
-  width:54px;
-  height:54px;
+  width:48px;
+  height:48px;
   stroke:var(--brand);
   fill:none;
   stroke-width:3.5;
@@ -95,14 +97,14 @@
 }
 
 .pillar-card h3{
-  margin:12px 0 0;
-  font-size:1rem
+  margin:10px 0 0;
+  font-size:.96rem
 }
 
 .ecosystem-grid{
   display:grid;
   grid-template-columns:repeat(5,minmax(0,1fr));
-  gap:18px;
+  gap:16px;
   max-width:1600px;
   margin:0 auto;
   align-items:stretch
@@ -117,12 +119,12 @@
 .project-card{
   display:flex;
   flex-direction:column;
-  min-height:210px;
+  min-height:190px;
   text-align:left;
   background:#fff;
   border:1px solid var(--line);
   border-radius:var(--radius);
-  padding:22px;
+  padding:18px;
   box-shadow:var(--shadow);
   transition:transform .18s ease, box-shadow .18s ease;
   height:100%
@@ -137,8 +139,8 @@
 .project-head{
   display:flex;
   align-items:flex-start;
-  gap:10px;
-  margin-bottom:10px
+  gap:8px;
+  margin-bottom:8px
 }
 
 .project-head h3{
@@ -147,18 +149,18 @@
 }
 
 .project-icon{
-  width:38px;
-  height:38px;
+  width:34px;
+  height:34px;
   display:grid;
   place-items:center;
-  border-radius:12px;
+  border-radius:10px;
   background:#eaf6f8;
   flex-shrink:0
 }
 
 .project-icon svg{
-  width:24px;
-  height:24px;
+  width:20px;
+  height:20px;
   stroke:var(--brand);
   fill:none;
   stroke-width:3;
@@ -168,27 +170,29 @@
 
 .project-card h3{
   margin:0;
-  font-size:1.15rem;
-  line-height:1.2
+  font-size:1.03rem;
+  line-height:1.18
 }
 
 .project-card p{
   margin:0;
   color:var(--muted);
-  line-height:1.55
+  line-height:1.48;
+  font-size:.93rem
 }
 
 .project-card .tagline{
   font-weight:700;
   color:var(--brand-dark);
-  margin-bottom:8px
+  margin-bottom:6px
 }
 
 .project-card .visit{
   margin-top:auto;
-  padding-top:18px;
+  padding-top:14px;
   font-weight:800;
-  color:var(--brand)
+  color:var(--brand);
+  font-size:.92rem
 }
 
 .ecosystem-card-link--disabled{
@@ -209,23 +213,21 @@
   border-style:dashed
 }
 
-
 .project-status{
   align-self:flex-start;
   margin-top:auto;
-  padding:5px 9px;
+  padding:4px 8px;
   border-radius:999px;
   background:#eaf6f8;
   border:1px solid rgba(13,113,136,.2);
   color:var(--brand-dark);
-  font-size:.68rem;
+  font-size:.62rem;
   font-weight:800;
   letter-spacing:.04em;
   text-transform:uppercase;
   white-space:nowrap;
   flex-shrink:0
 }
-
 
 .simple-section{
   background:#eef5f8
@@ -256,12 +258,12 @@
 
 @media (max-width:700px){
   .hero-content{
-    padding:32px clamp(18px,5vw,48px)
+    padding:30px clamp(16px,5vw,40px)
   }
   
   .hero-logo svg{
-    width:72px;
-    height:72px
+    width:68px;
+    height:68px
   }
 }
 
@@ -269,25 +271,25 @@
   .hero{
     min-height:auto;
     background:#f9fcfe;
-    padding:24px 0
+    padding:20px 0
   }
   
   .hero-content{
-    gap:16px;
-    padding:24px 16px
+    gap:14px;
+    padding:22px 14px
   }
   
   .hero-logo svg{
-    width:64px;
-    height:64px
+    width:60px;
+    height:60px
   }
   
   .hero h1{
-    font-size:clamp(1.6rem,4vw,2.2rem)
+    font-size:clamp(1.55rem,4vw,2.05rem)
   }
   
   .hero p{
-    font-size:clamp(.9rem,2vw,1rem)
+    font-size:clamp(.88rem,2vw,.98rem)
   }
   
   .pillars,.ecosystem-grid{
@@ -301,6 +303,6 @@
   }
   
   .section h2{
-    font-size:clamp(1.2rem,4vw,1.5rem)
+    font-size:clamp(1.15rem,4vw,1.4rem)
   }
 }
