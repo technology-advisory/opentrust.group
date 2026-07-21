@@ -192,7 +192,16 @@
 }
 
 .ecosystem-card-link--disabled{
+  display:block;
+  height:100%;
   cursor:default
+}
+
+.ecosystem-card-link--disabled:hover .project-card--coming-soon,
+.ecosystem-card-link--disabled:focus-within .project-card--coming-soon,
+.project-card--coming-soon:hover{
+  transform:translateY(-4px) !important;
+  box-shadow:0 16px 40px rgba(20,36,47,.16) !important
 }
 
 .project-card--coming-soon{
@@ -200,10 +209,6 @@
   border-style:dashed
 }
 
-.project-card--coming-soon:hover{
-  transform:none;
-  box-shadow:var(--shadow)
-}
 
 .project-status{
   align-self:flex-start;
