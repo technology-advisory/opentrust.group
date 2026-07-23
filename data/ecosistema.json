@@ -25,11 +25,10 @@
   },
   {
     "name": "CyberLibrary AI",
-    "url": "https://ai.opentrust.group/",
+    "url": "https://cyberlibrary-ai.es/",
     "tagline": "Arquitectura, seguridad, auditoría y GRC de sistemas de inteligencia artificial.",
     "description": "Guías con criterio, artefactos descargables y herramientas que se pueden utilizar de verdad. Contenido especializado, práctico y sin humo: lo que una respuesta genérica de IA no te va a dar.",
     "icon": "ai",
-    "status": "coming-soon",
     "category": "docs"
   },
   {
