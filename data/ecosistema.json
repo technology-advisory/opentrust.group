@@ -41,20 +41,21 @@
   },
   {
     "name": "Arq Studio",
-    "url": "#",
+    "url": "/apps/arq-studio.html",
     "tagline": "Diseño y documentación profesional de arquitecturas de soluciones.",
     "description": "Plataforma para crear, versionar y revisar HLD y futuros LLD mediante asistentes guiados, generación automática de diagramas C4, vistas lógicas e infraestructura editable. Incorpora un arquitecto IA que analiza la solución, detecta incoherencias, propone componentes, riesgos y mejoras, y transforma la información del proyecto en documentación técnica reutilizable.",
     "icon": "diagram",
-    "status": "coming-soon",
-    "category": "apps"
+    "category": "apps",
+	"status": "prev"
   },
   {
-    "name": "Auditoria365",
-    "url": "#",
+    "name": "AuditHub",
+    "url": "/apps/audithub.html",
     "tagline": "Auditoría, cumplimiento y gestión de riesgos en un único espacio.",
     "description": "Auditoria365 centraliza controles, evidencias, hallazgos, acciones y seguimiento para facilitar el trabajo de auditores, responsables de seguridad y organizaciones.",
     "icon": "clipboard",
     "status": "coming-soon",
-    "category": "apps"
+    "category": "apps",
+	"status": "prev"
   }
 ]

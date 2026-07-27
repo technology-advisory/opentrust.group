@@ -1,0 +1,240 @@
+/* Arq Studio portfolio */
+:root{
+  --brand:#0d7188;
+  --brand-dark:#08262f;
+  --ink:#10243c;
+  --muted:#607285;
+  --line:#d7e4e8;
+  --soft:#f3f7f9;
+}
+
+.back-link--button{
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  padding:.62rem 1rem;
+  border:1px solid rgba(13,113,136,.24);
+  border-radius:999px;
+  background:rgba(13,113,136,.08);
+  color:var(--brand);
+  font-weight:850;
+  text-decoration:none;
+  transition:.2s ease;
+}
+.back-link--button svg{
+  width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+.back-link--button:hover{background:var(--brand);color:#fff;transform:translateY(-1px)}
+
+.architect-origin{
+  margin:1.35rem 0;
+  padding:1rem 1.1rem;
+  border-left:4px solid var(--brand);
+  border-radius:0 12px 12px 0;
+  background:rgba(13,113,136,.07);
+}
+.architect-origin span{
+  display:block;
+  margin-bottom:.4rem;
+  color:var(--brand);
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.1em;
+}
+.architect-origin p{margin:0}
+
+.feature-grid{grid-template-columns:repeat(3,1fr)}
+
+.model-section{
+  background:var(--brand-dark);
+  color:#fff;
+  border-radius:22px;
+}
+.model-section .section-heading h2{color:#fff}
+.model-flow{
+  display:grid;
+  grid-template-columns:repeat(9,auto);
+  align-items:center;
+  gap:10px;
+  margin-top:28px;
+}
+.model-node{
+  padding:16px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:13px;
+  background:rgba(255,255,255,.06);
+  color:#d8e8eb;
+  text-align:center;
+  font-size:.88rem;
+}
+.model-arrow{color:#7fd1df;font-weight:900;font-size:1.2rem}
+
+.shot,.shot.reverse{
+  grid-template-columns:minmax(300px,.32fr) minmax(0,.68fr);
+  align-items:start;
+  gap:32px;
+}
+.shot.reverse .shot-copy{order:1}
+.shot.reverse .shot-image{order:2}
+.shot-image img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  background:var(--soft);
+}
+
+.professional-notes{display:grid;gap:12px;margin-top:20px}
+.professional-note{
+  padding:14px 15px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--soft);
+}
+.professional-note span{
+  display:block;
+  margin-bottom:6px;
+  color:var(--brand);
+  font-size:.69rem;
+  font-weight:900;
+  letter-spacing:.09em;
+}
+.professional-note p{
+  margin:0;
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.55;
+}
+.professional-note--architect{border-left:4px solid #17365d}
+.professional-note--technical{border-left:4px solid var(--brand)}
+
+.report-section{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+}
+.report-summary{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin:28px 0;
+}
+.report-summary article{
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--soft);
+}
+.report-summary strong,.report-summary span{display:block}
+.report-summary strong{color:var(--brand);font-size:1.1rem}
+.report-summary span{margin-top:5px;color:var(--muted);font-size:.82rem}
+.report-comments{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:22px}
+
+.pdf-viewer-shell{
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#eef3f5;
+}
+.pdf-viewer-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 18px;
+  background:var(--brand-dark);
+  color:#fff;
+}
+.pdf-viewer-head strong,.pdf-viewer-head span{display:block}
+.pdf-viewer-head span{font-size:.75rem;color:#c8dce1}
+.pdf-status{
+  padding:.3rem .65rem;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;
+  color:#fff!important;
+  font-weight:900;
+}
+.pdf-viewer{display:block;width:100%;height:860px;border:0}
+.pdf-viewer iframe{width:100%;height:100%;border:0}
+
+.closing-section{
+  text-align:center;
+  background:var(--brand-dark);
+  color:#fff;
+  border-radius:22px;
+}
+.closing-section h2{color:#fff}
+.closing-section>p{max-width:900px;margin:0 auto;color:#c8dce1}
+.closing-section blockquote{
+  max-width:1000px;
+  margin:32px auto 20px;
+  font-size:clamp(1.35rem,2.5vw,2rem);
+  line-height:1.4;
+}
+.closing-lines{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+}
+.closing-lines span{
+  padding:.45rem .8rem;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  color:#8dd9e6;
+  font-weight:800;
+}
+
+@media(max-width:1100px){
+  .feature-grid,.report-summary{grid-template-columns:repeat(2,1fr)}
+  .model-flow{grid-template-columns:1fr}
+  .model-arrow{transform:rotate(90deg);text-align:center}
+  .shot,.shot.reverse{grid-template-columns:1fr}
+  .shot.reverse .shot-copy,.shot.reverse .shot-image{order:initial}
+}
+@media(max-width:700px){
+  .feature-grid,.report-summary,.report-comments{grid-template-columns:1fr}
+  .pdf-viewer{height:620px}
+  .back-link--button span{display:none}
+}
+
+
+/* Visor PDF corregido */
+.report-section{max-width:none;width:100%}
+.pdf-viewer-shell{width:100%;max-width:none}
+.pdf-viewer{width:100%;height:920px;background:#2b2b2b}
+.pdf-viewer iframe{display:block;width:100%;height:100%;border:0;background:#2b2b2b}
+@media(max-width:900px){.pdf-viewer{height:760px}}
+@media(max-width:600px){.pdf-viewer{height:600px}}
+
+/* Visor PDF compacto */
+.pdf-viewer-shell--compact{
+  width:min(100%, 980px);
+  margin:0 auto;
+}
+
+.pdf-viewer-shell--compact .pdf-viewer{
+  height:620px;
+  background:#202124;
+}
+
+.pdf-viewer-shell--compact .pdf-viewer iframe{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+@media(max-width:900px){
+  .pdf-viewer-shell--compact{
+    width:100%;
+  }
+
+  .pdf-viewer-shell--compact .pdf-viewer{
+    height:520px;
+  }
+}
+
+@media(max-width:600px){
+  .pdf-viewer-shell--compact .pdf-viewer{
+    height:420px;
+  }
+}

@@ -69,27 +69,64 @@ function initMenuLinks() {
 
 function renderProjectCard(item, iconMap) {
   const svgContent = iconMap[item.icon] || '';
+
   const isComingSoon = item.status === 'coming-soon';
+  const isPreview = item.status === 'prev';
+
+  let actionHtml = '<span class="visit">Visitar →</span>';
+
+  if (isComingSoon) {
+    actionHtml = '<span class="project-status">Próximamente</span>';
+  } else if (isPreview) {
+    actionHtml = '<span class="visit">Previsualización proyecto →</span>';
+  }
 
   const card = `
     <article class="project-card${isComingSoon ? ' project-card--coming-soon' : ''}">
       <div class="project-head">
         <div class="project-icon" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3">
+          <svg
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+          >
             ${svgContent}
           </svg>
         </div>
+
         <h3>${item.name}</h3>
       </div>
-      <p class="tagline"><strong>${item.tagline}</strong></p>
+
+      <p class="tagline">
+        <strong>${item.tagline}</strong>
+      </p>
+
       <p>${item.description}</p>
-      ${isComingSoon ? '<span class="project-status">Próximamente</span>' : '<span class="visit">Visitar →</span>'}
+
+      ${actionHtml}
     </article>
   `;
 
-  return isComingSoon
-    ? `<div class="ecosystem-card-link ecosystem-card-link--disabled" aria-label="${item.name}, próximamente">${card}</div>`
-    : `<a href="${item.url}" target="_blank" rel="noopener" class="ecosystem-card-link">${card}</a>`;
+  if (isComingSoon) {
+    return `
+      <div
+        class="ecosystem-card-link ecosystem-card-link--disabled"
+        aria-label="${item.name}, próximamente"
+      >
+        ${card}
+      </div>
+    `;
+  }
+
+return `
+  <a
+    href="${item.url}"
+    class="ecosystem-card-link"
+  >
+    ${card}
+  </a>
+`;
 }
 
 async function loadEcosystem() {

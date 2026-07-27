@@ -1,0 +1,131 @@
+/* Audithub · imágenes ampliadas y comentarios profesionales */
+.gallery-group {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+.showcase {
+  gap: 38px;
+}
+.shot,
+.shot.reverse {
+  grid-template-columns: minmax(300px, .32fr) minmax(0, .68fr);
+  gap: 34px;
+  padding: 30px;
+  align-items: start;
+}
+.shot.reverse .shot-copy {
+  order: 1;
+}
+.shot.reverse .shot-image,
+.shot.reverse .mapping-panel {
+  order: 2;
+}
+.shot-image {
+  width: 100%;
+}
+.shot-image img {
+  width: 100%;
+  min-height: 430px;
+  max-height: 720px;
+  object-fit: contain;
+  background: #f5f8fa;
+}
+.hero-visual > img {
+  min-height: 470px;
+  object-fit: contain;
+  background: #f5f8fa;
+}
+.professional-notes {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+.professional-note {
+  padding: 14px 15px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--soft);
+}
+.professional-note span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--brand);
+  font-size: .69rem;
+  font-weight: 900;
+  letter-spacing: .09em;
+}
+.professional-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+.professional-note--technical {
+  border-left: 4px solid var(--brand);
+}
+.professional-note--auditor {
+  border-left: 4px solid #17365d;
+}
+.shot-copy > p {
+  font-size: 1rem;
+}
+.mapping-panel {
+  min-height: 430px;
+}
+@media (min-width: 1500px) {
+  .shot,
+  .shot.reverse {
+    grid-template-columns: minmax(340px, .28fr) minmax(0, .72fr);
+  }
+  .shot-image img {
+    min-height: 520px;
+  }
+}
+@media (max-width: 1100px) {
+  .shot,
+  .shot.reverse {
+    grid-template-columns: 1fr;
+  }
+  .shot.reverse .shot-copy,
+  .shot.reverse .shot-image,
+  .shot.reverse .mapping-panel {
+    order: initial;
+  }
+  .shot-image img,
+  .hero-visual > img {
+    min-height: 0;
+    max-height: none;
+  }
+}
+
+/* v3: corrección de composición de capturas */
+.shot, .shot.reverse {
+  grid-template-columns: minmax(320px, 0.34fr) minmax(0, 0.66fr);
+  align-items: center;
+}
+.shot.reverse .shot-copy { order: 1; }
+.shot.reverse .shot-image,
+.shot.reverse .mapping-panel { order: 2; }
+.shot-image {
+  width: 100%;
+  min-width: 0;
+  align-self: center;
+}
+.shot-image img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  object-fit: initial;
+  background: transparent;
+}
+.hero-visual > img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  object-fit: initial;
+}
+@media (max-width: 1100px) {
+  .shot, .shot.reverse { grid-template-columns: 1fr; }
+}
