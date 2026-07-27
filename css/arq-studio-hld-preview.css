@@ -1,0 +1,79 @@
+/* HLD mostrado como páginas renderizadas, sin visor PDF/Adobe */
+.hld-preview-shell{
+  width:min(100%, 1120px);
+  margin:0 auto;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#252525;
+}
+
+.hld-preview-head{
+  position:sticky;
+  top:0;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 18px;
+  background:#08262f;
+  color:#fff;
+}
+
+.hld-preview-head strong{
+  display:block;
+}
+
+.hld-pages{
+  max-height:720px;
+  overflow:auto;
+  padding:18px;
+  background:#252525;
+  scrollbar-gutter:stable;
+}
+
+.hld-page{
+  width:min(100%, 900px);
+  margin:0 auto 18px;
+  padding:0;
+  background:#fff;
+  box-shadow:0 7px 24px rgba(0,0,0,.22);
+}
+
+.hld-page:last-child{
+  margin-bottom:0;
+}
+
+.hld-page img{
+  display:block;
+  width:100%;
+  height:auto;
+  user-select:none;
+  -webkit-user-drag:none;
+}
+
+.hld-page figcaption{
+  padding:8px 12px;
+  border-top:1px solid #e5ecef;
+  color:#637585;
+  background:#fff;
+  text-align:right;
+  font-size:.72rem;
+}
+
+@media(max-width:700px){
+  .hld-pages{
+    max-height:560px;
+    padding:10px;
+  }
+
+  .hld-page{
+    margin-bottom:10px;
+  }
+}
+
+@media print{
+  .hld-preview-shell{
+    display:none !important;
+  }
+}

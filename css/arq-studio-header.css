@@ -1,0 +1,103 @@
+/* Arq Studio · cabecera idéntica a Audithub */
+.site-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  min-height:72px;
+  padding:0 max(32px, calc((100vw - 1720px) / 2));
+  background:#fff;
+  border-bottom:1px solid #d7e4e8;
+}
+
+.site-header .brand{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  color:#10243c;
+  text-decoration:none;
+}
+
+.site-header .brand-mark{
+  display:grid;
+  place-items:center;
+  width:40px;
+  height:40px;
+  color:#0d7188;
+}
+
+.site-header .brand-mark svg{
+  width:40px;
+  height:40px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2.4;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.site-header .brand-text{
+  color:#10243c;
+  font-size:16px;
+  line-height:1.02;
+  font-weight:500;
+}
+
+.site-header .brand-text strong{
+  color:#0d7188;
+  font-weight:800;
+}
+
+.site-header .back-link--button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.55rem;
+  min-height:42px;
+  padding:.62rem 1rem;
+  border:1px solid rgba(13,113,136,.24);
+  border-radius:999px;
+  background:rgba(13,113,136,.08);
+  color:#0d7188;
+  font-size:.82rem;
+  font-weight:850;
+  line-height:1;
+  text-decoration:none;
+  box-shadow:0 6px 18px rgba(16,36,60,.06);
+  transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+
+.site-header .back-link--button svg{
+  width:18px;
+  height:18px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.site-header .back-link--button:hover{
+  background:#0d7188;
+  border-color:#0d7188;
+  color:#fff;
+  transform:translateY(-1px);
+  box-shadow:0 10px 24px rgba(13,113,136,.18);
+}
+
+@media(max-width:700px){
+  .site-header{
+    min-height:64px;
+    padding:0 18px;
+  }
+
+  .site-header .back-link--button span{
+    display:none;
+  }
+
+  .site-header .back-link--button{
+    width:40px;
+    min-height:40px;
+    padding:0;
+  }
+}
