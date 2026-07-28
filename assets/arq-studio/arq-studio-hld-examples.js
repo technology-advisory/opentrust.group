@@ -39,3 +39,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Protección disuasoria de las páginas HLD renderizadas.
+// No impide capturas de pantalla ni el acceso mediante herramientas de desarrollo.
+const protectedHldArea = event =>
+  event.target.closest?.('.hld-example-viewer, .hld-example-page');
+
+document.addEventListener('contextmenu', event => {
+  if (!protectedHldArea(event)) return;
+  event.preventDefault();
+});
+
+document.addEventListener('dragstart', event => {
+  if (!protectedHldArea(event)) return;
+  event.preventDefault();
+});
+
+document.addEventListener('selectstart', event => {
+  if (!protectedHldArea(event)) return;
+  event.preventDefault();
+});
+
+document.addEventListener('copy', event => {
+  if (!protectedHldArea(event)) return;
+  event.preventDefault();
+});
+
+document.addEventListener('keydown', event => {
+  const activeInsideViewer =
+    document.activeElement?.closest?.('.hld-example-viewer') ||
+    document.querySelector('.hld-example-viewer:hover');
+
+  if (!activeInsideViewer) return;
+
+  const key = event.key.toLowerCase();
+  const blocked =
+    (event.ctrlKey || event.metaKey) &&
+    ['c', 's', 'p', 'u'].includes(key);
+
+  if (blocked) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+});
+
