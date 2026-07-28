@@ -69,6 +69,16 @@ function initMenuLinks() {
 
 function renderProjectCard(item, iconMap) {
   const svgContent = iconMap[item.icon] || '';
+  const showBulb = Boolean(item.bulb);
+  const bulbSvg = `
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M9 18h6"/>
+      <path d="M10 21h4"/>
+      <path d="M12 3a6 6 0 0 0-3.9 10.56c.76.66 1.4 1.73 1.65 2.94h4.5c.25-1.21.89-2.28 1.65-2.94A6 6 0 0 0 12 3Z"/>
+    </svg>`;
+  const bulbHtml = showBulb
+    ? `<span class="project-bulb" aria-label="Idea destacada" title="Idea destacada">${bulbSvg}</span>`
+    : '';
 
   const isComingSoon = item.status === 'coming-soon';
   const isPreview = item.status === 'prev';
@@ -96,6 +106,7 @@ function renderProjectCard(item, iconMap) {
         </div>
 
         <h3>${item.name}</h3>
+        ${bulbHtml}
       </div>
 
       <p class="tagline">

@@ -46,7 +46,8 @@
     "description": "Plataforma para crear, versionar y revisar HLD mediante asistentes guiados, modelo semántico y generación automática de C4 System Context, C4 Containers, vista lógica y vista física. Los módulos LLD y Arquitecto IA se encuentran en desarrollo.",
     "icon": "diagram",
     "category": "apps",
-    "status": "prev"
+    "status": "prev",
+    "bulb": true
   },
   {
     "name": "Audithub",
@@ -55,6 +56,7 @@
     "description": "Audithub centraliza auditorías, controles, evidencias, riesgos, hallazgos, acciones e informes, con gestión multi-marco y reutilización gobernada del trabajo ya realizado.",
     "icon": "clipboard",
     "category": "apps",
-    "status": "prev"
+    "status": "prev",
+    "bulb": true
   }
 ]

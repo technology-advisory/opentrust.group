@@ -183,6 +183,31 @@
   min-width:0
 }
 
+
+.project-bulb{
+  width:30px;
+  height:30px;
+  display:grid;
+  place-items:center;
+  margin-left:auto;
+  border-radius:999px;
+  background:linear-gradient(135deg,#fff8d8 0%,#ffe08a 100%);
+  border:1px solid rgba(204,147,0,.28);
+  box-shadow:0 6px 14px rgba(214,155,0,.18);
+  color:#a56a00;
+  flex-shrink:0
+}
+
+.project-bulb svg{
+  width:16px;
+  height:16px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:1.9;
+  stroke-linecap:round;
+  stroke-linejoin:round
+}
+
 .project-icon{
   width:34px;
   height:34px;
