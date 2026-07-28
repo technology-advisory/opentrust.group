@@ -1,0 +1,49 @@
+/* Arq Studio · actualización visual 2026-07-28 */
+.site-header .brand{
+  gap:10px;
+}
+
+.site-header .brand-mark{
+  width:40px;
+  height:40px;
+}
+
+.site-header .brand-mark svg{
+  width:40px;
+  height:40px;
+}
+
+.site-header .brand-text{
+  font-size:16px;
+  line-height:1.02;
+}
+
+.gallery-section .section-heading{
+  max-width:1180px;
+}
+
+.shot,
+.shot.reverse{
+  grid-template-columns:minmax(340px,.28fr) minmax(0,.72fr);
+  gap:38px;
+}
+
+.shot-image img{
+  width:100%;
+  height:auto;
+  max-height:760px;
+  object-fit:contain;
+  background:#f3f7f9;
+}
+
+@media(max-width:1100px){
+  .shot,
+  .shot.reverse{
+    grid-template-columns:1fr;
+  }
+
+  .shot.reverse .shot-copy,
+  .shot.reverse .shot-image{
+    order:initial;
+  }
+}

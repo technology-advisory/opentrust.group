@@ -1,0 +1,25 @@
+ARQ STUDIO - DOS HLD DE EJEMPLO SIN DESCARGA PDF
+
+Archivos:
+- apps/arq-studio.html
+- css/arq-studio-hld-examples.css
+- assets/arq-studio/arq-studio-hld-examples.js
+- assets/arq-studio/hld-examples/hyperv/page-01.png ... page-20.png
+- assets/arq-studio/hld-examples/vdi/page-01.png ... page-17.png
+
+Cambios:
+1. Se añaden dos HLD completos:
+   - Migración de Datacenter y Plataforma Hyper-V.
+   - Escritorio Virtual y Acceso Remoto Seguro.
+2. Selector mediante dos fichas/pestañas.
+3. Solo se cargan visualmente las páginas del HLD seleccionado.
+4. No se incluye ningún PDF, object, iframe, enlace de descarga ni visor de Adobe.
+5. Las páginas se entregan como imágenes renderizadas.
+6. El header de Arq Studio no se modifica.
+
+IMPORTANTE:
+- No copies hyperv.pdf ni VDI.pdf al sitio web.
+- Elimina de producción cualquier PDF de ejemplo antiguo que siga siendo accesible por URL.
+- Una web no puede impedir completamente capturas de pantalla o el guardado manual
+  de una imagen ya visible, pero este cambio evita entregar el archivo PDF original
+  y elimina los controles de Adobe/navegador.
