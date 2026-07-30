@@ -184,7 +184,7 @@
 }
 
 
-.project-bulb{
+.project-badge-icon{
   width:30px;
   height:30px;
   display:grid;
@@ -198,7 +198,7 @@
   flex-shrink:0
 }
 
-.project-bulb svg{
+.project-badge-icon svg{
   width:16px;
   height:16px;
   stroke:currentColor;
@@ -331,3 +331,13 @@
   .section h2{font-size:clamp(1.15rem,4vw,1.4rem)}
   .ecosystem-group-title{font-size:1.2rem}
 }
+
+
+.project-badge-icon--bulb{background:linear-gradient(135deg,#fff8d8 0%,#ffe08a 100%);color:#a56a00}
+.project-badge-icon--star{background:linear-gradient(135deg,#fff4d6 0%,#ffd86b 100%);color:#9c6500}
+.project-badge-icon--lock{background:linear-gradient(135deg,#eef3ff 0%,#cbd8ff 100%);color:#3557a4}
+.project-badge-icon--shield{background:linear-gradient(135deg,#e8f8f1 0%,#bdebd7 100%);color:#13704c}
+.project-badge-icon--sparkles{background:linear-gradient(135deg,#f6efff 0%,#dfc8ff 100%);color:#7042a6}
+.project-badge-icon--eye{background:linear-gradient(135deg,#eaf6f8 0%,#c7eaf0 100%);color:#0d7188}
+.project-badge-icon--rocket{background:linear-gradient(135deg,#fff0ed 0%,#ffc9bd 100%);color:#a6442e}
+.project-badge-icon--flask{background:linear-gradient(135deg,#edf8ff 0%,#c5e9ff 100%);color:#17658f}

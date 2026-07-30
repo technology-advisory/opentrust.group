@@ -37,7 +37,8 @@
     "tagline": "Inteligencia jurídica para comprender el cambio normativo.",
     "description": "Plataforma de investigación y análisis jurídico que centraliza y relaciona información legal para facilitar su consulta, interpretación y seguimiento mediante inteligencia artificial. <strong>Actualmente en fase beta privada.</strong>",
     "icon": "radar",
-    "category": "apps"
+    "category": "apps",
+    "badgeIcon": "lock"
   },
   {
     "name": "Arq Studio",
@@ -47,7 +48,7 @@
     "icon": "diagram",
     "category": "apps",
     "status": "prev",
-    "bulb": true
+    "badgeIcon": "bulb"
   },
   {
     "name": "Audithub",
@@ -57,6 +58,6 @@
     "icon": "clipboard",
     "category": "apps",
     "status": "prev",
-    "bulb": true
+    "badgeIcon": "shield"
   }
 ]

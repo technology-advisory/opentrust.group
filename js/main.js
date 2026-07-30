@@ -69,15 +69,44 @@ function initMenuLinks() {
 
 function renderProjectCard(item, iconMap) {
   const svgContent = iconMap[item.icon] || '';
-  const showBulb = Boolean(item.bulb);
-  const bulbSvg = `
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path d="M9 18h6"/>
-      <path d="M10 21h4"/>
-      <path d="M12 3a6 6 0 0 0-3.9 10.56c.76.66 1.4 1.73 1.65 2.94h4.5c.25-1.21.89-2.28 1.65-2.94A6 6 0 0 0 12 3Z"/>
-    </svg>`;
-  const bulbHtml = showBulb
-    ? `<span class="project-bulb" aria-label="Idea destacada" title="Idea destacada">${bulbSvg}</span>`
+
+  /*
+   * ICONOS DESTACADOS DISPONIBLES PARA badgeIcon:
+   * - "bulb"      → Bombilla / idea
+   * - "star"      → Estrella / destacado
+   * - "lock"      → Candado / seguridad
+   * - "shield"    → Escudo / protección
+   * - "sparkles"  → Destellos / novedad
+   * - "eye"       → Ojo / previsualización
+   * - "rocket"    → Cohete / lanzamiento
+   * - "flask"     → Matraz / laboratorio o beta
+   *
+   * Ejemplo en ecosistema.json:
+   * "badgeIcon": "bulb"
+   *
+   * Para no mostrar icono, elimina badgeIcon o usa:
+   * "badgeIcon": null
+   *
+   * Compatibilidad: si todavía existe "bulb": true y no hay badgeIcon,
+   * se mostrará la bombilla.
+   */
+  const badgeIconMap = {
+    bulb: `<path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.9 10.56c.76.66 1.4 1.73 1.65 2.94h4.5c.25-1.21.89-2.28 1.65-2.94A6 6 0 0 0 12 3Z"/>`,
+    star: `<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/>`,
+    lock: `<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>`,
+    shield: `<path d="M12 3 20 6v6c0 5-3 8.5-8 10-5-1.5-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/>`,
+    sparkles: `<path d="m12 3 1.2 3.8L17 8l-3.8 1.2L12 13l-1.2-3.8L7 8l3.8-1.2L12 3Z"/><path d="m19 14 .8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14Z"/><path d="m5 13 .7 1.8 1.8.7-1.8.7L5 18l-.7-1.8-1.8-.7 1.8-.7L5 13Z"/>`,
+    eye: `<path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/>`,
+    rocket: `<path d="M14 4c3-1 5-1 6-1 0 1 0 3-1 6l-6 6-4-4 5-7Z"/><path d="m9 11-4 1-2 2 5 1"/><path d="m13 15-1 4-2 2-1-5"/><path d="M7 17c-2 0-3 1-3 3 2 0 3-1 3-3Z"/>`,
+    flask: `<path d="M9 3h6"/><path d="M10 3v5l-5 9a3 3 0 0 0 2.6 4.5h8.8A3 3 0 0 0 19 17l-5-9V3"/><path d="M7.5 15h9"/>`
+  };
+
+  const badgeIconName = item.badgeIcon || (item.bulb ? 'bulb' : null);
+  const badgeSvg = badgeIconName ? badgeIconMap[badgeIconName] : '';
+  const badgeHtml = badgeSvg
+    ? `<span class="project-badge-icon project-badge-icon--${badgeIconName}" aria-label="${badgeIconName}" title="${badgeIconName}">
+         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">${badgeSvg}</svg>
+       </span>`
     : '';
 
   const isComingSoon = item.status === 'coming-soon';
@@ -106,7 +135,7 @@ function renderProjectCard(item, iconMap) {
         </div>
 
         <h3>${item.name}</h3>
-        ${bulbHtml}
+        ${badgeHtml}
       </div>
 
       <p class="tagline">
@@ -155,7 +184,7 @@ async function loadEcosystem() {
   };
 
   try {
-    const response = await fetch('data/ecosistema.json?v=20260728');
+    const response = await fetch('data/ecosistema.json?v=20260729-1330');
     if (!response.ok) throw new Error('No se pudo recuperar el JSON del ecosistema');
 
     const data = await response.json();
