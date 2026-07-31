@@ -39,7 +39,7 @@
     "name": "LexRadar",
     "url": "https://lexradar.es/",
     "tagline": "Investigación jurídica asistida por inteligencia artificial segura.",
-    "description": "Herramienta de apoyo para buscar, organizar, relacionar y analizar información jurídica procedente de fuentes públicas nacionales y europeas. Integra jurisprudencia, normativa, criterios administrativos y resoluciones notariales y registrales, junto con una biblioteca de prompts y capacidades de inteligencia artificial diseñadas con controles frente a la manipulación de instrucciones, la exposición de información sensible y las respuestas no verificadas.",
+    "description": "Herramienta de apoyo para buscar, organizar, relacionar y analizar información jurídica procedente de fuentes públicas nacionales y europeas. Integra jurisprudencia, normativa, criterios administrativos y resoluciones notariales y registrales, <strong>junto con una biblioteca de prompts y capacidades de inteligencia artificial diseñadas con controles frente a la manipulación de instrucciones, la exposición de información sensible y las respuestas no verificadas.</strong>",
     "icon": "radar",
     "category": "apps",
     "badgeIcon": "lock"
