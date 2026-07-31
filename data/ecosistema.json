@@ -5,7 +5,8 @@
     "tagline": "Conocimiento especializado en Gobernanza, Riesgo, Cumplimiento y Ciberseguridad.",
     "description": "Plataforma abierta con guías, marcos de referencia, comparativas, checklists, formación y recursos prácticos para profesionales de GRC, seguridad, cumplimiento normativo e inteligencia artificial.",
     "icon": "shield",
-    "category": "docs"
+    "category": "docs",
+    "badgeIcon": "star"
   },
   {
     "name": "FraudeDigital",
@@ -13,7 +14,8 @@
     "tagline": "Concienciación frente al fraude digital.",
     "description": "Información, alertas, simuladores y recursos para prevenir phishing, smishing, vishing, ingeniería social y otras estafas digitales.",
     "icon": "alert",
-    "category": "docs"
+    "category": "docs",
+    "badgeIcon": "shield"
   },
   {
     "name": "Technology Advisory",
@@ -21,7 +23,8 @@
     "tagline": "Arquitectura empresarial, infraestructura, cloud y ciberseguridad.",
     "description": "Arquitectura tecnológica, infraestructura, cloud, automatización, observabilidad, resiliencia y estrategia de ciberseguridad para organizaciones.",
     "icon": "network",
-    "category": "docs"
+    "category": "docs",
+    "badgeIcon": "rocket"
   },
   {
     "name": "CyberLibrary AI",
@@ -29,13 +32,14 @@
     "tagline": "Arquitectura, seguridad, auditoría y GRC de sistemas de inteligencia artificial.",
     "description": "Guías con criterio, artefactos descargables y herramientas que se pueden utilizar de verdad. Contenido especializado, práctico y sin humo: lo que una respuesta genérica de IA no te va a dar.",
     "icon": "ai",
-    "category": "docs"
+    "category": "docs",
+    "badgeIcon": "sparkles"
   },
   {
     "name": "LexRadar",
     "url": "https://lexradar.es/",
-    "tagline": "Inteligencia jurídica para comprender el cambio normativo.",
-    "description": "Plataforma de investigación y análisis jurídico que centraliza y relaciona información legal para facilitar su consulta, interpretación y seguimiento mediante inteligencia artificial. <strong>Actualmente en fase beta privada.</strong>",
+    "tagline": "Investigación jurídica asistida por inteligencia artificial segura.",
+    "description": "Herramienta de apoyo para buscar, organizar, relacionar y analizar información jurídica procedente de fuentes públicas nacionales y europeas. Integra jurisprudencia, normativa, criterios administrativos y resoluciones notariales y registrales, junto con una biblioteca de prompts y capacidades de inteligencia artificial diseñadas con controles frente a la manipulación de instrucciones, la exposición de información sensible y las respuestas no verificadas.",
     "icon": "radar",
     "category": "apps",
     "badgeIcon": "lock"
