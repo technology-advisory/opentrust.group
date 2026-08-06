@@ -1,0 +1,48 @@
+{
+  "version": "2026-08-06",
+  "grupos": [
+    {
+      "titulo": "Gobierno, seguridad y cumplimiento",
+      "certificaciones": [
+        {"nombre": "ISO/IEC 27001 Lead Auditor", "url": "https://www.credly.com/badges/e26bb8df-b906-467a-b1ed-3c83e0b4435d/public_url"},
+        {"nombre": "ISO/IEC 27001 Lead Implementer", "url": "https://www.credly.com/badges/3f92052e-2097-4f80-ba58-145074dcc514/public_url"},
+        {"nombre": "ISO/IEC 22301 Internal Auditor", "url": "https://www.credly.com/badges/87f387a4-2775-4f62-9570-6b3b0c9251f1/public_url"},
+        {"nombre": "ISO/IEC 42001 Internal Auditor", "url": "https://www.credly.com/badges/e318af6c-7652-4ea4-a6e1-871b1ff5ab14/public_url"},
+        {"nombre": "ISO/IEC 42001 Lead Auditor", "url": "https://www.credly.com/badges/fe872c6b-64bc-43e2-b3d2-b549c4f79640/public_url"},
+        {"nombre": "Lead Cybersecurity Professional"},
+        {"nombre": "Capacitación ENS · CCN-CERT (RD 311/2022, auditorías, riesgos e incidentes)"},
+        {"nombre": "Cybersecurity Compliance Strategies Certification"}
+      ]
+    },
+    {
+      "titulo": "Seguridad técnica y ofensiva",
+      "certificaciones": [
+        {"nombre": "Ethical Hacking Professional"},
+        {"nombre": "Certified Red Team Operations Management (CRTOM)"},
+        {"nombre": "Certified Ransomware Protection Officer (CRPO)"},
+        {"nombre": "Certified LLM Security Expert (CLLMSE)"}
+      ]
+    },
+    {
+      "titulo": "Inteligencia artificial y riesgo",
+      "certificaciones": [
+        {"nombre": "AI Governance Professional (AIGPC™)", "url": "https://www.credly.com/badges/175625c1-adf8-42c4-b7e7-303d38724bf6/public_url"},
+        {"nombre": "AI Risk Manager Professional (AIRMPC™)", "url": "https://www.credly.com/badges/218a4c43-c7ab-4bf1-adb5-654de673a2c3/public_url"},
+        {"nombre": "Generative AI Professional (GAIPC™)", "url": "https://www.credly.com/badges/7d86ba9b-70aa-41a0-a977-ad48bf9bf51b/public_url"}
+      ]
+    },
+    {
+      "titulo": "Cloud, redes y DevOps",
+      "certificaciones": [
+        {"nombre": "Google Cloud Associate Cloud Engineer"},
+        {"nombre": "Google Cloud Cybersecurity Certificate"},
+        {"nombre": "Aviatrix Multicloud Network Associate"},
+        {"nombre": "Fortinet Certified Associate in Cybersecurity"},
+        {"nombre": "SonicWall CSE Advanced Accreditation"},
+        {"nombre": "DevOps Advanced Professional"},
+        {"nombre": "Agile Leader Professional"},
+        {"nombre": "Microsoft Migrate & Modernize (Azure, Copilot, SQL y App Modernization)"}
+      ]
+    }
+  ]
+}

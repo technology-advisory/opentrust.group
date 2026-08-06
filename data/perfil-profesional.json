@@ -1,0 +1,71 @@
+{
+  "especializaciones": [
+    {
+      "icono": "shield-check",
+      "titulo": "Gobierno & Cumplimiento",
+      "descripcion": "ENS, ISO 27001, ISO 42001, ISO 22301, NIS2, GDPR. Auditorías, implementación y gobierno continuo orientado a negocio."
+    },
+    {
+      "icono": "building",
+      "titulo": "Arquitectura Híbrida",
+      "descripcion": "Diseño de arquitecturas híbridas resilientes (on-prem / cloud). Zero Trust, Security by Design y evolución de plataformas críticas."
+    },
+    {
+      "icono": "cloud",
+      "titulo": "Cloud (Azure & GCP)",
+      "descripcion": "Arquitectura y gobierno en Microsoft Azure y Google Cloud. Landing zones, seguridad nativa, optimización de costes y cumplimiento."
+    },
+    {
+      "icono": "firewall",
+      "titulo": "Firewalling & Perímetro",
+      "descripcion": "Fortinet, SonicWall, ZTNA/SASE, hardening, segmentación perimetral, VPN/IPSec y control de acceso seguro."
+    },
+    {
+      "icono": "network",
+      "titulo": "Red & Segmentación",
+      "descripcion": "Diseño de redes seguras: VLANs, routing, microsegmentación y aislamiento de entornos críticos (Tier 0)."
+    },
+    {
+      "icono": "backup",
+      "titulo": "Backup & Recuperación",
+      "descripcion": "Veeam Backup & Replication, backups inmutables, Object Lock, estrategias DR y validación real de restauración."
+    },
+    {
+      "icono": "shield",
+      "titulo": "Ciberseguridad Operativa",
+      "descripcion": "Coordinación con SOC, gestión de incidentes, análisis de riesgos y estrategia de seguridad alineada con negocio."
+    },
+    {
+      "icono": "continuity",
+      "titulo": "Continuidad de Negocio",
+      "descripcion": "Diseño y validación de BCP/DRP en entornos críticos. Enfoque basado en impacto y resiliencia (ISO 22301)."
+    },
+    {
+      "icono": "ai",
+      "titulo": "IA & Seguridad",
+      "descripcion": "Gobierno del riesgo en IA, ISO 42001, modelos generativos, seguridad y cumplimiento en entornos AI-driven."
+    }
+  ],
+  "responsabilidades": [
+    "Gobierno y evolución de arquitecturas híbridas, multicloud y plataformas corporativas críticas",
+    "Definición de la estrategia tecnológica y de ciberseguridad alineada con objetivos, riesgo y continuidad de negocio",
+    "Responsabilidad sobre disponibilidad, capacidad, rendimiento, resiliencia y cumplimiento de SLAs de los servicios esenciales",
+    "Dirección de operaciones IT, gestión de cambios, problemas e incidentes mayores con coordinación técnica y ejecutiva",
+    "Diseño, validación y mantenimiento de planes BCP, DRP, contingencia y recuperación ante desastres",
+    "Gobierno de backup, replicación, inmutabilidad, retención y pruebas reales de restauración",
+    "Arquitectura y modernización de datacenters, sistemas, redes, Active Directory, bases de datos y plataformas de virtualización",
+    "Diseño de segmentación, hardening, Zero Trust, acceso privilegiado y protección de entornos críticos y Tier 0",
+    "Coordinación con SOC y liderazgo de la respuesta técnica ante incidentes de seguridad y amenazas relevantes",
+    "Dirección técnica de auditorías, evaluaciones regulatorias y planes de adecuación a ENS, ISO 27001, ISO 22301, NIS2 y GDPR",
+    "Evaluación y gobierno de riesgos tecnológicos, excepciones de seguridad, vulnerabilidades y planes de remediación",
+    "Gestión de proveedores estratégicos, fabricantes, contratos, licencias, renovaciones, costes y niveles de servicio",
+    "Interlocución técnica con fabricantes, integradores, operadores y partners estratégicos en proyectos, escalados y decisiones críticas",
+    "Validación de migraciones de sistemas operativos, aplicaciones, servicios y plataformas antes de su paso a producción",
+    "Definición de estándares, políticas, procedimientos, métricas, cuadros de mando y modelos de gobierno tecnológico",
+    "Reporting a dirección y participación en decisiones ejecutivas sobre arquitectura, inversión, seguridad y riesgo",
+    "Liderazgo y coordinación de equipos técnicos internos y externos, priorización de iniciativas y transferencia de conocimiento",
+    "Impulso de automatización, observabilidad, mejora continua, eficiencia operativa y transformación de servicios IT",
+    "Arquitectura y gobierno de servicios cloud en Azure y Google Cloud, incluyendo seguridad, costes y cumplimiento",
+    "Evaluación de riesgos y controles de seguridad aplicables a inteligencia artificial y modelos generativos"
+  ]
+}

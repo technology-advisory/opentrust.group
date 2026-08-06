@@ -73,5 +73,14 @@
     "category": "apps",
     "status": "prev",
     "badgeIcon": "eye"
+  },
+  {
+    "name": "Link Studio",
+    "url": "/apps/link-studio.html",
+    "tagline": "Análisis y optimización inteligente de enlaces compartidos.",
+    "description": "Aplicación local-first para pegar una URL, detectar automáticamente su plataforma, identificar parámetros de seguimiento y generar una versión limpia lista para copiar. No almacena historial ni envía los enlaces a servicios externos.",
+    "icon": "link",
+    "category": "apps",
+    "badgeIcon": "sparkles"
   }
 ]

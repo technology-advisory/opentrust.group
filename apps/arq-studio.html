@@ -1,1023 +1,747 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0d7188">
-  <meta name="description" content="Previsualización de Arq Studio, la plataforma OpenTrust Group para diseñar, gobernar, versionar y documentar arquitecturas HLD y futuros LLD.">
-  <title>Arq Studio · Previsualización | OpenTrust Group</title>
-  <link rel="stylesheet" href="../css/global.css?v=1.1">
-  <link rel="stylesheet" href="../css/arq-studio.css?v=2.0">
-  <link rel="stylesheet" href="../css/arq-studio-portfolio.css?v=1.0">
-  <link rel="stylesheet" href="../css/arq-studio-wide.css?v=1.0">
-  <link rel="stylesheet" href="../css/arq-studio-hld-preview.css?v=1.0">
-  <link rel="stylesheet" href="../css/arq-studio-refresh.css?v=1.0">
-  <link rel="stylesheet" href="../css/arq-studio-hld-examples.css?v=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#0d7188" name="theme-color"/>
+<meta content="Previsualización de Arq Studio, la plataforma OpenTrust Group para diseñar, gobernar, versionar y documentar arquitecturas HLD y futuros LLD." name="description"/>
+<title>Arq Studio · Previsualización | OpenTrust Group</title>
+
+
+<link href="../css/global.css?v=2.2" rel="stylesheet"/>
+<link href="../css/apps.css?v=2.2" rel="stylesheet"/>
+<link href="../css/site.css?v=2.2" rel="stylesheet"/>
 </head>
-<body>
-  <header class="site-header">
-<a aria-label="Volver a OpenTrust Group" class="brand" href="../index.html">
-<span aria-hidden="true" class="brand-mark">
-<svg viewbox="0 0 64 64">
-<path d="M32 4 54 12v17c0 14.6-8.9 25.6-22 31C18.9 54.6 10 43.6 10 29V12L32 4Z"></path>
-<path d="M23 33.5 29.2 40 43 24"></path>
-<path d="M22 18h20M18 26h28"></path>
-</svg>
-</span>
-<span class="brand-text">OpenTrust<br/><strong>Group</strong></span>
-</a>
-<a class="back-link back-link--button" href="../index.html" aria-label="Volver al ecosistema de OpenTrust Group">
-  <svg viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M19 12H5"></path>
-    <path d="m12 19-7-7 7-7"></path>
-  </svg>
-  <span>Volver al ecosistema</span>
-</a>
-</header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">PREVISUALIZACIÓN · PRODUCTO EN DESARROLLO</span>
-        <h1>Arq Studio</h1>
-        <p class="lead">Diseño y documentación profesional de arquitecturas de soluciones.</p>
-        <p>Arq Studio transforma la elaboración de un HLD en un proceso guiado, trazable, versionado y gobernado. Clientes, proyectos, decisiones, requisitos, inventario, relaciones, diagramas e informe comparten un mismo modelo estructurado.</p>
-
-        <div class="architect-origin">
-          <span>DE UN ARQUITECTO PARA OTROS ARQUITECTOS</span>
-          <p>He creado Arq Studio desde la experiencia real de preparar, revisar, defender y mantener diseños de arquitectura. No parte de una plantilla genérica: parte de los problemas cotidianos del arquitecto de soluciones, de infraestructura y cloud.</p>
-        </div>
-
-        <div class="hero-actions">
-          <a class="button primary" href="#recorrido">Ver recorrido funcional</a>
-          <a class="button secondary" href="#informe-ejemplo">Ver HLD de ejemplo</a>
-          <a class="button secondary" href="#capacidades">Conocer capacidades</a>
-        </div>
-
-        <div class="status-line">
-          <span></span>
+<body class="app-page">
+<header class="site-header" id="site-header"></header>
+<main>
+<section class="hero">
+<div class="hero-copy">
+<span class="eyebrow">PREVISUALIZACIÓN · PRODUCTO EN DESARROLLO</span>
+<h1>Arq Studio</h1>
+<p class="lead">Diseño y documentación profesional de arquitecturas de soluciones.</p>
+<p>Arq Studio transforma la elaboración de un HLD en un proceso guiado, trazable, versionado y gobernado. Clientes, proyectos, decisiones, requisitos, inventario, relaciones, diagramas e informe comparten un mismo modelo estructurado.</p>
+<div class="architect-origin">
+<span>DE UN ARQUITECTO PARA OTROS ARQUITECTOS</span>
+<p>He creado Arq Studio desde la experiencia real de preparar, revisar, defender y mantener diseños de arquitectura. No parte de una plantilla genérica: parte de los problemas cotidianos del arquitecto de soluciones, de infraestructura y cloud.</p>
+</div>
+<div class="hero-actions">
+<a class="button primary" href="#recorrido">Ver recorrido funcional</a>
+<a class="button secondary" href="#informe-ejemplo">Ver HLD de ejemplo</a>
+<a class="button secondary" href="#capacidades">Conocer capacidades</a>
+</div>
+<div class="status-line">
+<span></span>
           Previsualización funcional. LLD y Arquitecto IA continúan en desarrollo.
         </div>
-      </div>
-
-      <div class="hero-visual">
-        <img src="../assets/arq-studio/dashboard-arquitectura.png" alt="Dashboard principal de Arq Studio" loading="eager">
-        <div class="hero-badge">
-          <strong>El modelo manda</strong>
-          <span>HLD · C4 · draw.io · Versionado · Informe</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="capacidades" class="section intro-section">
-      <div class="section-heading">
-        <span class="eyebrow">ARQUITECTURA COMO PRODUCTO</span>
-        <h2>Una plataforma para construir, revisar y gobernar el diseño</h2>
-        <p>Arq Studio no es únicamente un editor de diagramas. El wizard captura la información, el modelo semántico la estructura, los diagramas la representan, el informe la documenta y la gobernanza controla sus versiones y aprobaciones.</p>
-      </div>
-
-      <div class="feature-grid">
-        <article><span>01</span><h3>Workspace multi-cliente</h3><p>Organiza clientes, proyectos y HLD con responsables, estados, versiones y separación clara de contextos.</p></article>
-        <article><span>02</span><h3>Wizard HLD F0–F9</h3><p>Recoge información general, alcance, actores, contenedores, vistas, requisitos, seguridad, riesgos y trabajos.</p></article>
-        <article><span>03</span><h3>Modelo semántico</h3><p>Elementos y relaciones mantienen identificadores estables y actúan como fuente de verdad.</p></article>
-        <article><span>04</span><h3>Diagramas gobernados</h3><p>Genera C4 System Context, C4 Containers, vista lógica y vista física en SVG y XML draw.io.</p></article>
-        <article><span>05</span><h3>Gobierno documental</h3><p>Versionado, estados, revisión, aprobación, baseline y protección de versiones aprobadas.</p></article>
-        <article><span>06</span><h3>Repositorio integrado</h3><p>Centraliza documentos, diagramas, adjuntos, evidencias, exportaciones y backups.</p></article>
-      </div>
-    </section>
-
-    <section class="section model-section">
-      <div class="section-heading">
-        <span class="eyebrow">PRINCIPIO FUNDAMENTAL</span>
-        <h2>El modelo manda</h2>
-      </div>
-      <div class="model-flow">
-        <div class="model-node">El wizard captura la información</div>
-        <div class="model-arrow">→</div>
-        <div class="model-node">El modelo estructura la arquitectura</div>
-        <div class="model-arrow">→</div>
-        <div class="model-node">Los diagramas representan el modelo</div>
-        <div class="model-arrow">→</div>
-        <div class="model-node">El informe documenta el modelo</div>
-        <div class="model-arrow">→</div>
-        <div class="model-node">La gobernanza controla versiones y aprobación</div>
-      </div>
-    </section>
-
-    
-    <section id="recorrido" class="section gallery-section">
-      <div class="section-heading compact">
-        <span class="eyebrow">RECORRIDO FUNCIONAL ACTUALIZADO</span>
-        <h2>Del portfolio de arquitectura al HLD, LLD y gobierno documental</h2>
-        <p>Las siguientes capturas pertenecen a la versión actual de Arq Studio y muestran el ciclo completo de trabajo, incluyendo las capacidades HLD operativas, la evolución LLD y el Arquitecto IA en desarrollo.</p>
-      </div>
-      <div class="showcase">
-        
-        <article class="shot">
-          <div class="shot-copy">
-            <span>01 · VISIÓN GENERAL</span>
-            <h3>Dashboard de arquitectura</h3>
-            <p>Visión consolidada de clientes, proyectos, HLD, versiones, actividad reciente y estado general del portfolio.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>El dashboard debe ayudar a priorizar iniciativas y revisiones, pero cada indicador debe poder abrir el expediente que lo justifica.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Las métricas deben calcularse desde los datos persistidos y compartir las mismas reglas que los listados y el workspace.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/dashboard-arquitectura.png"
-                  aria-label="Ampliar Dashboard de arquitectura">
-            <img src="../assets/arq-studio/dashboard-arquitectura.png"
-                 alt="Dashboard de arquitectura en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>02 · ORGANIZACIONES</span>
-            <h3>Gestión de clientes</h3>
-            <p>Administración de organizaciones, responsables y proyectos asociados dentro del workspace de arquitectura.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>La separación por cliente delimita alcance, propiedad y contexto documental. La eliminación debe ser controlada y trazable.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Las relaciones cliente → proyecto → HLD deben protegerse mediante integridad referencial y validaciones en backend.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/clientes-arquitectura.png"
-                  aria-label="Ampliar Gestión de clientes">
-            <img src="../assets/arq-studio/clientes-arquitectura.png"
-                 alt="Gestión de clientes en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot">
-          <div class="shot-copy">
-            <span>03 · PORTFOLIO</span>
-            <h3>Gestión de proyectos</h3>
-            <p>Listado de iniciativas por cliente, con responsable, HLD asociados, estado y última actualización.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>Antes de revisar un diseño, el arquitecto necesita entender el propósito, alcance y responsables de la iniciativa.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Los identificadores deben permanecer estables y los filtros deben conservar siempre el contexto del cliente.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/proyectos-arquitectura.png"
-                  aria-label="Ampliar Gestión de proyectos">
-            <img src="../assets/arq-studio/proyectos-arquitectura.png"
-                 alt="Gestión de proyectos en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>04 · DOCUMENTACIÓN</span>
-            <h3>Catálogo de HLD</h3>
-            <p>Repositorio central de documentos HLD con cliente, proyecto, versión, estado y acciones disponibles.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>El catálogo debe diferenciar claramente borrador, revisión, aprobado y obsoleto, evitando modificar baselines aprobadas.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Cada versión aprobada debe quedar bloqueada; cualquier cambio posterior debe originar una nueva versión.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/catalogo-hld.png"
-                  aria-label="Ampliar Catálogo de HLD">
-            <img src="../assets/arq-studio/catalogo-hld.png"
-                 alt="Catálogo de HLD en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot">
-          <div class="shot-copy">
-            <span>05 · WORKSPACE</span>
-            <h3>Resumen, completitud y preparación</h3>
-            <p>Vista general del HLD con avance del wizard, diagramas disponibles, requisitos, activos y trabajos identificados.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>La completitud es un indicador de preparación, no una aprobación automática del diseño.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Las reglas de completitud deben ser explícitas, versionadas y calculadas desde campos, relaciones y artefactos reales.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/resumen-hld-completitud.png"
-                  aria-label="Ampliar Resumen, completitud y preparación">
-            <img src="../assets/arq-studio/resumen-hld-completitud.png"
-                 alt="Resumen, completitud y preparación en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>06 · WIZARD HLD</span>
-            <h3>Asistente guiado F0–F9</h3>
-            <p>Proceso estructurado para capturar información general, alcance, actores, contenedores, vistas, requisitos, seguridad, riesgos y cierre.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>El wizard debe guiar sin convertir el diseño en un formulario mecánico; el criterio arquitectónico sigue siendo esencial.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Las validaciones deben detectar referencias huérfanas, duplicidades y campos obligatorios antes de generar artefactos.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/wizard-hld-f0-f9.png"
-                  aria-label="Ampliar Asistente guiado F0–F9">
-            <img src="../assets/arq-studio/wizard-hld-f0-f9.png"
-                 alt="Asistente guiado F0–F9 en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot">
-          <div class="shot-copy">
-            <span>07 · GENERACIÓN AUTOMÁTICA</span>
-            <h3>C4 System Context</h3>
-            <p>Diagrama generado automáticamente desde el modelo con actores, sistema en estudio, sistemas externos y relaciones principales.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>La vista permite validar límites, dependencias y contexto antes de profundizar en contenedores o infraestructura.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>SVG y XML draw.io deben conservar IDs, relaciones, etiquetas, protocolos y sentido de los flujos.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/c4-system-context.png"
-                  aria-label="Ampliar C4 System Context">
-            <img src="../assets/arq-studio/c4-system-context.png"
-                 alt="C4 System Context en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>08 · GENERACIÓN AUTOMÁTICA</span>
-            <h3>C4 Containers</h3>
-            <p>Vista generada automáticamente con aplicaciones, servicios, APIs, bases de datos, almacenamiento e integraciones.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>Debe mostrar responsabilidades y dependencias relevantes, no limitarse a una relación de productos.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>La generación debe ser determinista: el mismo modelo debe producir siempre el mismo resultado.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/c4-containers.png"
-                  aria-label="Ampliar C4 Containers">
-            <img src="../assets/arq-studio/c4-containers.png"
-                 alt="C4 Containers en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot">
-          <div class="shot-copy">
-            <span>09 · GENERACIÓN AUTOMÁTICA</span>
-            <h3>Vista lógica</h3>
-            <p>Diagrama generado automáticamente con capacidades, dominios, capas, módulos y dependencias funcionales.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>La vista lógica debe explicar cómo se organiza la solución sin mezclar responsabilidades funcionales con infraestructura física.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Cada elemento debe trazarse hasta su definición en el wizard y hasta sus relaciones en el modelo.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/vista-logica.png"
-                  aria-label="Ampliar Vista lógica">
-            <img src="../assets/arq-studio/vista-logica.png"
-                 alt="Vista lógica en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>10 · GENERACIÓN AUTOMÁTICA</span>
-            <h3>Vista física</h3>
-            <p>Vista generada automáticamente desde inventario, zonas, plataformas, nodos y relaciones de infraestructura.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>El HLD debe mantener el nivel adecuado; puertos, VLAN, direccionamiento y configuración detallada pertenecen al LLD.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>La generación debe detectar nodos sin propietario, entorno, función o relaciones completas.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/vista-fisica.png"
-                  aria-label="Ampliar Vista física">
-            <img src="../assets/arq-studio/vista-fisica.png"
-                 alt="Vista física en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot">
-          <div class="shot-copy">
-            <span>11 · EDICIÓN PROFESIONAL</span>
-            <h3>Edición gobernada en draw.io</h3>
-            <p>Los diagramas generados pueden abrirse en diagrams.net para ajustar composición, rutas y etiquetas.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>La edición manual permite aplicar criterio visual sin perder la fuente estructurada del diseño.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Debe conservarse el XML, actualizar el SVG, registrar la edición manual y protegerla frente a regeneraciones accidentales.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/edicion-drawio.png"
-                  aria-label="Ampliar Edición gobernada en draw.io">
-            <img src="../assets/arq-studio/edicion-drawio.png"
-                 alt="Edición gobernada en draw.io en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>12 · GOBERNANZA</span>
-            <h3>Preparación y aprobación</h3>
-            <p>Panel de gobierno con estado, completitud, validaciones, aprobación, observaciones y control de baseline.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>La gobernanza convierte el HLD en un entregable revisable y aprobado, no en un fichero aislado.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Las transiciones deben registrar usuario, fecha, motivo, versión y resultado de las validaciones.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/gobernanza-version.png"
-                  aria-label="Ampliar Preparación y aprobación">
-            <img src="../assets/arq-studio/gobernanza-version.png"
-                 alt="Preparación y aprobación en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot">
-          <div class="shot-copy">
-            <span>13 · REPOSITORIO</span>
-            <h3>Documentos, diagramas y evidencias</h3>
-            <p>Inventario de entregables asociados al HLD: documentos, diagramas, adjuntos, evidencias, exportaciones y backups.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>El repositorio debe permitir reconstruir exactamente qué artefactos formaban parte de una baseline.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Cada archivo debe mantener categoría, origen, integridad, tamaño, fecha, estado y permisos.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/repositorio-documental.png"
-                  aria-label="Ampliar Documentos, diagramas y evidencias">
-            <img src="../assets/arq-studio/repositorio-documental.png"
-                 alt="Documentos, diagramas y evidencias en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>14 · INFORME</span>
-            <h3>HLD generado desde el modelo</h3>
-            <p>Vista previa de la portada y metadatos del documento profesional generado por Arq Studio.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>El informe debe representar fielmente el alcance, las decisiones, los riesgos y las limitaciones aprobadas.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>La generación debe usar una versión congelada para evitar cambios posteriores sobre un documento emitido.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/informe-hld-portada.png"
-                  aria-label="Ampliar HLD generado desde el modelo">
-            <img src="../assets/arq-studio/informe-hld-portada.png"
-                 alt="HLD generado desde el modelo en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot">
-          <div class="shot-copy">
-            <span>15 · LLD</span>
-            <h3>Catálogo de LLD</h3>
-            <p>Vista del módulo LLD para diseños técnicos detallados asociados a HLD aprobados.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>El LLD debe mantener trazabilidad con las decisiones y requisitos del HLD de origen.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>El modelo debe diferenciar claramente información de alto nivel y parámetros técnicos de construcción.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/listado-lld.png"
-                  aria-label="Ampliar Catálogo de LLD">
-            <img src="../assets/arq-studio/listado-lld.png"
-                 alt="Catálogo de LLD en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>16 · LLD</span>
-            <h3>Preparación y completitud técnica</h3>
-            <p>Resumen de readiness del LLD por dominios técnicos, con porcentaje de preparación y datos de gobierno.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>La completitud técnica debe reflejar si existe información suficiente para construir y probar la solución.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Las reglas deben adaptarse al contexto; elementos no aplicables o gestionados no deben bloquear artificialmente el 100 %.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/lld-readiness.png"
-                  aria-label="Ampliar Preparación y completitud técnica">
-            <img src="../assets/arq-studio/lld-readiness.png"
-                 alt="Preparación y completitud técnica en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot">
-          <div class="shot-copy">
-            <span>17 · LLD</span>
-            <h3>Red y direccionamiento</h3>
-            <p>Detalle técnico de redes, VLAN, subredes, VIP, routing, firewall y parámetros asociados.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>Esta información pertenece al nivel de construcción y debe derivarse de las decisiones aprobadas en el HLD.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Se requieren validaciones de solapamiento, formato, dependencias y coherencia entre VLAN, subredes, VIP y reglas.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/lld-red-direccionamiento.png"
-                  aria-label="Ampliar Red y direccionamiento">
-            <img src="../assets/arq-studio/lld-red-direccionamiento.png"
-                 alt="Red y direccionamiento en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>18 · CATÁLOGO</span>
-            <h3>Gestión de diagramas</h3>
-            <p>Catálogo de vistas generadas, estado de edición, formato disponible y protección frente a regeneraciones.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>El arquitecto debe distinguir claramente diagramas derivados del modelo y diagramas ajustados manualmente.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>SVG, XML draw.io, backups y estado de bloqueo deben permanecer sincronizados.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/diagramas-catalogo.png"
-                  aria-label="Ampliar Gestión de diagramas">
-            <img src="../assets/arq-studio/diagramas-catalogo.png"
-                 alt="Gestión de diagramas en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot">
-          <div class="shot-copy">
-            <span>19 · DOCUMENTACIÓN</span>
-            <h3>Entregables generados</h3>
-            <p>Listado de informes y documentos producidos por Arq Studio, con versión, fecha, formato y estado.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>Los entregables deben quedar asociados a la versión y baseline que los originó.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Conviene registrar hash, plantilla, fecha de generación, origen y usuario que produjo cada artefacto.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/documentacion-generada.png"
-                  aria-label="Ampliar Entregables generados">
-            <img src="../assets/arq-studio/documentacion-generada.png"
-                 alt="Entregables generados en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-        <article class="shot reverse">
-          <div class="shot-copy">
-            <span>20 · EN DESARROLLO</span>
-            <h3>Arquitecto IA</h3>
-            <p>Módulo previsto para revisar coherencia, requisitos, riesgos, decisiones y evolución del diseño.</p>
-            <div class="professional-notes">
-              <div class="professional-note professional-note--architect">
-                <span>COMENTARIO DEL ARQUITECTO</span>
-                <p>La IA debe asistir al arquitecto, nunca aprobar una arquitectura ni sustituir el criterio profesional.</p>
-              </div>
-              <div class="professional-note professional-note--technical">
-                <span>COMENTARIO TÉCNICO</span>
-                <p>Toda propuesta debe requerir validación humana y no puede modificar baselines ni diagramas protegidos automáticamente.</p>
-              </div>
-            </div>
-          </div>
-          <button class="shot-image"
-                  data-image="../assets/arq-studio/arquitecto-ia.png"
-                  aria-label="Ampliar Arquitecto IA">
-            <img src="../assets/arq-studio/arquitecto-ia.png"
-                 alt="Arquitecto IA en Arq Studio"
-                 loading="lazy">
-          </button>
-        </article>
-    
-      </div>
-    </section>
-
-    <section id="informe-ejemplo" class="section report-section hld-examples-section">
-      <div class="section-heading">
-        <span class="eyebrow">DOS HLD GENERADOS DESDE EL MODELO</span>
-        <h2>Ejemplos completos de documentación de arquitectura</h2>
-        <p>Estos dos documentos de demostración muestran cómo Arq Studio transforma el modelo gobernado en un HLD profesional. Se presentan como páginas renderizadas dentro de la web, sin publicar ni enlazar los archivos PDF originales.</p>
-      </div>
-
-      <div class="hld-example-selector" role="tablist" aria-label="Seleccionar HLD de ejemplo">
-        <button class="hld-example-tab is-active"
-                id="tab-hyperv"
-                type="button"
-                role="tab"
-                aria-selected="true"
-                aria-controls="panel-hyperv"
-                data-hld-target="panel-hyperv">
-          <span>HLD 01</span>
-          <strong>Migración de Datacenter y Plataforma Hyper-V</strong>
-          <small>20 páginas · HLD-DCMIG-001</small>
-        </button>
-
-        <button class="hld-example-tab"
-                id="tab-vdi"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel-vdi"
-                data-hld-target="panel-vdi">
-          <span>HLD 02</span>
-          <strong>Escritorio Virtual y Acceso Remoto Seguro</strong>
-          <small>17 páginas · HLD-VDI-001</small>
-        </button>
-      </div>
-
-      <section class="hld-example-panel is-active"
-               id="panel-hyperv"
-               role="tabpanel"
-               aria-labelledby="tab-hyperv">
-        <div class="hld-example-intro">
-          <div>
-            <span class="eyebrow">INFRAESTRUCTURA Y CONTINUIDAD</span>
-            <h3>Migración de Datacenter y Plataforma Hyper-V</h3>
-            <p>Arquitectura de alto nivel para trasladar cargas virtuales a un nuevo datacenter, manteniendo continuidad, seguridad y capacidad de reversión. Incluye clúster Hyper-V, almacenamiento compartido, fabric SAN dual, backup, redes segregadas, monitorización y migración por oleadas.</p>
-          </div>
-          <div class="hld-example-meta">
-            <span><strong>20</strong> páginas</span>
-            <span><strong>1.0</strong> versión</span>
-            <span><strong>DEMO</strong> uso ficticio</span>
-          </div>
-        </div>
-
-        <div class="report-comments">
-          <div class="professional-note professional-note--architect">
-            <span>COMENTARIO DEL ARQUITECTO</span>
-            <p>El ejemplo muestra cómo relacionar alcance, actores, componentes, requisitos, inventario, seguridad, decisiones, riesgos, trabajos y diagramas dentro de una única baseline.</p>
-          </div>
-        </div>
-
-        <div class="hld-example-viewer" aria-label="Vista del HLD de migración Hyper-V">
-          <div class="hld-example-viewer-head">
-            <div>
-              <strong>HLD-DCMIG-001 · Migración Hyper-V</strong>
-              <span>Documento de demostración</span>
-            </div>
-            <span class="hld-demo-badge">DEMO</span>
-          </div>
-          <div class="hld-example-pages">
-            
-          <figure class="hld-example-page hld-copy-protected" data-page="1">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-01.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 1 de 20"
-                 loading="eager"
-                 draggable="false">
-            <figcaption>Página 1 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="2">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-02.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 2 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 2 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="3">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-03.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 3 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 3 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="4">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-04.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 4 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 4 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="5">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-05.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 5 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 5 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="6">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-06.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 6 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 6 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="7">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-07.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 7 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 7 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="8">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-08.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 8 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 8 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="9">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-09.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 9 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 9 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="10">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-10.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 10 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 10 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="11">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-11.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 11 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 11 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="12">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-12.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 12 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 12 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="13">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-13.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 13 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 13 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="14">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-14.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 14 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 14 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="15">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-15.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 15 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 15 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="16">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-16.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 16 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 16 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="17">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-17.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 17 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 17 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="18">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-18.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 18 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 18 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="19">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-19.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 19 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 19 de 20</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="20">
-            <img src="../assets/arq-studio/hld-examples/hyperv/page-20.png"
-                 alt="Migración de Datacenter y Plataforma Hyper-V · Página 20 de 20"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 20 de 20</figcaption>
-          </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="hld-example-panel"
-               id="panel-vdi"
-               role="tabpanel"
-               aria-labelledby="tab-vdi"
-               hidden>
-        <div class="hld-example-intro">
-          <div>
-            <span class="eyebrow">PUESTO DE TRABAJO Y ACCESO SEGURO</span>
-            <h3>Escritorio Virtual y Acceso Remoto Seguro</h3>
-            <p>Diseño de alto nivel de una solución VDI/DaaS con broker, hosts de escritorio, MFA, gateway seguro, perfiles de usuario, EDR y monitorización. Contempla empleados y terceros autorizados, piloto inicial y crecimiento por oleadas.</p>
-          </div>
-          <div class="hld-example-meta">
-            <span><strong>17</strong> páginas</span>
-            <span><strong>1.0</strong> versión</span>
-            <span><strong>DEMO</strong> uso ficticio</span>
-          </div>
-        </div>
-
-        <div class="report-comments">
-          <div class="professional-note professional-note--architect">
-            <span>COMENTARIO DEL ARQUITECTO</span>
-            <p>Este segundo ejemplo demuestra que el mismo metamodelo puede documentar una arquitectura diferente, conservando estructura, gobierno, trazabilidad y separación entre HLD y futuro LLD.</p>
-          </div>
-        </div>
-
-        <div class="hld-example-viewer" aria-label="Vista del HLD de escritorio virtual y acceso remoto">
-          <div class="hld-example-viewer-head">
-            <div>
-              <strong>HLD-VDI-001 · Escritorio Virtual y Acceso Remoto</strong>
-              <span>Documento de demostración</span>
-            </div>
-            <span class="hld-demo-badge">DEMO</span>
-          </div>
-          <div class="hld-example-pages">
-            
-          <figure class="hld-example-page hld-copy-protected" data-page="1">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-01.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 1 de 17"
-                 loading="eager"
-                 draggable="false">
-            <figcaption>Página 1 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="2">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-02.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 2 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 2 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="3">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-03.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 3 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 3 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="4">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-04.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 4 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 4 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="5">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-05.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 5 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 5 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="6">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-06.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 6 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 6 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="7">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-07.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 7 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 7 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="8">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-08.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 8 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 8 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="9">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-09.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 9 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 9 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="10">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-10.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 10 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 10 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="11">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-11.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 11 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 11 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="12">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-12.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 12 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 12 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="13">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-13.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 13 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 13 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="14">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-14.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 14 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 14 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="15">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-15.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 15 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 15 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="16">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-16.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 16 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 16 de 17</figcaption>
-          </figure>
-          <figure class="hld-example-page hld-copy-protected" data-page="17">
-            <img src="../assets/arq-studio/hld-examples/vdi/page-17.png"
-                 alt="Escritorio Virtual y Acceso Remoto Seguro · Página 17 de 17"
-                 loading="lazy"
-                 draggable="false">
-            <figcaption>Página 17 de 17</figcaption>
-          </figure>
-          </div>
-        </div>
-      </section>
-
-      <p class="hld-preview-notice">Los documentos son ejemplos ficticios y no contractuales. Se muestran exclusivamente como previsualización visual dentro del portfolio.</p>
-    </section>
-
+</div>
+<div class="hero-visual">
+<img alt="Dashboard principal de Arq Studio" loading="eager" src="../assets/arq-studio/dashboard-arquitectura.png"/>
+<div class="hero-badge">
+<strong>El modelo manda</strong>
+<span>HLD · C4 · draw.io · Versionado · Informe</span>
+</div>
+</div>
+</section>
+<section class="section intro-section" id="capacidades">
+<div class="section-heading">
+<span class="eyebrow">ARQUITECTURA COMO PRODUCTO</span>
+<h2>Una plataforma para construir, revisar y gobernar el diseño</h2>
+<p>Arq Studio no es únicamente un editor de diagramas. El wizard captura la información, el modelo semántico la estructura, los diagramas la representan, el informe la documenta y la gobernanza controla sus versiones y aprobaciones.</p>
+</div>
+<div class="feature-grid">
+<article><span>01</span><h3>Workspace multi-cliente</h3><p>Organiza clientes, proyectos y HLD con responsables, estados, versiones y separación clara de contextos.</p></article>
+<article><span>02</span><h3>Wizard HLD F0–F9</h3><p>Recoge información general, alcance, actores, contenedores, vistas, requisitos, seguridad, riesgos y trabajos.</p></article>
+<article><span>03</span><h3>Modelo semántico</h3><p>Elementos y relaciones mantienen identificadores estables y actúan como fuente de verdad.</p></article>
+<article><span>04</span><h3>Diagramas gobernados</h3><p>Genera C4 System Context, C4 Containers, vista lógica y vista física en SVG y XML draw.io.</p></article>
+<article><span>05</span><h3>Gobierno documental</h3><p>Versionado, estados, revisión, aprobación, baseline y protección de versiones aprobadas.</p></article>
+<article><span>06</span><h3>Repositorio integrado</h3><p>Centraliza documentos, diagramas, adjuntos, evidencias, exportaciones y backups.</p></article>
+</div>
+</section>
+<section class="section model-section">
+<div class="section-heading">
+<span class="eyebrow">PRINCIPIO FUNDAMENTAL</span>
+<h2>El modelo manda</h2>
+</div>
+<div class="model-flow">
+<div class="model-node">El wizard captura la información</div>
+<div class="model-arrow">→</div>
+<div class="model-node">El modelo estructura la arquitectura</div>
+<div class="model-arrow">→</div>
+<div class="model-node">Los diagramas representan el modelo</div>
+<div class="model-arrow">→</div>
+<div class="model-node">El informe documenta el modelo</div>
+<div class="model-arrow">→</div>
+<div class="model-node">La gobernanza controla versiones y aprobación</div>
+</div>
+</section>
+<section class="section gallery-section" id="recorrido">
+<div class="section-heading compact">
+<span class="eyebrow">RECORRIDO FUNCIONAL ACTUALIZADO</span>
+<h2>Del portfolio de arquitectura al HLD, LLD y gobierno documental</h2>
+<p>Las siguientes capturas pertenecen a la versión actual de Arq Studio y muestran el ciclo completo de trabajo, incluyendo las capacidades HLD operativas, la evolución LLD y el Arquitecto IA en desarrollo.</p>
+</div>
+<div class="showcase">
+<article class="shot">
+<div class="shot-copy">
+<span>01 · VISIÓN GENERAL</span>
+<h3>Dashboard de arquitectura</h3>
+<p>Visión consolidada de clientes, proyectos, HLD, versiones, actividad reciente y estado general del portfolio.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>El dashboard debe ayudar a priorizar iniciativas y revisiones, pero cada indicador debe poder abrir el expediente que lo justifica.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Las métricas deben calcularse desde los datos persistidos y compartir las mismas reglas que los listados y el workspace.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Dashboard de arquitectura" class="shot-image" data-image="../assets/arq-studio/dashboard-arquitectura.png">
+<img alt="Dashboard de arquitectura en Arq Studio" loading="lazy" src="../assets/arq-studio/dashboard-arquitectura.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>02 · ORGANIZACIONES</span>
+<h3>Gestión de clientes</h3>
+<p>Administración de organizaciones, responsables y proyectos asociados dentro del workspace de arquitectura.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>La separación por cliente delimita alcance, propiedad y contexto documental. La eliminación debe ser controlada y trazable.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Las relaciones cliente → proyecto → HLD deben protegerse mediante integridad referencial y validaciones en backend.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Gestión de clientes" class="shot-image" data-image="../assets/arq-studio/clientes-arquitectura.png">
+<img alt="Gestión de clientes en Arq Studio" loading="lazy" src="../assets/arq-studio/clientes-arquitectura.png"/>
+</button>
+</article>
+<article class="shot">
+<div class="shot-copy">
+<span>03 · PORTFOLIO</span>
+<h3>Gestión de proyectos</h3>
+<p>Listado de iniciativas por cliente, con responsable, HLD asociados, estado y última actualización.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>Antes de revisar un diseño, el arquitecto necesita entender el propósito, alcance y responsables de la iniciativa.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Los identificadores deben permanecer estables y los filtros deben conservar siempre el contexto del cliente.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Gestión de proyectos" class="shot-image" data-image="../assets/arq-studio/proyectos-arquitectura.png">
+<img alt="Gestión de proyectos en Arq Studio" loading="lazy" src="../assets/arq-studio/proyectos-arquitectura.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>04 · DOCUMENTACIÓN</span>
+<h3>Catálogo de HLD</h3>
+<p>Repositorio central de documentos HLD con cliente, proyecto, versión, estado y acciones disponibles.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>El catálogo debe diferenciar claramente borrador, revisión, aprobado y obsoleto, evitando modificar baselines aprobadas.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Cada versión aprobada debe quedar bloqueada; cualquier cambio posterior debe originar una nueva versión.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Catálogo de HLD" class="shot-image" data-image="../assets/arq-studio/catalogo-hld.png">
+<img alt="Catálogo de HLD en Arq Studio" loading="lazy" src="../assets/arq-studio/catalogo-hld.png"/>
+</button>
+</article>
+<article class="shot">
+<div class="shot-copy">
+<span>05 · WORKSPACE</span>
+<h3>Resumen, completitud y preparación</h3>
+<p>Vista general del HLD con avance del wizard, diagramas disponibles, requisitos, activos y trabajos identificados.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>La completitud es un indicador de preparación, no una aprobación automática del diseño.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Las reglas de completitud deben ser explícitas, versionadas y calculadas desde campos, relaciones y artefactos reales.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Resumen, completitud y preparación" class="shot-image" data-image="../assets/arq-studio/resumen-hld-completitud.png">
+<img alt="Resumen, completitud y preparación en Arq Studio" loading="lazy" src="../assets/arq-studio/resumen-hld-completitud.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>06 · WIZARD HLD</span>
+<h3>Asistente guiado F0–F9</h3>
+<p>Proceso estructurado para capturar información general, alcance, actores, contenedores, vistas, requisitos, seguridad, riesgos y cierre.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>El wizard debe guiar sin convertir el diseño en un formulario mecánico; el criterio arquitectónico sigue siendo esencial.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Las validaciones deben detectar referencias huérfanas, duplicidades y campos obligatorios antes de generar artefactos.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Asistente guiado F0–F9" class="shot-image" data-image="../assets/arq-studio/wizard-hld-f0-f9.png">
+<img alt="Asistente guiado F0–F9 en Arq Studio" loading="lazy" src="../assets/arq-studio/wizard-hld-f0-f9.png"/>
+</button>
+</article>
+<article class="shot">
+<div class="shot-copy">
+<span>07 · GENERACIÓN AUTOMÁTICA</span>
+<h3>C4 System Context</h3>
+<p>Diagrama generado automáticamente desde el modelo con actores, sistema en estudio, sistemas externos y relaciones principales.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>La vista permite validar límites, dependencias y contexto antes de profundizar en contenedores o infraestructura.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>SVG y XML draw.io deben conservar IDs, relaciones, etiquetas, protocolos y sentido de los flujos.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar C4 System Context" class="shot-image" data-image="../assets/arq-studio/c4-system-context.png">
+<img alt="C4 System Context en Arq Studio" loading="lazy" src="../assets/arq-studio/c4-system-context.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>08 · GENERACIÓN AUTOMÁTICA</span>
+<h3>C4 Containers</h3>
+<p>Vista generada automáticamente con aplicaciones, servicios, APIs, bases de datos, almacenamiento e integraciones.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>Debe mostrar responsabilidades y dependencias relevantes, no limitarse a una relación de productos.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>La generación debe ser determinista: el mismo modelo debe producir siempre el mismo resultado.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar C4 Containers" class="shot-image" data-image="../assets/arq-studio/c4-containers.png">
+<img alt="C4 Containers en Arq Studio" loading="lazy" src="../assets/arq-studio/c4-containers.png"/>
+</button>
+</article>
+<article class="shot">
+<div class="shot-copy">
+<span>09 · GENERACIÓN AUTOMÁTICA</span>
+<h3>Vista lógica</h3>
+<p>Diagrama generado automáticamente con capacidades, dominios, capas, módulos y dependencias funcionales.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>La vista lógica debe explicar cómo se organiza la solución sin mezclar responsabilidades funcionales con infraestructura física.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Cada elemento debe trazarse hasta su definición en el wizard y hasta sus relaciones en el modelo.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Vista lógica" class="shot-image" data-image="../assets/arq-studio/vista-logica.png">
+<img alt="Vista lógica en Arq Studio" loading="lazy" src="../assets/arq-studio/vista-logica.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>10 · GENERACIÓN AUTOMÁTICA</span>
+<h3>Vista física</h3>
+<p>Vista generada automáticamente desde inventario, zonas, plataformas, nodos y relaciones de infraestructura.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>El HLD debe mantener el nivel adecuado; puertos, VLAN, direccionamiento y configuración detallada pertenecen al LLD.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>La generación debe detectar nodos sin propietario, entorno, función o relaciones completas.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Vista física" class="shot-image" data-image="../assets/arq-studio/vista-fisica.png">
+<img alt="Vista física en Arq Studio" loading="lazy" src="../assets/arq-studio/vista-fisica.png"/>
+</button>
+</article>
+<article class="shot">
+<div class="shot-copy">
+<span>11 · EDICIÓN PROFESIONAL</span>
+<h3>Edición gobernada en draw.io</h3>
+<p>Los diagramas generados pueden abrirse en diagrams.net para ajustar composición, rutas y etiquetas.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>La edición manual permite aplicar criterio visual sin perder la fuente estructurada del diseño.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Debe conservarse el XML, actualizar el SVG, registrar la edición manual y protegerla frente a regeneraciones accidentales.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Edición gobernada en draw.io" class="shot-image" data-image="../assets/arq-studio/edicion-drawio.png">
+<img alt="Edición gobernada en draw.io en Arq Studio" loading="lazy" src="../assets/arq-studio/edicion-drawio.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>12 · GOBERNANZA</span>
+<h3>Preparación y aprobación</h3>
+<p>Panel de gobierno con estado, completitud, validaciones, aprobación, observaciones y control de baseline.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>La gobernanza convierte el HLD en un entregable revisable y aprobado, no en un fichero aislado.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Las transiciones deben registrar usuario, fecha, motivo, versión y resultado de las validaciones.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Preparación y aprobación" class="shot-image" data-image="../assets/arq-studio/gobernanza-version.png">
+<img alt="Preparación y aprobación en Arq Studio" loading="lazy" src="../assets/arq-studio/gobernanza-version.png"/>
+</button>
+</article>
+<article class="shot">
+<div class="shot-copy">
+<span>13 · REPOSITORIO</span>
+<h3>Documentos, diagramas y evidencias</h3>
+<p>Inventario de entregables asociados al HLD: documentos, diagramas, adjuntos, evidencias, exportaciones y backups.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>El repositorio debe permitir reconstruir exactamente qué artefactos formaban parte de una baseline.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Cada archivo debe mantener categoría, origen, integridad, tamaño, fecha, estado y permisos.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Documentos, diagramas y evidencias" class="shot-image" data-image="../assets/arq-studio/repositorio-documental.png">
+<img alt="Documentos, diagramas y evidencias en Arq Studio" loading="lazy" src="../assets/arq-studio/repositorio-documental.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>14 · INFORME</span>
+<h3>HLD generado desde el modelo</h3>
+<p>Vista previa de la portada y metadatos del documento profesional generado por Arq Studio.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>El informe debe representar fielmente el alcance, las decisiones, los riesgos y las limitaciones aprobadas.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>La generación debe usar una versión congelada para evitar cambios posteriores sobre un documento emitido.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar HLD generado desde el modelo" class="shot-image" data-image="../assets/arq-studio/informe-hld-portada.png">
+<img alt="HLD generado desde el modelo en Arq Studio" loading="lazy" src="../assets/arq-studio/informe-hld-portada.png"/>
+</button>
+</article>
+<article class="shot">
+<div class="shot-copy">
+<span>15 · LLD</span>
+<h3>Catálogo de LLD</h3>
+<p>Vista del módulo LLD para diseños técnicos detallados asociados a HLD aprobados.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>El LLD debe mantener trazabilidad con las decisiones y requisitos del HLD de origen.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>El modelo debe diferenciar claramente información de alto nivel y parámetros técnicos de construcción.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Catálogo de LLD" class="shot-image" data-image="../assets/arq-studio/listado-lld.png">
+<img alt="Catálogo de LLD en Arq Studio" loading="lazy" src="../assets/arq-studio/listado-lld.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>16 · LLD</span>
+<h3>Preparación y completitud técnica</h3>
+<p>Resumen de readiness del LLD por dominios técnicos, con porcentaje de preparación y datos de gobierno.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>La completitud técnica debe reflejar si existe información suficiente para construir y probar la solución.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Las reglas deben adaptarse al contexto; elementos no aplicables o gestionados no deben bloquear artificialmente el 100 %.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Preparación y completitud técnica" class="shot-image" data-image="../assets/arq-studio/lld-readiness.png">
+<img alt="Preparación y completitud técnica en Arq Studio" loading="lazy" src="../assets/arq-studio/lld-readiness.png"/>
+</button>
+</article>
+<article class="shot">
+<div class="shot-copy">
+<span>17 · LLD</span>
+<h3>Red y direccionamiento</h3>
+<p>Detalle técnico de redes, VLAN, subredes, VIP, routing, firewall y parámetros asociados.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>Esta información pertenece al nivel de construcción y debe derivarse de las decisiones aprobadas en el HLD.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Se requieren validaciones de solapamiento, formato, dependencias y coherencia entre VLAN, subredes, VIP y reglas.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Red y direccionamiento" class="shot-image" data-image="../assets/arq-studio/lld-red-direccionamiento.png">
+<img alt="Red y direccionamiento en Arq Studio" loading="lazy" src="../assets/arq-studio/lld-red-direccionamiento.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>18 · CATÁLOGO</span>
+<h3>Gestión de diagramas</h3>
+<p>Catálogo de vistas generadas, estado de edición, formato disponible y protección frente a regeneraciones.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>El arquitecto debe distinguir claramente diagramas derivados del modelo y diagramas ajustados manualmente.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>SVG, XML draw.io, backups y estado de bloqueo deben permanecer sincronizados.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Gestión de diagramas" class="shot-image" data-image="../assets/arq-studio/diagramas-catalogo.png">
+<img alt="Gestión de diagramas en Arq Studio" loading="lazy" src="../assets/arq-studio/diagramas-catalogo.png"/>
+</button>
+</article>
+<article class="shot">
+<div class="shot-copy">
+<span>19 · DOCUMENTACIÓN</span>
+<h3>Entregables generados</h3>
+<p>Listado de informes y documentos producidos por Arq Studio, con versión, fecha, formato y estado.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>Los entregables deben quedar asociados a la versión y baseline que los originó.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Conviene registrar hash, plantilla, fecha de generación, origen y usuario que produjo cada artefacto.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Entregables generados" class="shot-image" data-image="../assets/arq-studio/documentacion-generada.png">
+<img alt="Entregables generados en Arq Studio" loading="lazy" src="../assets/arq-studio/documentacion-generada.png"/>
+</button>
+</article>
+<article class="shot reverse">
+<div class="shot-copy">
+<span>20 · EN DESARROLLO</span>
+<h3>Arquitecto IA</h3>
+<p>Módulo previsto para revisar coherencia, requisitos, riesgos, decisiones y evolución del diseño.</p>
+<div class="professional-notes">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>La IA debe asistir al arquitecto, nunca aprobar una arquitectura ni sustituir el criterio profesional.</p>
+</div>
+<div class="professional-note professional-note--technical">
+<span>COMENTARIO TÉCNICO</span>
+<p>Toda propuesta debe requerir validación humana y no puede modificar baselines ni diagramas protegidos automáticamente.</p>
+</div>
+</div>
+</div>
+<button aria-label="Ampliar Arquitecto IA" class="shot-image" data-image="../assets/arq-studio/arquitecto-ia.png">
+<img alt="Arquitecto IA en Arq Studio" loading="lazy" src="../assets/arq-studio/arquitecto-ia.png"/>
+</button>
+</article>
+</div>
+</section>
+<section class="section report-section hld-examples-section" id="informe-ejemplo">
+<div class="section-heading">
+<span class="eyebrow">DOS HLD GENERADOS DESDE EL MODELO</span>
+<h2>Ejemplos completos de documentación de arquitectura</h2>
+<p>Estos dos documentos de demostración muestran cómo Arq Studio transforma el modelo gobernado en un HLD profesional. Se presentan como páginas renderizadas dentro de la web, sin publicar ni enlazar los archivos PDF originales.</p>
+</div>
+<div aria-label="Seleccionar HLD de ejemplo" class="hld-example-selector" role="tablist">
+<button aria-controls="panel-hyperv" aria-selected="true" class="hld-example-tab is-active" data-hld-target="panel-hyperv" id="tab-hyperv" role="tab" type="button">
+<span>HLD 01</span>
+<strong>Migración de Datacenter y Plataforma Hyper-V</strong>
+<small>20 páginas · HLD-DCMIG-001</small>
+</button>
+<button aria-controls="panel-vdi" aria-selected="false" class="hld-example-tab" data-hld-target="panel-vdi" id="tab-vdi" role="tab" type="button">
+<span>HLD 02</span>
+<strong>Escritorio Virtual y Acceso Remoto Seguro</strong>
+<small>17 páginas · HLD-VDI-001</small>
+</button>
+</div>
+<section aria-labelledby="tab-hyperv" class="hld-example-panel is-active" id="panel-hyperv" role="tabpanel">
+<div class="hld-example-intro">
+<div>
+<span class="eyebrow">INFRAESTRUCTURA Y CONTINUIDAD</span>
+<h3>Migración de Datacenter y Plataforma Hyper-V</h3>
+<p>Arquitectura de alto nivel para trasladar cargas virtuales a un nuevo datacenter, manteniendo continuidad, seguridad y capacidad de reversión. Incluye clúster Hyper-V, almacenamiento compartido, fabric SAN dual, backup, redes segregadas, monitorización y migración por oleadas.</p>
+</div>
+<div class="hld-example-meta">
+<span><strong>20</strong> páginas</span>
+<span><strong>1.0</strong> versión</span>
+<span><strong>DEMO</strong> uso ficticio</span>
+</div>
+</div>
+<div class="report-comments">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>El ejemplo muestra cómo relacionar alcance, actores, componentes, requisitos, inventario, seguridad, decisiones, riesgos, trabajos y diagramas dentro de una única baseline.</p>
+</div>
+</div>
+<div aria-label="Vista del HLD de migración Hyper-V" class="hld-example-viewer">
+<div class="hld-example-viewer-head">
+<div>
+<strong>HLD-DCMIG-001 · Migración Hyper-V</strong>
+<span>Documento de demostración</span>
+</div>
+<span class="hld-demo-badge">DEMO</span>
+</div>
+<div class="hld-example-pages">
+<figure class="hld-example-page hld-copy-protected" data-page="1">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 1 de 20" draggable="false" loading="eager" src="../assets/arq-studio/hld-examples/hyperv/page-01.png"/>
+<figcaption>Página 1 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="2">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 2 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-02.png"/>
+<figcaption>Página 2 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="3">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 3 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-03.png"/>
+<figcaption>Página 3 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="4">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 4 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-04.png"/>
+<figcaption>Página 4 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="5">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 5 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-05.png"/>
+<figcaption>Página 5 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="6">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 6 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-06.png"/>
+<figcaption>Página 6 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="7">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 7 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-07.png"/>
+<figcaption>Página 7 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="8">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 8 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-08.png"/>
+<figcaption>Página 8 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="9">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 9 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-09.png"/>
+<figcaption>Página 9 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="10">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 10 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-10.png"/>
+<figcaption>Página 10 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="11">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 11 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-11.png"/>
+<figcaption>Página 11 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="12">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 12 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-12.png"/>
+<figcaption>Página 12 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="13">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 13 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-13.png"/>
+<figcaption>Página 13 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="14">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 14 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-14.png"/>
+<figcaption>Página 14 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="15">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 15 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-15.png"/>
+<figcaption>Página 15 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="16">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 16 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-16.png"/>
+<figcaption>Página 16 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="17">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 17 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-17.png"/>
+<figcaption>Página 17 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="18">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 18 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-18.png"/>
+<figcaption>Página 18 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="19">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 19 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-19.png"/>
+<figcaption>Página 19 de 20</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="20">
+<img alt="Migración de Datacenter y Plataforma Hyper-V · Página 20 de 20" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/hyperv/page-20.png"/>
+<figcaption>Página 20 de 20</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="tab-vdi" class="hld-example-panel" hidden="" id="panel-vdi" role="tabpanel">
+<div class="hld-example-intro">
+<div>
+<span class="eyebrow">PUESTO DE TRABAJO Y ACCESO SEGURO</span>
+<h3>Escritorio Virtual y Acceso Remoto Seguro</h3>
+<p>Diseño de alto nivel de una solución VDI/DaaS con broker, hosts de escritorio, MFA, gateway seguro, perfiles de usuario, EDR y monitorización. Contempla empleados y terceros autorizados, piloto inicial y crecimiento por oleadas.</p>
+</div>
+<div class="hld-example-meta">
+<span><strong>17</strong> páginas</span>
+<span><strong>1.0</strong> versión</span>
+<span><strong>DEMO</strong> uso ficticio</span>
+</div>
+</div>
+<div class="report-comments">
+<div class="professional-note professional-note--architect">
+<span>COMENTARIO DEL ARQUITECTO</span>
+<p>Este segundo ejemplo demuestra que el mismo metamodelo puede documentar una arquitectura diferente, conservando estructura, gobierno, trazabilidad y separación entre HLD y futuro LLD.</p>
+</div>
+</div>
+<div aria-label="Vista del HLD de escritorio virtual y acceso remoto" class="hld-example-viewer">
+<div class="hld-example-viewer-head">
+<div>
+<strong>HLD-VDI-001 · Escritorio Virtual y Acceso Remoto</strong>
+<span>Documento de demostración</span>
+</div>
+<span class="hld-demo-badge">DEMO</span>
+</div>
+<div class="hld-example-pages">
+<figure class="hld-example-page hld-copy-protected" data-page="1">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 1 de 17" draggable="false" loading="eager" src="../assets/arq-studio/hld-examples/vdi/page-01.png"/>
+<figcaption>Página 1 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="2">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 2 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-02.png"/>
+<figcaption>Página 2 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="3">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 3 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-03.png"/>
+<figcaption>Página 3 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="4">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 4 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-04.png"/>
+<figcaption>Página 4 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="5">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 5 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-05.png"/>
+<figcaption>Página 5 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="6">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 6 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-06.png"/>
+<figcaption>Página 6 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="7">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 7 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-07.png"/>
+<figcaption>Página 7 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="8">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 8 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-08.png"/>
+<figcaption>Página 8 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="9">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 9 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-09.png"/>
+<figcaption>Página 9 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="10">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 10 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-10.png"/>
+<figcaption>Página 10 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="11">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 11 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-11.png"/>
+<figcaption>Página 11 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="12">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 12 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-12.png"/>
+<figcaption>Página 12 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="13">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 13 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-13.png"/>
+<figcaption>Página 13 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="14">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 14 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-14.png"/>
+<figcaption>Página 14 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="15">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 15 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-15.png"/>
+<figcaption>Página 15 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="16">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 16 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-16.png"/>
+<figcaption>Página 16 de 17</figcaption>
+</figure>
+<figure class="hld-example-page hld-copy-protected" data-page="17">
+<img alt="Escritorio Virtual y Acceso Remoto Seguro · Página 17 de 17" draggable="false" loading="lazy" src="../assets/arq-studio/hld-examples/vdi/page-17.png"/>
+<figcaption>Página 17 de 17</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<p class="hld-preview-notice">Los documentos son ejemplos ficticios y no contractuales. Se muestran exclusivamente como previsualización visual dentro del portfolio.</p>
+</section>
 <section class="section roadmap arq-roadmap">
-      <div>
-        <span class="eyebrow">VISIÓN DEL PRODUCTO</span>
-        <h2>Del modelo al gobierno completo de la arquitectura</h2>
-      </div>
-      <div class="roadmap-grid">
-        <article>
-          <strong>Modelo como fuente de verdad</strong>
-          <p>La información, las relaciones, los diagramas y el informe nacen del mismo modelo estructurado.</p>
-        </article>
-        <article>
-          <strong>Diagramas automáticos</strong>
-          <p>C4 System Context, C4 Containers, vista lógica y vista física se generan automáticamente desde el modelo.</p>
-        </article>
-        <article>
-          <strong>Gobernanza documental</strong>
-          <p>Versiones, revisión, aprobación, baseline, repositorio e integridad dentro de un mismo ciclo de vida.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><p>© 2026 Technology Advisory - OpenTrust Group</p></footer>
-
-  <dialog id="viewer">
-    <button id="closeViewer" aria-label="Cerrar">×</button>
-    <img alt="Vista ampliada de Arq Studio">
-  </dialog>
-
-  <script src="../assets/arq-studio/arq-studio.js?v=20260728-2"></script>
-  <script src="../assets/arq-studio/arq-studio-hld-examples.js"></script>
-</body>
+<div>
+<span class="eyebrow">VISIÓN DEL PRODUCTO</span>
+<h2>Del modelo al gobierno completo de la arquitectura</h2>
+</div>
+<div class="roadmap-grid">
+<article>
+<strong>Modelo como fuente de verdad</strong>
+<p>La información, las relaciones, los diagramas y el informe nacen del mismo modelo estructurado.</p>
+</article>
+<article>
+<strong>Diagramas automáticos</strong>
+<p>C4 System Context, C4 Containers, vista lógica y vista física se generan automáticamente desde el modelo.</p>
+</article>
+<article>
+<strong>Gobernanza documental</strong>
+<p>Versiones, revisión, aprobación, baseline, repositorio e integridad dentro de un mismo ciclo de vida.</p>
+</article>
+</div>
+</section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<dialog id="viewer">
+<button aria-label="Cerrar" id="closeViewer">×</button>
+<img alt="Vista ampliada de Arq Studio"/>
+</dialog>
+<script src="../js/apps/arq-studio.js?v=2.1"></script>
+<script src="../js/apps/arq-studio-hld-examples.js"></script>
+<script data-root=".." src="../js/site-shell.js?v=2.2"></script></body>
 </html>

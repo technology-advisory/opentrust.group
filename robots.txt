@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /.git/
+Disallow: /legal/
 
 Sitemap: https://opentrust.group/sitemap.xml
