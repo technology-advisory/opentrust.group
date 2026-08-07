@@ -76,6 +76,16 @@
 <div class="hero-actions">
 <a class="button button--primary" href="#ecosistema">Explorar el ecosistema</a>
 <a class="button button--secondary" href="sobre-mi/index.html" rel="nofollow">Conocer mi vida profesional</a>
+<a class="button button--secondary" href="https://status.opentrust.group" aria-label="Estado de los servicios de OpenTrust Group">
+  <span style="display:inline-flex;align-items:center;gap:.55rem;">
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" style="flex:0 0 18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">
+      <rect x="3" y="5" width="18" height="12" rx="2"></rect>
+      <path d="M7 20h10"></path>
+      <path d="M8 13l2.3-2.3 2.1 2.1 3.6-4.1"></path>
+    </svg>
+    <span>Estado de los servicios</span>
+  </span>
+</a>
 </div>
 <div aria-label="Ámbitos de especialización" class="hero-areas">
 <span>Arquitectura</span>
@@ -209,6 +219,39 @@
 </section>
 </main>
 <footer class="site-footer" id="site-footer"></footer>
-<script defer="" src="js/main.js?v=3.2"></script>
-<script data-root="." src="./js/site-shell.js?v=2.4"></script></body>
+<script defer="" src="js/main.js?v=3.4"></script>
+<script data-root="." src="./js/site-shell.js?v=2.4"></script>
+<script>
+(function () {
+  const STATUS_URL = 'https://status.opentrust.group';
+
+  function addStatusNavigation() {
+    const header = document.getElementById('site-header');
+    if (!header) return false;
+
+    const nav = header.querySelector('nav');
+    if (!nav) return false;
+
+    if (nav.querySelector('[data-status-link]')) return true;
+
+    const link = document.createElement('a');
+    link.href = STATUS_URL;
+    link.textContent = 'Estado';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.setAttribute('data-status-link', '');
+    link.setAttribute('aria-label', 'Estado de los servicios de OpenTrust Group');
+    nav.appendChild(link);
+    return true;
+  }
+
+  if (!addStatusNavigation()) {
+    const observer = new MutationObserver(() => {
+      if (addStatusNavigation()) observer.disconnect();
+    });
+    observer.observe(document.getElementById('site-header'), { childList: true, subtree: true });
+    window.setTimeout(() => observer.disconnect(), 5000);
+  }
+})();
+</script></body>
 </html>
