@@ -206,33 +206,27 @@ body:not(.home-page)>main>.hero>*,body:not(.home-page)>main>.section>*,body:not(
 .button,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;text-decoration:none;font-weight:780;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}.button:hover,.btn:hover{transform:translateY(-1px)}
 @media(max-width:580px){:root{--ot-shell-pad:18px}.site-footer__grid{grid-template-columns:1fr}.site-footer__inner{padding-top:34px}.site-header__inner{min-height:62px}.site-header .brand-mark svg{width:34px;height:34px}}
 
-
 /* =========================================================
-   AJUSTE VISUAL v2.6
-   - Volver al ecosistema como rectángulo sólido
-   - Legal como botón sólido en la navegación
+   v2.6 · ACCIONES SÓLIDAS
    ========================================================= */
 
-/* Legal siempre visible como botón sólido */
-.site-header .main-nav a[href="legal/index.html"],
-.site-header .main-nav a[href="../legal/index.html"],
-.site-header .main-nav a[href="/legal/index.html"]{
+/* Legal: CTA sólido permanente del menú */
+.site-header .main-nav a[href$="/legal/index.html"],
+.site-header .main-nav a[href="legal/index.html"]{
   color:#fff;
   background:linear-gradient(135deg,var(--brand),#0a5d72);
   box-shadow:0 7px 18px rgba(13,113,136,.18);
 }
+.site-header .main-nav a[href$="/legal/index.html"]:hover,
+.site-header .main-nav a[href$="/legal/index.html"]:focus-visible,
 .site-header .main-nav a[href="legal/index.html"]:hover,
-.site-header .main-nav a[href="../legal/index.html"]:hover,
-.site-header .main-nav a[href="/legal/index.html"]:hover,
-.site-header .main-nav a[href="legal/index.html"]:focus-visible,
-.site-header .main-nav a[href="../legal/index.html"]:focus-visible,
-.site-header .main-nav a[href="/legal/index.html"]:focus-visible{
+.site-header .main-nav a[href="legal/index.html"]:focus-visible{
   color:#fff;
   background:linear-gradient(135deg,#1185a0,#0a5d72);
   box-shadow:0 9px 22px rgba(13,113,136,.24);
 }
 
-/* Volver al ecosistema como botón sólido */
+/* Volver al ecosistema: botón sólido integrado en el hero */
 .app-back-nav{
   margin:0 0 24px;
   padding:0;
@@ -244,8 +238,8 @@ body:not(.home-page)>main>.hero>*,body:not(.home-page)>main>.section>*,body:not(
   gap:8px;
   min-height:40px;
   padding:0 14px;
-  border-radius:12px;
-  background:linear-gradient(135deg,var(--navy),#0f4458);
+  border-radius:11px;
+  background:var(--navy);
   color:#fff;
   font-size:.79rem;
   line-height:1;
@@ -253,7 +247,7 @@ body:not(.home-page)>main>.hero>*,body:not(.home-page)>main>.section>*,body:not(
   letter-spacing:.004em;
   text-decoration:none;
   box-shadow:0 8px 22px rgba(7,38,49,.14);
-  transition:background .18s ease,color .18s ease,transform .18s ease,box-shadow .18s ease;
+  transition:background .18s ease,transform .18s ease,box-shadow .18s ease;
 }
 .app-back-link svg{
   width:16px;
@@ -269,7 +263,7 @@ body:not(.home-page)>main>.hero>*,body:not(.home-page)>main>.section>*,body:not(
 .app-back-link:hover,
 .app-back-link:focus-visible{
   color:#fff;
-  background:linear-gradient(135deg,var(--brand),#0a5d72);
+  background:var(--brand);
   box-shadow:0 10px 24px rgba(13,113,136,.22);
   transform:translateY(-1px);
   outline:none;
@@ -283,56 +277,6 @@ body:not(.home-page)>main>.hero>*,body:not(.home-page)>main>.section>*,body:not(
   outline-offset:4px;
 }
 @media(max-width:580px){
-  .app-back-nav{
-    margin-bottom:18px;
-  }
-}
-
-
-/* =========================================================
-   FIX v2.7 · COLORES SÓLIDOS INDEPENDIENTES DE CADA APP
-   ========================================================= */
-
-/* Botón volver: no depender de variables redefinidas por las apps */
-.app-back-link{
-  background:#12384a !important;
-  color:#ffffff !important;
-  border:1px solid #12384a !important;
-  opacity:1 !important;
-  filter:none !important;
-  text-shadow:none !important;
-}
-.app-back-link svg{
-  stroke:#ffffff !important;
-}
-.app-back-link:hover,
-.app-back-link:focus-visible{
-  background:#0d7188 !important;
-  color:#ffffff !important;
-  border-color:#0d7188 !important;
-}
-.app-back-link:hover svg,
-.app-back-link:focus-visible svg{
-  stroke:#ffffff !important;
-}
-
-/* Legal: botón sólido corporativo estable */
-.site-header .main-nav a[href$="/legal/index.html"],
-.site-header .main-nav a[href="legal/index.html"],
-.site-header .main-nav a[href="../legal/index.html"]{
-  background:#0d7188 !important;
-  color:#ffffff !important;
-  border-color:#0d7188 !important;
-  opacity:1 !important;
-}
-.site-header .main-nav a[href$="/legal/index.html"]:hover,
-.site-header .main-nav a[href$="/legal/index.html"]:focus-visible,
-.site-header .main-nav a[href="legal/index.html"]:hover,
-.site-header .main-nav a[href="legal/index.html"]:focus-visible,
-.site-header .main-nav a[href="../legal/index.html"]:hover,
-.site-header .main-nav a[href="../legal/index.html"]:focus-visible{
-  background:#12384a !important;
-  color:#ffffff !important;
-  border-color:#12384a !important;
+  .app-back-nav{margin-bottom:18px}
 }
 
