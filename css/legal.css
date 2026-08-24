@@ -117,7 +117,7 @@
   min-height:30px;
   padding:0 11px;
   border-radius:9px;
-  background:var(--brand);
+  background:#147d95;
   color:#fff;
   font-size:.66rem;
   line-height:1;
@@ -215,15 +215,16 @@
   justify-content:space-between;
   gap:32px;
   margin-top:24px;
-  padding:26px 28px;
+  padding:28px 30px;
+  border:1px solid rgba(7,38,49,.14);
   border-radius:20px;
-  background:var(--navy);
-  box-shadow:0 18px 46px rgba(7,38,49,.13);
+  background:linear-gradient(180deg,#0b2430 0%,#123646 100%);
+  box-shadow:0 18px 46px rgba(7,38,49,.16);
 }
 .legal-security-cta__eyebrow{
   display:block;
   margin-bottom:8px;
-  color:#79d0dc;
+  color:#93e3ed;
   font-size:.66rem;
   font-weight:900;
   letter-spacing:.12em;
@@ -231,15 +232,16 @@
 }
 .legal-security-cta h2{
   margin:0;
-  color:#fff;
-  font-size:1.22rem;
-  letter-spacing:-.02em;
+  color:#ffffff;
+  font-size:clamp(1.35rem,2vw,1.7rem);
+  line-height:1.15;
+  letter-spacing:-.025em;
 }
 .legal-security-cta p{
   max-width:720px;
   margin:7px 0 0;
-  color:#c7d8de;
-  font-size:.84rem;
+  color:#e1edf1;
+  font-size:.9rem;
   line-height:1.6;
 }
 .legal-security-cta__button{
@@ -250,7 +252,7 @@
   min-height:46px;
   padding:0 18px;
   border-radius:11px;
-  background:var(--brand);
+  background:#147d95;
   color:#fff;
   text-decoration:none;
   font-size:.8rem;
