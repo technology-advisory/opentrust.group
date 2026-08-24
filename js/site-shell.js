@@ -84,6 +84,7 @@
             <h3>Aplicaciones</h3>
             <a href="${root}/apps/privacy-studio.html">Privacy Studio</a>
             <a href="https://link-studio.opentrust.group">Link Studio</a>
+            <a href="https://metadata-studio.opentrust.group">Metadata Studio</a>
           </div>
         </div>
         <div class="site-footer__bottom">

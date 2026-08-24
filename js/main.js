@@ -111,11 +111,12 @@ async function loadEcosystem() {
     ai: `<path d="M20 18h24a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6H20a6 6 0 0 1-6-6V24a6 6 0 0 1 6-6Z"/><path d="M25 38V27l7-4 7 4v11l-7 4-7-4Z"/><path d="M32 23v19M25 27l14 11M39 27 25 38"/>`,
     diagram: `<rect x="12" y="12" width="12" height="12" rx="2"/><rect x="40" y="12" width="12" height="12" rx="2"/><rect x="26" y="40" width="12" height="12" rx="2"/><path d="M24 18h16M46 24v8M32 24v16"/>`,
     clipboard: `<path d="M24 10h16v8H24z"/><path d="M20 14h24a4 4 0 0 1 4 4v30a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4Z"/><path d="M24 30h16M24 38h12"/>`,
-    link: `<path d="M26 38 20 44a10 10 0 0 1-14-14l8-8a10 10 0 0 1 14 0"/><path d="m38 26 6-6a10 10 0 0 1 14 14l-8 8a10 10 0 0 1-14 0"/><path d="M22 42 42 22"/>`
+    link: `<path d="M26 38 20 44a10 10 0 0 1-14-14l8-8a10 10 0 0 1 14 0"/><path d="m38 26 6-6a10 10 0 0 1 14 14l-8 8a10 10 0 0 1-14 0"/><path d="M22 42 42 22"/>`,
+    metadata: `<path d="M18 10h20l8 8v34H18z"/><path d="M38 10v10h8"/><path d="M24 30h16M24 38h10"/><circle cx="42" cy="44" r="6"/><path d="m46 48 5 5"/>`
   };
 
   try {
-    const response = await fetch('data/ecosistema.json?v=20260806-1');
+    const response = await fetch('data/ecosistema.json?v=20260824-1');
     if (!response.ok) throw new Error('No se pudo recuperar el ecosistema');
     const data = await response.json();
     const docs = data.filter(item => item.category === 'docs');

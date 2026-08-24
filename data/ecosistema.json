@@ -76,11 +76,20 @@
   },
   {
     "name": "Link Studio",
-    "url": "/apps/link-studio.html",
+    "url": "https://link-studio.opentrust.group",
     "tagline": "Análisis y optimización inteligente de enlaces compartidos.",
     "description": "Aplicación local-first para pegar una URL, detectar automáticamente su plataforma, identificar parámetros de seguimiento y generar una versión limpia lista para copiar. No almacena historial ni envía los enlaces a servicios externos.",
     "icon": "link",
     "category": "apps",
     "badgeIcon": "sparkles"
+  },
+  {
+    "name": "Metadata Studio",
+    "url": "https://metadata-studio.opentrust.group",
+    "tagline": "Análisis y limpieza segura de metadatos antes de compartir archivos.",
+    "description": "Herramienta local-first para detectar, clasificar y eliminar metadatos potencialmente sensibles en documentos, imágenes, multimedia y archivos comprimidos. Permite revisar los hallazgos, sanear los ficheros y generar un informe corporativo del proceso sin enviar el contenido a servicios externos.",
+    "icon": "metadata",
+    "category": "apps",
+    "badgeIcon": "shield"
   }
 ]
