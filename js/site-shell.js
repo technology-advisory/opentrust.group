@@ -7,8 +7,9 @@
   const currentPath = location.pathname.replace(/\\/g, "/");
   const isProfile = currentPath.includes("/sobre-mi/");
   const isLegal = currentPath.includes("/legal/");
+  const isSecurity = currentPath.includes("/security");
   const isApp = currentPath.includes("/apps/");
-  const isHome = !isProfile && !isLegal && !isApp;
+  const isHome = !isProfile && !isLegal && !isSecurity && !isApp;
 
   const logo = `
     <span class="brand-mark" aria-hidden="true">
@@ -79,6 +80,7 @@
             <a href="${root}/sobre-mi/index.html">Vida profesional</a>
             <a href="${home}#contacto">Contacto</a>
             <a href="${root}/legal/index.html">Legal</a>
+            <a href="${root}/security">Seguridad</a>
           </div>
           <div>
             <h3>Aplicaciones</h3>
