@@ -116,7 +116,7 @@ async function loadEcosystem() {
   };
 
   try {
-    const response = await fetch('data/ecosistema.json?v=20260824-1');
+    const response = await fetch('data/ecosistema.json?v=20260904-1');
     if (!response.ok) throw new Error('No se pudo recuperar el ecosistema');
     const data = await response.json();
     const docs = data.filter(item => item.category === 'docs');

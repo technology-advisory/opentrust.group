@@ -65,6 +65,16 @@
     "badgeIcon": "shield"
   },
   {
+    "name": "Cyber Attack Assessment & Response Studio",
+    "url": "/apps/cyber-attack-assessment-response-studio.html",
+    "tagline": "Evaluación y respuesta ante ciberataques organizada por expedientes independientes.",
+    "description": "Plataforma para registrar y evaluar ciberincidentes, preservar evidencias, gestionar IoCs, medir riesgo residual, decidir notificaciones, generar informes y apoyar la recuperación con trazabilidad de extremo a extremo.",
+    "icon": "alert",
+    "category": "apps",
+    "status": "prev",
+    "badgeIcon": "shield"
+  },
+  {
     "name": "Privacy Studio",
     "url": "/apps/privacy-studio.html",
     "tagline": "Anonimización documental segura, trazable y adaptada al contexto.",

@@ -239,7 +239,7 @@ body:not(.home-page)>main>.hero>*,body:not(.home-page)>main>.section>*,body:not(
   min-height:40px;
   padding:0 14px;
   border-radius:11px;
-  background:var(--navy);
+  background:var(--brand);
   color:#fff;
   font-size:.79rem;
   line-height:1;
@@ -263,8 +263,8 @@ body:not(.home-page)>main>.hero>*,body:not(.home-page)>main>.section>*,body:not(
 .app-back-link:hover,
 .app-back-link:focus-visible{
   color:#fff;
-  background:var(--brand);
-  box-shadow:0 10px 24px rgba(13,113,136,.22);
+  background:#095d70;
+  box-shadow:0 10px 24px rgba(13,113,136,.26);
   transform:translateY(-1px);
   outline:none;
 }

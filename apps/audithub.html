@@ -12,26 +12,25 @@
 <meta content="https://opentrust.group/apps/audithub.html" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="Audithub · Previsualización | OpenTrust Group" property="og:title"/>
-
-
 <link href="../css/global.css?v=2.2" rel="stylesheet"/>
 <link href="../css/apps.css?v=2.2" rel="stylesheet"/>
 <link href="../css/site.css?v=2.2" rel="stylesheet"/>
+<link href="../css/audithub-modern.css?v=20260904.4" rel="stylesheet"/>
 </head>
 <body class="app-page">
 <header class="site-header" id="site-header"></header>
 <main>
-<section class="hero">
+<section class="hero audithub-hero">
 <div class="hero-copy">
 <span class="eyebrow">PREVISUALIZACIÓN · PRODUCTO EN DESARROLLO</span>
 <h1>Audithub</h1>
-<p class="lead">Auditoría, cumplimiento y gestión de riesgos en un único espacio.</p>
-<p>Audithub es una plataforma unificada para gestionar y auditar, desde un mismo espacio, todos los marcos de cumplimiento de una organización. Centraliza clientes, auditorías, controles, evidencias, documentos, riesgos, políticas, incidentes, proveedores, hallazgos, acciones e informes. Cuando una organización ya dispone en el sistema de auditorías ENS e ISO/IEC 27001, Audithub puede aprovechar ese trabajo para preparar una evaluación NIS2 sin comenzar desde cero.</p>
+<p class="lead">Auditoría, cumplimiento, riesgos y seguridad técnica en un único espacio.</p>
+<p>Audithub unifica el ciclo completo de auditoría: clientes, marcos, controles, evidencias, documentos, riesgos, políticas, incidentes, proveedores, hallazgos, acciones e informes. Además, incorpora un módulo de Seguridad que aporta señales técnicas externas —DNS, correo, web, superficie de exposición, vulnerabilidades, OSINT y monitorización— y las conecta con el contexto de cada organización.</p>
 <div class="hero-actions">
 <a class="button primary" href="#recorrido">Ver recorrido funcional</a>
 <a class="button secondary" href="#capacidades">Conocer capacidades</a>
 <a class="button secondary" href="#seguridad">Seguridad por diseño</a>
-</div>
+<a class="button secondary" href="#seguridad-integrada">Ver módulo de Seguridad</a></div>
 <div aria-label="Principios de seguridad de Audithub" class="security-strip">
 <span>AES-256-GCM</span><span>Cifrado en navegador</span><span>Clave por documento</span><span>Servidor sin claves</span>
 </div>
@@ -39,7 +38,7 @@
 </div>
 <div class="hero-visual">
 <img alt="Dashboard ENS categoría ALTA" src="../assets/audithub/dashboard-ens-alta.png"/>
-<div class="hero-badge"><strong>Auditoría multi-marco</strong><span>ENS · ISO 27001 · NIS2 · DORA · Evidencias</span></div>
+<div class="hero-badge"><strong>Cumplimiento + Seguridad</strong><span>ENS · ISO 27001 · NIS2 · DORA · Security Scanner</span></div>
 </div>
 </section>
 <section class="section intro-section" id="capacidades">
@@ -48,14 +47,41 @@
 <h2>Una plataforma para preparar, ejecutar y gobernar auditorías</h2>
 <p>Cada organización puede trabajar simultáneamente con varios marcos dentro de un mismo entorno. Las auditorías mantienen su cliente, alcance, periodo, controles, evidencias, riesgos y acciones, pero comparten una base común que permite reutilizar trabajo ya realizado, mantener trazabilidad y reducir duplicidades.</p>
 </div>
-<div class="feature-grid">
-<article><span>01</span><h3>Auditoría multi-marco</h3><p>Permite trabajar en paralelo con ENS, ISO/IEC 27001, NIS2, DORA y otros marcos desde una única aplicación y sobre una misma organización.</p></article>
-<article><span>02</span><h3>NIS2 sin empezar desde cero</h3><p>Si existen en Audithub auditorías ENS categoría MEDIA o ALTA e ISO/IEC 27001, la plataforma analiza sus controles y evidencias para proponer correspondencias reutilizables en NIS2.</p></article>
-<article><span>03</span><h3>Evidencia reutilizable y trazable</h3><p>Un documento, diagrama o política puede relacionarse con varios controles y auditorías, manteniendo origen, estado, responsables y fecha de validación.</p></article>
-<article><span>04</span><h3>Motor documental con IA</h3><p>Se está desarrollando un motor que analizará cada fichero subido, identificará su contenido, lo etiquetará y propondrá su asignación al marco, control y auditoría correspondientes.</p></article>
+<div class="feature-grid"><article><span>01</span><h3>Auditoría multi-marco</h3><p>Gestiona ENS, ISO/IEC 27001, NIS2, DORA y futuros marcos desde una única plataforma y sobre una misma organización.</p></article><article><span>02</span><h3>Reutilización de controles y evidencias</h3><p>Aprovecha trabajo ya realizado entre marcos, conservando origen, vigencia, cobertura y validación del auditor.</p></article><article><span>03</span><h3>Riesgos, hallazgos y acciones</h3><p>Relaciona desviaciones, riesgos y planes de tratamiento con responsables, fechas objetivo, estado y evidencia de cierre.</p></article><article><span>04</span><h3>Gobierno documental y trazabilidad</h3><p>Mantiene documentos, políticas, controles y evidencias conectados dentro de un expediente auditable y versionado.</p></article></div>
+</section><section class="section integrated-security security-showcase" id="seguridad-integrada">
+<div class="security-showcase__inner">
+<div class="security-showcase__copy">
+<span class="eyebrow">SEGURIDAD INTEGRADA</span>
+<h2>OpenTrust Security Scanner dentro de Audithub</h2>
+<p>El módulo de Seguridad incorpora evaluación técnica externa y pasiva al expediente de auditoría. Analiza superficie de exposición, controles web y correo, inteligencia de vulnerabilidades, OSINT técnico y cambios entre observaciones, manteniendo el resultado ligado al cliente y al histórico de ejecución.</p>
+<p>Las señales técnicas se presentan como contexto para el auditor: no sustituyen un pentest ni convierten automáticamente una observación pública en una conclusión de cumplimiento.</p>
+<a class="button primary security-cta" href="#security-rail">Conocer módulo de Seguridad <span aria-hidden="true">→</span></a>
+<div class="security-scope"><span>DNS &amp; dominio</span><span>Email Security</span><span>Web Security</span><span>Attack Surface</span><span>Vulnerability Intelligence</span><span>OSINT técnico</span><span>Monitoring</span></div>
+</div>
+<div class="security-rail-wrap" id="security-rail">
+<div aria-label="Navegación de capturas de Seguridad" class="security-rail-nav">
+<button aria-label="Capturas anteriores" class="security-rail-arrow security-rail-prev" type="button">←</button>
+<span><strong>Recorrido visual</strong><small>5 vistas reales del módulo</small></span>
+<button aria-label="Capturas siguientes" class="security-rail-arrow security-rail-next" type="button">→</button>
+</div>
+<div class="security-rail">
+<article class="security-card"><button aria-label="Ampliar Inicio de Seguridad" class="security-card__image" data-image="../assets/audithub/security-inicio.png"><img alt="Inicio del módulo de Seguridad" loading="lazy" src="../assets/audithub/security-inicio.png"/></button><h3>Inicio de Seguridad</h3><p>Lanza análisis, consulta históricos y revisa el último estado.</p></article>
+<article class="security-card"><button aria-label="Ampliar controles técnicos" class="security-card__image" data-image="../assets/audithub/security-web.png"><img alt="Controles técnicos de Seguridad" loading="lazy" src="../assets/audithub/security-web.png"/></button><h3>Controles técnicos de seguridad</h3><p>Correo y web verificados con estados y contexto técnico.</p></article>
+<article class="security-card"><button aria-label="Ampliar informe ejecutivo" class="security-card__image" data-image="../assets/audithub/security-informe.png"><img alt="Informe ejecutivo de Seguridad" loading="lazy" src="../assets/audithub/security-informe.png"/></button><h3>Informe ejecutivo de seguridad</h3><p>Puntuación, hallazgos y resultados organizados por dominio.</p></article>
+<article class="security-card"><button aria-label="Ampliar hallazgos y evidencias" class="security-card__image" data-image="../assets/audithub/security-attack-surface.png"><img alt="Attack Surface y evidencias" loading="lazy" src="../assets/audithub/security-attack-surface.png"/></button><h3>Hallazgos y evidencias</h3><p>Exposición, atribución prudente, Shodan, RDAP y señales observables.</p></article>
+<article class="security-card"><button aria-label="Ampliar inteligencia y monitorización" class="security-card__image" data-image="../assets/audithub/security-monitoring.png"><img alt="Vulnerabilidades OSINT y monitorización" loading="lazy" src="../assets/audithub/security-monitoring.png"/></button><h3>Inteligencia y monitorización</h3><p>Vulnerabilidades, Evidence &amp; Findings, OSINT y cambios de exposición.</p></article>
+</div>
+</div>
+</div>
+<div aria-label="Capacidades clave de Audithub" class="security-value-strip">
+<div><b>◎</b><span><strong>Multi-marco</strong><small>ENS · ISO/IEC 27001 · NIS2 · DORA</small></span></div>
+<div><b>▱</b><span><strong>Evidencias trazables y reutilizables</strong><small>Origen · vigencia · cobertura · validación</small></span></div>
+<div><b>⌘</b><span><strong>Riesgos, hallazgos y acciones conectados</strong><small>Trazabilidad de extremo a extremo</small></span></div>
+<div><b>◇</b><span><strong>Seguridad integrada</strong><small>OpenTrust Security Scanner</small></span></div>
+<div><b>▥</b><span><strong>Informes ejecutivos</strong><small>Visión ejecutiva y técnica</small></span></div>
 </div>
 </section>
-<section class="gallery-group">
+<section class="gallery-group modern-gallery" id="recorrido">
 <div class="group-heading">
 <span class="eyebrow">VISIÓN GLOBAL DE CUMPLIMIENTO</span>
 <h2>Todos los marcos y auditorías desde una única plataforma</h2>
@@ -201,47 +227,42 @@
 </div>
 <div class="security-grid">
 <article>
-<span class="security-state security-state--implemented">IMPLEMENTADO</span>
 <h3>Cifrado en el navegador</h3>
 <p>Los documentos se cifran antes de abandonar el navegador mediante AES-256-GCM. El servidor recibe y conserva contenedores cifrados, no el contenido original en claro.</p>
 </article>
 <article>
-<span class="security-state security-state--implemented">IMPLEMENTADO</span>
 <h3>Clave independiente por documento</h3>
 <p>El modelo de envelope encryption utiliza una clave de datos específica para cada evidencia. Esto reduce el impacto potencial de una exposición aislada.</p>
 </article>
 <article>
-<span class="security-state security-state--implemented">IMPLEMENTADO</span>
 <h3>Integridad autenticada</h3>
 <p>AES-GCM permite detectar modificaciones sobre el contenido cifrado, el vector de inicialización o la etiqueta de autenticación antes de entregar el documento al usuario.</p>
 </article>
 <article>
-<span class="security-state security-state--implemented">IMPLEMENTADO</span>
 <h3>Almacenamiento sin claves</h3>
 <p>El servicio de almacenamiento gestiona archivos cifrados y no necesita disponer de la contraseña del usuario ni de las claves que descifran las evidencias.</p>
 </article>
 <article>
-<span class="security-state security-state--implemented">IMPLEMENTADO</span>
 <h3>Backups cifrados</h3>
 <p>Las copias de seguridad conservan la protección criptográfica de las evidencias y pueden exportarse con cifrado autenticado para evitar que una copia se convierta en una vía de exposición.</p>
 </article>
 <article>
-<span class="security-state security-state--implemented">IMPLEMENTADO</span>
 <h3>Permisos por ámbito</h3>
 <p>Los accesos se limitan por cliente, auditoría y rol. Un usuario solo trabaja con los ámbitos que tiene expresamente autorizados.</p>
 </article>
+<article class="security-grid__scanner">
+<h3>Módulo de Seguridad integrado</h3>
+<p>OpenTrust Security Scanner incorpora evaluación técnica externa, superficie de exposición, seguridad DNS, correo y web, inteligencia de vulnerabilidades, OSINT técnico, evidencias normalizadas y monitorización de cambios dentro del expediente del cliente.</p>
+</article>
 <article>
-<span class="security-state security-state--implemented">IMPLEMENTADO</span>
 <h3>Nombres físicos sin contexto</h3>
 <p>Los archivos se almacenan con identificadores técnicos sin significado funcional. El nombre físico no revela el cliente, la auditoría ni el contenido del documento.</p>
 </article>
 <article>
-<span class="security-state security-state--planned">PLANIFICADO</span>
 <h3>Rotación y recuperación gobernada</h3>
 <p>La evolución prevista incluye rotación de claves maestras, integridad reforzada de metadatos y mecanismos de recuperación sujetos a gobierno compartido.</p>
 </article>
 <article>
-<span class="security-state security-state--planned">EN DISEÑO</span>
 <h3>Evolución post-cuántica</h3>
 <p>La arquitectura se está preparando para incorporar mecanismos criptográficos post-cuánticos cuando su adopción resulte adecuada para el producto y el entorno operativo.</p>
 </article>
@@ -290,7 +311,7 @@
 </div>
 </section>
 <div id="recorrido">
-<section class="gallery-group">
+<section class="gallery-group modern-gallery">
 <div class="group-heading">
 <span class="eyebrow">GESTIÓN Y GOBIERNO MULTI-CLIENTE</span>
 <h2>Clientes y auditorías desde una única vista</h2>
@@ -339,7 +360,7 @@
 </article>
 </div>
 </section>
-<section class="gallery-group"><div class="group-heading"><span class="eyebrow">RECORRIDO FUNCIONAL</span><h2>ENS · CLI-001 · OpenTrust Demo Services, S.L. (Empresa Demo)</h2></div><div class="showcase">
+<section class="gallery-group modern-gallery"><div class="group-heading"><span class="eyebrow">RECORRIDO FUNCIONAL</span><h2>ENS · CLI-001 · OpenTrust Demo Services, S.L. (Empresa Demo)</h2></div><div class="showcase">
 <article class="shot">
 <div class="shot-copy">
 <span>183734</span>
@@ -537,7 +558,7 @@
 </div>
 </div><button aria-label="Ampliar Informes de auditoría" class="shot-image" data-image="../assets/audithub/informes-auditoria-ens.png">
 <img alt="Informes de auditoría" loading="lazy" src="../assets/audithub/informes-auditoria-ens.png"/>
-</button></article></div></section><section class="gallery-group"><div class="group-heading"><span class="eyebrow">RECORRIDO FUNCIONAL</span><h2>ISO/IEC 27001 · CLI-001 · OpenTrust Demo Services, S.L. (Empresa Demo)</h2></div><div class="showcase">
+</button></article></div></section><section class="gallery-group modern-gallery"><div class="group-heading"><span class="eyebrow">RECORRIDO FUNCIONAL</span><h2>ISO/IEC 27001 · CLI-001 · OpenTrust Demo Services, S.L. (Empresa Demo)</h2></div><div class="showcase">
 <article class="shot">
 <div class="shot-copy">
 <span>184118</span>
@@ -645,7 +666,7 @@
 </div>
 </div><button aria-label="Ampliar Mapa de riesgos ISO 27001" class="shot-image" data-image="../assets/audithub/mapa-riesgos-iso27001.png">
 <img alt="Mapa de riesgos ISO/IEC 27001" loading="lazy" src="../assets/audithub/mapa-riesgos-iso27001.png"/>
-</button></article></div></section><section class="gallery-group"><div class="group-heading"><span class="eyebrow">RECORRIDO FUNCIONAL</span><h2>DORA · CLI-003 · Karry, S.L. (Empresa Demo)</h2></div><div class="showcase">
+</button></article></div></section><section class="gallery-group modern-gallery"><div class="group-heading"><span class="eyebrow">RECORRIDO FUNCIONAL</span><h2>DORA · CLI-003 · Karry, S.L. (Empresa Demo)</h2></div><div class="showcase">
 <article class="shot">
 <div class="shot-copy">
 <span>184258</span>
@@ -735,7 +756,7 @@
 </div>
 </div><button aria-label="Ampliar Plan de acción DORA" class="shot-image" data-image="../assets/audithub/seguimiento-plan-accion-dora.png">
 <img alt="Detalle del plan de acción" loading="lazy" src="../assets/audithub/seguimiento-plan-accion-dora.png"/>
-</button></article></div></section><section class="gallery-group"><div class="group-heading"><span class="eyebrow">RECORRIDO FUNCIONAL</span><h2>Administración de Audithub</h2></div><div class="showcase">
+</button></article></div></section><section class="gallery-group modern-gallery"><div class="group-heading"><span class="eyebrow">RECORRIDO FUNCIONAL</span><h2>Administración de Audithub</h2></div><div class="showcase">
 <article class="shot">
 <div class="shot-copy">
 <span>184417</span>
@@ -787,6 +808,6 @@
 <button aria-label="Cerrar" id="closeViewer">×</button>
 <img alt="Vista ampliada de Audithub"/>
 </dialog>
-<script src="../js/audithub.js"></script>
+<script src="../js/audithub.js?v=20260904.4"></script>
 <script data-root=".." src="../js/site-shell.js?v=2.2"></script></body>
 </html>
