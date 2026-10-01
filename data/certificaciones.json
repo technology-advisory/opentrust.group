@@ -1,47 +1,176 @@
 {
-  "version": "2026-08-06",
+  "schema_version": "1.1",
+  "version": "2026-10-01",
+  "updated_at": "2026-10-01",
+  "owner": "Miguel Ángel Carriazo Álvarez",
+  "canonical_source": "https://opentrust.group/data/certificaciones.json",
   "grupos": [
     {
-      "titulo": "Gobierno, seguridad y cumplimiento",
+      "id": "gobierno-ciberseguridad-cumplimiento",
+      "titulo": "Gobierno, ciberseguridad y cumplimiento",
+      "orden": 10,
       "certificaciones": [
-        {"nombre": "ISO/IEC 27001 Lead Auditor", "url": "https://www.credly.com/badges/e26bb8df-b906-467a-b1ed-3c83e0b4435d/public_url"},
-        {"nombre": "ISO/IEC 27001 Lead Implementer", "url": "https://www.credly.com/badges/3f92052e-2097-4f80-ba58-145074dcc514/public_url"},
-        {"nombre": "ISO/IEC 22301 Internal Auditor", "url": "https://www.credly.com/badges/87f387a4-2775-4f62-9570-6b3b0c9251f1/public_url"},
-        {"nombre": "ISO/IEC 42001 Internal Auditor", "url": "https://www.credly.com/badges/e318af6c-7652-4ea4-a6e1-871b1ff5ab14/public_url"},
-        {"nombre": "ISO/IEC 42001 Lead Auditor", "url": "https://www.credly.com/badges/fe872c6b-64bc-43e2-b3d2-b549c4f79640/public_url"},
-        {"nombre": "Lead Cybersecurity Professional"},
-        {"nombre": "Capacitación ENS · CCN-CERT (RD 311/2022, auditorías, riesgos e incidentes)"},
-        {"nombre": "Cybersecurity Compliance Strategies Certification"}
+        {
+          "id": "ccn-capacitacion-ens",
+          "nombre": "Capacitación en el Esquema Nacional de Seguridad (ENS) – CCN-CERT"
+        },
+        {
+          "id": "ens-rd-311-2022",
+          "nombre": "Esquema Nacional de Seguridad (RD 311/2022, de 3 de mayo)"
+        },
+        {
+          "id": "ccn-aproximacion-practica-ens",
+          "nombre": "Aproximación práctica al Esquema Nacional de Seguridad"
+        },
+        {
+          "id": "ccn-auditorias-ens",
+          "nombre": "Auditorías en el ENS"
+        },
+        {
+          "id": "ccn-analisis-gestion-riesgos",
+          "nombre": "Análisis y Gestión de Riesgos de los Sistemas de Información"
+        },
+        {
+          "id": "ccn-muceens",
+          "nombre": "µCeENS"
+        },
+        {
+          "id": "ccn-gestion-incidentes",
+          "nombre": "Gestión de Incidentes de Ciberseguridad"
+        },
+        {
+          "id": "ccn-ingenieria-social",
+          "nombre": "Ingeniería Social. Descifrando el arte del engaño"
+        },
+        {
+          "id": "iso-27001-lead-auditor",
+          "nombre": "ISO/IEC 27001 Lead Auditor",
+          "url": "https://www.credly.com/badges/e26bb8df-b906-467a-b1ed-3c83e0b4435d/public_url"
+        },
+        {
+          "id": "iso-27001-lead-implementer",
+          "nombre": "ISO/IEC 27001 Lead Implementer",
+          "url": "https://www.credly.com/badges/3f92052e-2097-4f80-ba58-145074dcc514/public_url"
+        },
+        {
+          "id": "iso-22301-internal-auditor",
+          "nombre": "ISO/IEC 22301 – Continuidad de Negocio · Internal Auditor",
+          "url": "https://www.credly.com/badges/87f387a4-2775-4f62-9570-6b3b0c9251f1/public_url"
+        },
+        {
+          "id": "iso-42001-internal-auditor",
+          "nombre": "ISO/IEC 42001 – Gestión de IA · Internal Auditor",
+          "url": "https://www.credly.com/badges/e318af6c-7652-4ea4-a6e1-871b1ff5ab14/public_url"
+        },
+        {
+          "id": "iso-42001-lead-auditor",
+          "nombre": "ISO/IEC 42001 – Gestión de IA · Lead Auditor",
+          "url": "https://www.credly.com/badges/fe872c6b-64bc-43e2-b3d2-b549c4f79640/public_url"
+        },
+        {
+          "id": "lead-cybersecurity-professional",
+          "nombre": "Lead Cybersecurity Professional"
+        }
       ]
     },
     {
-      "titulo": "Seguridad técnica y ofensiva",
+      "id": "seguridad-tecnica",
+      "titulo": "Seguridad técnica",
+      "orden": 20,
       "certificaciones": [
-        {"nombre": "Ethical Hacking Professional"},
-        {"nombre": "Certified Red Team Operations Management (CRTOM)"},
-        {"nombre": "Certified Ransomware Protection Officer (CRPO)"},
-        {"nombre": "Certified LLM Security Expert (CLLMSE)"}
+        {
+          "id": "ethical-hacking-professional",
+          "nombre": "Ethical Hacking Professional"
+        },
+        {
+          "id": "cczt",
+          "nombre": "Certificate of Competence in Zero Trust (CCZT)"
+        },
+        {
+          "id": "crtom",
+          "nombre": "Certified Red Team Operations Management (CRTOM)"
+        },
+        {
+          "id": "crpo",
+          "nombre": "Certified Ransomware Protection Officer (CRPO)"
+        }
       ]
     },
     {
-      "titulo": "Inteligencia artificial y riesgo",
+      "id": "inteligencia-artificial-riesgo",
+      "titulo": "Inteligencia artificial y gestión del riesgo",
+      "orden": 30,
       "certificaciones": [
-        {"nombre": "AI Governance Professional (AIGPC™)", "url": "https://www.credly.com/badges/175625c1-adf8-42c4-b7e7-303d38724bf6/public_url"},
-        {"nombre": "AI Risk Manager Professional (AIRMPC™)", "url": "https://www.credly.com/badges/218a4c43-c7ab-4bf1-adb5-654de673a2c3/public_url"},
-        {"nombre": "Generative AI Professional (GAIPC™)", "url": "https://www.credly.com/badges/7d86ba9b-70aa-41a0-a977-ad48bf9bf51b/public_url"}
+        {
+          "id": "harvey-legal-engineer-l1",
+          "nombre": "Level 1 Legal Engineer — Harvey"
+        },
+        {
+          "id": "aigpc",
+          "nombre": "AI Governance Professional Certification (AIGPC™)",
+          "url": "https://www.credly.com/badges/175625c1-adf8-42c4-b7e7-303d38724bf6/public_url"
+        },
+        {
+          "id": "airmpc",
+          "nombre": "AI Risk Manager Professional Certification (AIRMPC™)",
+          "url": "https://www.credly.com/badges/218a4c43-c7ab-4bf1-adb5-654de673a2c3/public_url"
+        },
+        {
+          "id": "gaipc",
+          "nombre": "Generative AI Professional Certification (GAIPC™)",
+          "url": "https://www.credly.com/badges/7d86ba9b-70aa-41a0-a977-ad48bf9bf51b/public_url"
+        },
+        {
+          "id": "cllmse",
+          "nombre": "Certified LLM Security Expert (CLLMSE)"
+        }
       ]
     },
     {
+      "id": "cloud-redes-devops",
       "titulo": "Cloud, redes y DevOps",
+      "orden": 40,
       "certificaciones": [
-        {"nombre": "Google Cloud Associate Cloud Engineer"},
-        {"nombre": "Google Cloud Cybersecurity Certificate"},
-        {"nombre": "Aviatrix Multicloud Network Associate"},
-        {"nombre": "Fortinet Certified Associate in Cybersecurity"},
-        {"nombre": "SonicWall CSE Advanced Accreditation"},
-        {"nombre": "DevOps Advanced Professional"},
-        {"nombre": "Agile Leader Professional"},
-        {"nombre": "Microsoft Migrate & Modernize (Azure, Copilot, SQL y App Modernization)"}
+        {
+          "id": "google-cloud-ace",
+          "nombre": "Google Cloud Certified – Associate Cloud Engineer"
+        },
+        {
+          "id": "google-cloud-cybersecurity",
+          "nombre": "Google Cloud Cybersecurity Certificate"
+        },
+        {
+          "id": "aviatrix-multicloud-network-associate",
+          "nombre": "Multicloud Network Associate (Aviatrix)"
+        },
+        {
+          "id": "fortinet-certified-associate",
+          "nombre": "Fortinet Certified Associate in Cybersecurity"
+        },
+        {
+          "id": "sonicwall-cse-advanced",
+          "nombre": "SonicWall Cloud Secure Edge (CSE) Advanced Accreditation"
+        },
+        {
+          "id": "sonicwall-mpss-professional",
+          "nombre": "SonicWall Managed Protection Security Suite (MPSS) Professional Accreditation"
+        },
+        {
+          "id": "google-cloud-skill-badges",
+          "nombre": "Google Cloud Skill Badges (Networking, Security, Terraform, Load Balancing, App Dev)"
+        },
+        {
+          "id": "devops-advanced-professional",
+          "nombre": "DevOps Advanced Professional"
+        },
+        {
+          "id": "agile-leader-professional",
+          "nombre": "Agile Leader Professional"
+        },
+        {
+          "id": "microsoft-migrate-modernize",
+          "nombre": "Microsoft - Migrate & Modernize (Azure, Copilot, SQL Migration, App Modernization)"
+        }
       ]
     }
   ]

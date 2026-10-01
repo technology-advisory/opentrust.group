@@ -8,15 +8,37 @@
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
   })[char]);
 
+  const formatDate = (value) => {
+    const match = String(value ?? "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!match) return null;
+    const [, year, month, day] = match;
+    const date = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
+    return new Intl.DateTimeFormat("es-ES", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+      timeZone: "UTC"
+    }).format(date);
+  };
+
   fetch("../data/certificaciones.json", { cache: "no-store" })
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
     })
     .then((data) => {
-      const grupos = Array.isArray(data.grupos) ? data.grupos : [];
-      container.innerHTML = grupos.map((grupo) => `
-        <article class="cert-card">
+      const grupos = Array.isArray(data.grupos)
+        ? [...data.grupos].sort((a, b) => (a.orden ?? 999) - (b.orden ?? 999))
+        : [];
+      const fechaActualizacion = formatDate(data.updated_at || data.version);
+      const meta = fechaActualizacion
+        ? `<p class="cert-catalog-meta">Catálogo actualizado: <time datetime="${escapeHtml(data.updated_at || data.version)}">${escapeHtml(fechaActualizacion)}</time></p>`
+        : "";
+
+      container.innerHTML = meta + grupos.map((grupo) => {
+        const id = String(grupo.id || "").replace(/[^a-z0-9-]/gi, "").toLowerCase();
+        return `
+        <article class="cert-card${id ? ` cert-card--${escapeHtml(id)}` : ""}">
           <h3>${escapeHtml(grupo.titulo)}</h3>
           <ul>
             ${(grupo.certificaciones || []).map((cert) => `
@@ -25,7 +47,8 @@
                 ${cert.url ? `<a href="${escapeHtml(cert.url)}" target="_blank" rel="noopener noreferrer">Verificar <span aria-hidden="true">↗</span></a>` : ""}
               </li>`).join("")}
           </ul>
-        </article>`).join("");
+        </article>`;
+      }).join("");
     })
     .catch((error) => {
       console.error("No se pudieron cargar las certificaciones:", error);

@@ -36,3 +36,38 @@
 .professional-main .hero__grid{grid-template-columns:minmax(0,1fr) 180px}
 .professional-main .hero__photo{width:180px;max-width:180px}
 .professional-main .hero__photo img{width:180px;height:225px;object-fit:cover}
+
+/* v2.3 · Certificaciones: composición equilibrada + fecha del catálogo */
+#certificaciones .cert-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-areas:
+    "gobierno cloud"
+    "ia seguridad";
+  align-items:start;
+  gap:1rem;
+}
+#certificaciones .cert-catalog-meta{
+  grid-column:1/-1;
+  margin:-.55rem 0 .15rem;
+  color:var(--muted);
+  font-size:.78rem;
+  text-align:right;
+}
+#certificaciones .cert-catalog-meta time{color:var(--navy);font-weight:750}
+#certificaciones .cert-card{align-self:start;height:auto}
+#certificaciones .cert-card--gobierno-ciberseguridad-cumplimiento{grid-area:gobierno}
+#certificaciones .cert-card--cloud-redes-devops{grid-area:cloud}
+#certificaciones .cert-card--inteligencia-artificial-riesgo{grid-area:ia}
+#certificaciones .cert-card--seguridad-tecnica{grid-area:seguridad}
+@media(max-width:900px){
+  #certificaciones .cert-grid{
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "gobierno"
+      "cloud"
+      "ia"
+      "seguridad";
+  }
+  #certificaciones .cert-catalog-meta{text-align:left;margin-top:-.35rem}
+}
+
