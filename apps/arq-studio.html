@@ -1,174 +1,396 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0d7188">
-  <meta name="description" content="Previsualización de Arq Studio, plataforma OpenTrust Group para diseño, gobierno, versionado y documentación HLD/LLD con generación automática de diagramas.">
-  <title>Arq Studio · Previsualización | OpenTrust Group</title>
-  <link rel="stylesheet" href="../css/global.css?v=2.2">
-  <link rel="stylesheet" href="../css/apps.css?v=2.2">
-  <link rel="stylesheet" href="../css/site.css?v=2.2">
-  <link rel="stylesheet" href="../css/arq-studio-modern.css?v=20260904.2">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arq Studio · Arquitectura HLD/LLD · OpenTrust Group</title>
+  <meta name="description" content="Arq Studio: diseño, gobierno y documentación de arquitecturas HLD/LLD con diagramas y vistas generadas desde el modelo.">
+  <meta name="theme-color" content="#0066CC"><link rel="canonical" href="https://opentrust.group/apps/arq-studio.html">
+  <link rel="icon" href="/favicon.ico" sizes="any"><link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="app-page arq-modern-page">
-<header class="site-header" id="site-header"></header>
-<main>
-  <section class="arq-hero">
+<body class="home-target arq-sales-page">
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header home-header">
+  <div class="container header-inner">
+    <a class="logo" href="/" aria-label="OpenTrust Group, inicio"><span class="logo-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 19 6v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span>OpenTrust Group</span></a>
+    <nav class="nav" data-main-nav aria-label="Navegación principal">
+      <a href="/">Inicio</a><a href="/conocimiento/">Conocimiento</a><a class="active" href="/apps/">Aplicaciones</a><a href="/sobre-mi/">Trayectoria</a><a href="https://status.opentrust.group" target="_blank" rel="noopener noreferrer">Estado</a><a href="/sobre-mi/#opentrust">Sobre OpenTrust</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search" aria-label="Buscar en OpenTrust"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input data-search type="search" placeholder="Buscar en OpenTrust..."><span class="key-hint">/</span></label>
+      <a class="btn btn-primary header-contact" href="mailto:macarriazo@opentrust.group">Contactar →</a>
+    </div>
+    <button class="mobile-toggle" data-menu-toggle aria-label="Abrir menú" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="arq-hero">
+  <div class="arq-grid-lines" aria-hidden="true"></div>
+  <div class="container arq-hero-grid">
     <div class="arq-hero-copy">
-      <span class="eyebrow">PREVISUALIZACIÓN · PRODUCTO EN DESARROLLO</span>
-      <h1>Arq Studio</h1>
-      <p class="arq-lead">Arquitectura HLD y LLD gobernada, trazable y documentada desde un único modelo.</p>
-      <p class="arq-intro">Arq Studio convierte el trabajo de arquitectura en un proceso estructurado: clientes y proyectos, wizard de diseño, decisiones y riesgos, revisión arquitectónica, gobierno de versiones, HLD, LLD, planes de construcción, rollback y documentación técnica.</p>
-      <div class="arq-hero-callout">
-        <strong>Diagramas generados automáticamente</strong>
-        <span>Contexto, contenedores, vista lógica y vista física se proyectan automáticamente desde el modelo de arquitectura. El arquitecto mantiene el control del contenido y puede exportar o continuar el trabajo en draw.io.</span>
+      <div class="arq-roadmap-badge"><span>ROADMAP</span><strong>Q1 2027</strong><small>Lanzamiento previsto</small></div>
+      <p class="arq-kicker">ARQUITECTURA · HLD · LLD · GOBIERNO</p>
+      <h1>La arquitectura no debería terminar <span>en un dibujo.</span></h1>
+      <p class="arq-lead">Arq Studio convierte el trabajo de arquitectura en un proceso estructurado: modelo, decisiones, HLD/LLD, vistas, diagramas, documentación y gobierno dentro de un mismo entorno.</p>
+      <div class="arq-hero-actions">
+        <a class="btn btn-primary" href="mailto:macarriazo@opentrust.group?subject=Acceso%20anticipado%20Arq%20Studio">Solicitar acceso anticipado →</a>
+        <a class="btn arq-btn-ghost" href="#producto">Ver cómo funciona</a>
       </div>
-      <div class="arq-actions">
-        <a class="button primary" href="#recorrido">Ver recorrido funcional</a>
-        <a class="button secondary" href="#diagramas">Diagramas automáticos</a>
-        <a class="button secondary" href="#documentos-demo">Ver HLD y LLD demo</a>
-      </div>
-      <div class="arq-status"><span></span>Previsualización funcional con datos de demostración. Arquitecto IA: pendiente / en desarrollo.</div>
+      <div class="arq-tags"><span>HLD</span><span>LLD</span><span>C4</span><span>Vistas lógicas</span><span>Vistas físicas</span></div>
     </div>
-    <div class="arq-hero-visual">
-      <button class="arq-zoom" data-image="../assets/arq-studio/current/dashboard-hld-lld.png" aria-label="Ampliar dashboard actual de Arq Studio">
-        <img src="../assets/arq-studio/current/dashboard-hld-lld.png" alt="Dashboard actual de Arq Studio con actividad HLD y LLD">
+
+    <div class="arq-hero-board">
+      <div class="arq-board-label"><span>ARCHITECTURE WORKSPACE</span><b>Modelo → Documento</b></div>
+      <div class="arq-board-main"><figure class="arq-hero-shot" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/dashboard-hld-lld.png" data-lightbox-caption="Arq Studio · Dashboard HLD/LLD">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Arq Studio · Dashboard HLD/LLD">
+        <img loading="lazy" src="/assets/arq-studio/current/dashboard-hld-lld.png" alt="Arq Studio · Dashboard HLD/LLD">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
       </button>
-      <div class="arq-hero-badge"><strong>Architecture Workspace</strong><span>HLD · LLD · Diagramas · Gobierno · Informes</span></div>
+      <figcaption>Arq Studio · Dashboard HLD/LLD</figcaption>
+    </figure></div>
+      <div class="arq-board-node arq-node-one"><figure class="arq-hero-shot arq-hero-shot-small" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-diagram-context.png" data-lightbox-caption="Arq Studio · C4 System Context">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Arq Studio · C4 System Context">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-diagram-context.png" alt="Arq Studio · C4 System Context">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Arq Studio · C4 System Context</figcaption>
+    </figure></div>
+      <div class="arq-board-node arq-node-two"><figure class="arq-hero-shot arq-hero-shot-small" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-diagram-logical.png" data-lightbox-caption="Arq Studio · Vista lógica">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Arq Studio · Vista lógica">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-diagram-logical.png" alt="Arq Studio · Vista lógica">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Arq Studio · Vista lógica</figcaption>
+    </figure></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="arq-capabilities" id="capacidades">
-    <div class="arq-section-head centered">
-      <span class="eyebrow">ARQUITECTURA COMO PRODUCTO</span>
-      <h2>Del diseño conceptual a la implementación gobernada</h2>
-      <p>El mismo modelo alimenta el HLD, su evolución a LLD, los diagramas, la revisión de arquitectura y los artefactos operativos de construcción y reversión.</p>
+<section class="arq-flow" id="producto">
+  <div class="container">
+    <div class="arq-section-heading">
+      <div><p class="arq-kicker">DEL MODELO AL ENTREGABLE</p><h2>Una arquitectura que mantiene el hilo de principio a fin.</h2></div>
+      <p>La información no vive separada del documento y los diagramas. Arq Studio organiza el trabajo para que cada vista forme parte de una misma arquitectura.</p>
     </div>
-    <div class="arq-cap-grid">
-      <article><span class="arq-icon">◇</span><h3>HLD gobernado</h3><p>Wizard F0–F9, requisitos, actores, contenedores, seguridad, decisiones, riesgos, inventario y baseline.</p></article>
-      <article><span class="arq-icon">▦</span><h3>LLD derivado del HLD</h3><p>Paquetes técnicos, red, identidad, backup, observabilidad, build, change y rollback con trazabilidad al diseño de origen.</p></article>
-      <article><span class="arq-icon">↗</span><h3>Diagramas automáticos</h3><p>Las vistas arquitectónicas se generan desde el modelo, evitando dibujar una realidad distinta de la documentada.</p></article>
-      <article><span class="arq-icon">✓</span><h3>Review y gobernanza</h3><p>Quality score, hallazgos explicables, control de versiones, estados, aprobación y bloqueo de baselines.</p></article>
+    <div class="arq-process">
+      <article><span>01</span><strong>Modelo</strong><small>Componentes, relaciones y contexto</small></article>
+      <b>→</b>
+      <article><span>02</span><strong>HLD</strong><small>Diseño de alto nivel y decisiones</small></article>
+      <b>→</b>
+      <article><span>03</span><strong>Diagramas</strong><small>C4, lógica y física</small></article>
+      <b>→</b>
+      <article><span>04</span><strong>LLD</strong><small>Detalle de implementación</small></article>
+      <b>→</b>
+      <article><span>05</span><strong>Documento</strong><small>Salida estructurada y gobernada</small></article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="arq-automation" id="diagramas">
-    <div class="arq-automation-copy">
-      <span class="eyebrow">EL MODELO MANDA</span>
-      <h2>Los diagramas no se dibujan aparte: se generan desde la arquitectura</h2>
-      <p>Arq Studio transforma el modelo estructurado en proyecciones visuales coherentes. Si cambia el modelo, las vistas pueden regenerarse para mantener alineados documento y arquitectura.</p>
-      <div class="arq-flow">
-        <span>Wizard</span><b>→</b><span>Modelo</span><b>→</b><span>Diagramas</span><b>→</b><span>HLD / LLD</span><b>→</b><span>Gobierno</span>
+<section class="arq-workbench">
+  <div class="container">
+    <div class="arq-section-heading arq-section-heading-light">
+      <div><p class="arq-kicker">WORKBENCH</p><h2>No más diagramas desconectados del documento.</h2></div>
+      <p>Asistentes, vistas y gobierno del ciclo de arquitectura trabajan sobre un mismo contexto para reducir incoherencias entre lo diseñado, lo documentado y lo que finalmente se implementa.</p>
+    </div>
+    <div class="arq-workbench-grid">
+      <article class="arq-feature arq-feature-large arq-feature-wizard">
+        <figure class="arq-feature-shot" data-lightbox-item data-lightbox-src="/assets/arq-studio/wizard-hld-f0-f9.png" data-lightbox-caption="Arq Studio · Wizard HLD">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Arq Studio · Wizard HLD">
+        <img loading="lazy" src="/assets/arq-studio/wizard-hld-f0-f9.png" alt="Arq Studio · Wizard HLD">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Arq Studio · Wizard HLD</figcaption>
+    </figure>
+        <div><span>DISEÑO GUIADO</span><h3>Construye el HLD por fases.</h3><p>Un flujo guiado permite estructurar el trabajo antes de generar vistas y documentación.</p></div>
+      </article>
+      <article class="arq-feature">
+        <figure class="arq-feature-shot" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-diagram-containers.png" data-lightbox-caption="Arq Studio · C4 Containers">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Arq Studio · C4 Containers">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-diagram-containers.png" alt="Arq Studio · C4 Containers">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Arq Studio · C4 Containers</figcaption>
+    </figure>
+        <div><span>VISTAS</span><h3>Del contexto al detalle visual.</h3><p>System Context, Containers, vista lógica y vista física forman parte del mismo trabajo de arquitectura.</p></div>
+      </article>
+      <article class="arq-feature">
+        <figure class="arq-feature-shot" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-governance.png" data-lightbox-caption="Arq Studio · Gobierno HLD">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Arq Studio · Gobierno HLD">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-governance.png" alt="Arq Studio · Gobierno HLD">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Arq Studio · Gobierno HLD</figcaption>
+    </figure>
+        <div><span>GOBIERNO</span><h3>Versiona, revisa y conserva trazabilidad.</h3><p>La arquitectura se trata como un activo gobernado, no como una colección de ficheros aislados.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="arq-blueprint">
+  <div class="container arq-blueprint-grid">
+    <div class="arq-blueprint-copy">
+      <p class="arq-kicker">HLD + LLD</p>
+      <h2>Diseño de alto nivel y detalle técnico, conectados.</h2>
+      <p>Arq Studio separa el nivel de abstracción sin romper la continuidad del diseño. El HLD define arquitectura, contexto y decisiones; el LLD baja al detalle necesario para preparar la implementación.</p>
+      <div class="arq-blueprint-points">
+        <span>Contexto y contenedores</span><span>Vistas lógica y física</span><span>Red y direccionamiento</span><span>Build plan</span><span>Rollback</span><span>Gobierno documental</span>
       </div>
-      <ul>
-        <li>Contexto del sistema y actores externos.</li>
-        <li>Contenedores y responsabilidades.</li>
-        <li>Vista lógica de dominios y dependencias.</li>
-        <li>Vista física / implementación y conectividad.</li>
-        <li>Exportación SVG, draw.io y datos de modelo.</li>
-      </ul>
     </div>
-    <div class="arq-diagram-showcase">
-      <div class="arq-diagram-family">
-        <div class="arq-diagram-family-head"><span>HLD · 4 VISTAS AUTOMÁTICAS</span><strong>Una arquitectura, cuatro proyecciones coherentes</strong></div>
-        <div class="arq-diagram-grid arq-diagram-grid--hld">
-          <figure class="arq-diagram-tile"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-diagram-context.png"><img src="../assets/arq-studio/current/hld-diagram-context.png" alt="Diagrama HLD de contexto generado automáticamente"></button><figcaption><strong>Contexto</strong><span>Actores, sistema y dependencias externas.</span></figcaption></figure>
-          <figure class="arq-diagram-tile"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-diagram-containers.png"><img src="../assets/arq-studio/current/hld-diagram-containers.png" alt="Diagrama HLD de contenedores generado automáticamente"></button><figcaption><strong>Contenedores</strong><span>Servicios, responsabilidades y relaciones.</span></figcaption></figure>
-          <figure class="arq-diagram-tile"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-diagram-logical.png"><img src="../assets/arq-studio/current/hld-diagram-logical.png" alt="Vista lógica HLD generada automáticamente"></button><figcaption><strong>Vista lógica</strong><span>Dominios, capacidades y dependencias funcionales.</span></figcaption></figure>
-          <figure class="arq-diagram-tile"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-diagram-physical.png"><img src="../assets/arq-studio/current/hld-diagram-physical.png" alt="Vista física HLD generada automáticamente"></button><figcaption><strong>Vista física</strong><span>Infraestructura, publicación, datos y operación.</span></figcaption></figure>
+    <div class="arq-blueprint-stack">
+      <figure class="arq-blueprint-shot" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-summary.png" data-lightbox-caption="Arq Studio · Resumen HLD">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Arq Studio · Resumen HLD">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-summary.png" alt="Arq Studio · Resumen HLD">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Arq Studio · Resumen HLD</figcaption>
+    </figure>
+      <figure class="arq-blueprint-shot" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/lld-summary.png" data-lightbox-caption="Arq Studio · Resumen LLD">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Arq Studio · Resumen LLD">
+        <img loading="lazy" src="/assets/arq-studio/current/lld-summary.png" alt="Arq Studio · Resumen LLD">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Arq Studio · Resumen LLD</figcaption>
+    </figure>
+    </div>
+  </div>
+</section>
+
+<section class="arq-document-section" id="documento">
+  <div class="container">
+    <div class="arq-section-heading">
+      <div><p class="arq-kicker">DOCUMENTO DE EJEMPLO</p><h2>El resultado también importa.</h2></div>
+      <p>Consulta dentro de la propia página el HLD de demostración de SharePoint utilizado como ejemplo de entregable de Arq Studio.</p>
+    </div>
+    <div class="arq-document-shell arq-document-shell-corporate" data-protected-document>
+      <div class="arq-doc-toolbar">
+        <div class="arq-doc-brand">
+          <span class="arq-doc-brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 13h8M8 9h8M8 17h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <span><strong>Arq Studio</strong><small>High Level Design · Demo SharePoint</small></span>
+        </div>
+        <div class="arq-doc-status">
+          <span class="arq-doc-pages-label">50 páginas</span>
+          <span class="arq-doc-readonly">SOLO LECTURA</span>
         </div>
       </div>
-      <div class="arq-diagram-family arq-diagram-family--lld">
-        <div class="arq-diagram-family-head"><span>LLD · 2 VISTAS AUTOMÁTICAS</span><strong>El mismo modelo, especializado para implementación</strong></div>
-        <div class="arq-diagram-grid arq-diagram-grid--lld">
-          <figure class="arq-diagram-tile"><button class="arq-zoom" data-image="../assets/arq-studio/current/lld-diagram-refined.png"><img src="../assets/arq-studio/current/lld-diagram-refined.png" alt="Vista física refinada LLD generada automáticamente"></button><figcaption><strong>Vista física refinada</strong><span>Topología técnica y relaciones de implementación.</span></figcaption></figure>
-          <figure class="arq-diagram-tile"><button class="arq-zoom" data-image="../assets/arq-studio/current/lld-diagram-network-publication.png"><img src="../assets/arq-studio/current/lld-diagram-network-publication.png" alt="Diagrama LLD de red y publicación generado automáticamente"></button><figcaption><strong>Red y publicación</strong><span>VLAN, VIP, publicación, DNS y flujos del mismo LLD.</span></figcaption></figure>
+
+      <div class="arq-doc-subbar">
+        <div class="arq-doc-title">
+          <strong>Documento de arquitectura</strong>
+          <span>HLD · Versión de demostración</span>
+        </div>
+        <div class="arq-doc-actions" aria-label="Controles del visor">
+          <button type="button" data-doc-prev aria-label="Página anterior">‹</button>
+          <span class="arq-doc-counter"><b data-doc-current>1</b> / <span data-doc-total>50</span></span>
+          <button type="button" data-doc-next aria-label="Página siguiente">›</button>
+          <span class="arq-doc-separator"></span>
+          <button type="button" data-doc-zoom-out aria-label="Reducir zoom">−</button>
+          <span class="arq-doc-zoom-label" data-doc-zoom-label>100%</span>
+          <button type="button" data-doc-zoom-in aria-label="Aumentar zoom">+</button>
+          <button type="button" class="arq-doc-fit" data-doc-fit>Ajustar ancho</button>
+          <button type="button" data-doc-fullscreen aria-label="Pantalla completa">
+            <svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="arq-gallery" id="recorrido">
-    <div class="arq-section-head">
-      <span class="eyebrow">RECORRIDO FUNCIONAL ACTUAL</span>
-      <h2>HLD, LLD, diagramas, revisión y gobierno en el mismo workspace</h2>
-      <p>Las capturas siguientes corresponden a la evolución actual de Arq Studio. Puedes desplazarte horizontalmente, usar las flechas y ampliar cualquier pantalla.</p>
-    </div>
-
-    <div class="arq-gallery-group" data-carousel>
-      <div class="arq-gallery-title">
-        <div><span class="arq-kicker">HLD · HIGH LEVEL DESIGN</span><h3>Gobernar el diseño antes de construir</h3></div>
-        <div class="arq-carousel-controls"><button data-prev aria-label="Anterior">←</button><span data-counter>01 / 10</span><button data-next aria-label="Siguiente">→</button></div>
+      <div class="arq-document-viewport arq-document-viewport-horizontal" tabindex="0" aria-label="Visor horizontal del HLD de ejemplo">
+        <button class="arq-doc-side-nav arq-doc-side-prev" type="button" data-doc-prev-side aria-label="Página anterior">‹</button>
+        <div class="arq-document-stage">
+          <div class="arq-document-pages arq-document-pages-horizontal" data-doc-pages>
+            <img class="arq-doc-page is-active" loading="eager" src="/assets/arq-studio/hld-viewer/page-01.jpg" alt="Arq Studio · HLD · página 1 de 50" draggable="false" data-doc-page="1"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-02.jpg" alt="Arq Studio · HLD · página 2 de 50" draggable="false" data-doc-page="2"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-03.jpg" alt="Arq Studio · HLD · página 3 de 50" draggable="false" data-doc-page="3"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-04.jpg" alt="Arq Studio · HLD · página 4 de 50" draggable="false" data-doc-page="4"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-05.jpg" alt="Arq Studio · HLD · página 5 de 50" draggable="false" data-doc-page="5"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-06.jpg" alt="Arq Studio · HLD · página 6 de 50" draggable="false" data-doc-page="6"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-07.jpg" alt="Arq Studio · HLD · página 7 de 50" draggable="false" data-doc-page="7"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-08.jpg" alt="Arq Studio · HLD · página 8 de 50" draggable="false" data-doc-page="8"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-09.jpg" alt="Arq Studio · HLD · página 9 de 50" draggable="false" data-doc-page="9"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-10.jpg" alt="Arq Studio · HLD · página 10 de 50" draggable="false" data-doc-page="10"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-11.jpg" alt="Arq Studio · HLD · página 11 de 50" draggable="false" data-doc-page="11"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-12.jpg" alt="Arq Studio · HLD · página 12 de 50" draggable="false" data-doc-page="12"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-13.jpg" alt="Arq Studio · HLD · página 13 de 50" draggable="false" data-doc-page="13"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-14.jpg" alt="Arq Studio · HLD · página 14 de 50" draggable="false" data-doc-page="14"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-15.jpg" alt="Arq Studio · HLD · página 15 de 50" draggable="false" data-doc-page="15"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-16.jpg" alt="Arq Studio · HLD · página 16 de 50" draggable="false" data-doc-page="16"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-17.jpg" alt="Arq Studio · HLD · página 17 de 50" draggable="false" data-doc-page="17"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-18.jpg" alt="Arq Studio · HLD · página 18 de 50" draggable="false" data-doc-page="18"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-19.jpg" alt="Arq Studio · HLD · página 19 de 50" draggable="false" data-doc-page="19"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-20.jpg" alt="Arq Studio · HLD · página 20 de 50" draggable="false" data-doc-page="20"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-21.jpg" alt="Arq Studio · HLD · página 21 de 50" draggable="false" data-doc-page="21"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-22.jpg" alt="Arq Studio · HLD · página 22 de 50" draggable="false" data-doc-page="22"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-23.jpg" alt="Arq Studio · HLD · página 23 de 50" draggable="false" data-doc-page="23"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-24.jpg" alt="Arq Studio · HLD · página 24 de 50" draggable="false" data-doc-page="24"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-25.jpg" alt="Arq Studio · HLD · página 25 de 50" draggable="false" data-doc-page="25"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-26.jpg" alt="Arq Studio · HLD · página 26 de 50" draggable="false" data-doc-page="26"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-27.jpg" alt="Arq Studio · HLD · página 27 de 50" draggable="false" data-doc-page="27"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-28.jpg" alt="Arq Studio · HLD · página 28 de 50" draggable="false" data-doc-page="28"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-29.jpg" alt="Arq Studio · HLD · página 29 de 50" draggable="false" data-doc-page="29"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-30.jpg" alt="Arq Studio · HLD · página 30 de 50" draggable="false" data-doc-page="30"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-31.jpg" alt="Arq Studio · HLD · página 31 de 50" draggable="false" data-doc-page="31"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-32.jpg" alt="Arq Studio · HLD · página 32 de 50" draggable="false" data-doc-page="32"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-33.jpg" alt="Arq Studio · HLD · página 33 de 50" draggable="false" data-doc-page="33"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-34.jpg" alt="Arq Studio · HLD · página 34 de 50" draggable="false" data-doc-page="34"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-35.jpg" alt="Arq Studio · HLD · página 35 de 50" draggable="false" data-doc-page="35"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-36.jpg" alt="Arq Studio · HLD · página 36 de 50" draggable="false" data-doc-page="36"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-37.jpg" alt="Arq Studio · HLD · página 37 de 50" draggable="false" data-doc-page="37"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-38.jpg" alt="Arq Studio · HLD · página 38 de 50" draggable="false" data-doc-page="38"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-39.jpg" alt="Arq Studio · HLD · página 39 de 50" draggable="false" data-doc-page="39"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-40.jpg" alt="Arq Studio · HLD · página 40 de 50" draggable="false" data-doc-page="40"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-41.jpg" alt="Arq Studio · HLD · página 41 de 50" draggable="false" data-doc-page="41"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-42.jpg" alt="Arq Studio · HLD · página 42 de 50" draggable="false" data-doc-page="42"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-43.jpg" alt="Arq Studio · HLD · página 43 de 50" draggable="false" data-doc-page="43"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-44.jpg" alt="Arq Studio · HLD · página 44 de 50" draggable="false" data-doc-page="44"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-45.jpg" alt="Arq Studio · HLD · página 45 de 50" draggable="false" data-doc-page="45"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-46.jpg" alt="Arq Studio · HLD · página 46 de 50" draggable="false" data-doc-page="46"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-47.jpg" alt="Arq Studio · HLD · página 47 de 50" draggable="false" data-doc-page="47"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-48.jpg" alt="Arq Studio · HLD · página 48 de 50" draggable="false" data-doc-page="48"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-49.jpg" alt="Arq Studio · HLD · página 49 de 50" draggable="false" data-doc-page="49"><img class="arq-doc-page" loading="lazy" src="/assets/arq-studio/hld-viewer/page-50.jpg" alt="Arq Studio · HLD · página 50 de 50" draggable="false" data-doc-page="50">
+          </div>
+        </div>
+        <button class="arq-doc-side-nav arq-doc-side-next" type="button" data-doc-next-side aria-label="Página siguiente">›</button>
       </div>
-      <div class="arq-track" data-track>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-list.png"><img src="../assets/arq-studio/current/hld-list.png" alt="Listado de HLD"></button><h4>Portfolio HLD</h4><p>Versiones, estados, responsables y acceso a cada workspace de arquitectura.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-summary.png"><img src="../assets/arq-studio/current/hld-summary.png" alt="Resumen del HLD"></button><h4>Resumen del HLD</h4><p>Completitud, preparación documental y acceso al wizard desde una vista ejecutiva del diseño.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-wizard-f0.png"><img src="../assets/arq-studio/current/hld-wizard-f0.png" alt="Wizard HLD F0"></button><h4>Wizard F0–F9</h4><p>Captura guiada de información general, alcance, actores, requisitos, seguridad y gobierno.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-wizard-risks.png"><img src="../assets/arq-studio/current/hld-wizard-risks.png" alt="Decisiones y riesgos HLD"></button><h4>Decisiones y riesgos</h4><p>ADR y riesgos permanecen identificados y vinculados al modelo, en lugar de quedar dispersos en el documento.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-diagram-context.png"><img src="../assets/arq-studio/current/hld-diagram-context.png" alt="Diagrama de contexto HLD"></button><h4>Contexto automático</h4><p>Actores, sistema en estudio, dependencias externas y relaciones principales generadas desde el modelo.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-diagram-containers.png"><img src="../assets/arq-studio/current/hld-diagram-containers.png" alt="Diagrama de contenedores HLD"></button><h4>Contenedores automáticos</h4><p>Responsabilidades, servicios y dependencias representados sin duplicar manualmente la información.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-diagram-logical.png"><img src="../assets/arq-studio/current/hld-diagram-logical.png" alt="Vista lógica HLD"></button><h4>Vista lógica automática</h4><p>Capacidades, dominios y relaciones funcionales generadas como proyección del mismo modelo.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-diagram-physical.png"><img src="../assets/arq-studio/current/hld-diagram-physical.png" alt="Vista física HLD"></button><h4>Vista física automática</h4><p>Infraestructura, publicación, identidad, datos, observabilidad y continuidad en una única vista coherente.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-architecture-review.png"><img src="../assets/arq-studio/current/hld-architecture-review.png" alt="Architecture Review"></button><h4>Architecture Review</h4><p>Quality score y hallazgos explicables para revisar coherencia, riesgo y preparación antes de aprobar.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/hld-governance.png"><img src="../assets/arq-studio/current/hld-governance.png" alt="Gobernanza y versiones"></button><h4>Gobernanza y baseline</h4><p>Historial de versiones, estado, responsable, aprobación y comparación con la versión anterior.</p></article>
+
+      <div class="arq-doc-footerbar">
+        <span>Documento de demostración · HLD · 50 páginas</span>
+        <span>OpenTrust Group · Arq Studio</span>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="arq-gallery-group" data-carousel>
-      <div class="arq-gallery-title">
-        <div><span class="arq-kicker">LLD · LOW LEVEL DESIGN</span><h3>Convertir el diseño en un paquete técnico ejecutable</h3></div>
-        <div class="arq-carousel-controls"><button data-prev aria-label="Anterior">←</button><span data-counter>01 / 6</span><button data-next aria-label="Siguiente">→</button></div>
-      </div>
-      <div class="arq-track" data-track>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/lld-list.png"><img src="../assets/arq-studio/current/lld-list.png" alt="Listado de LLD"></button><h4>LLD derivados del HLD</h4><p>Cada LLD conserva el HLD de origen, versión, estado y trazabilidad documental.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/lld-summary.png"><img src="../assets/arq-studio/current/lld-summary.png" alt="Resumen del LLD"></button><h4>Resumen técnico del LLD</h4><p>Paquetes, inventario, red, IAM, backup, observabilidad, seguridad, build y trazabilidad en una vista de preparación.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/lld-wizard-network.png"><img src="../assets/arq-studio/current/lld-wizard-network.png" alt="Wizard de red LLD"></button><h4>Wizard de implementación</h4><p>Parámetros concretos de red y publicación: segmentos, VLAN, direccionamiento, balanceo, DNS y dependencias.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/lld-diagram-refined.png"><img src="../assets/arq-studio/current/lld-diagram-refined.png" alt="Diagrama LLD refinado"></button><h4>Vista física refinada</h4><p>El LLD especializa la arquitectura con detalle de implementación sin perder el vínculo con el HLD.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/lld-build-plan.png"><img src="../assets/arq-studio/current/lld-build-plan.png" alt="Plan de construcción y Change Request"></button><h4>Plan de construcción / Change</h4><p>Secuencia ejecutable, ventanas de cambio, dependencias, validaciones, evidencias y backout por paso.</p></article>
-        <article class="arq-slide"><button class="arq-zoom" data-image="../assets/arq-studio/current/lld-rollback.png"><img src="../assets/arq-studio/current/lld-rollback.png" alt="Plan de rollback y backup"></button><h4>Rollback / Backup Plan</h4><p>Triggers, precondiciones, secuencia de reversión, RTO/RPO, validación, pérdida de datos y comunicaciones.</p></article>
-      </div>
+<section class="arq-gallery-section">
+  <div class="container">
+    <div class="arq-section-heading">
+      <div><p class="arq-kicker">PRODUCTO REAL</p><h2>Arquitectura visible, no solo prometida.</h2></div>
+      <p>Pulsa sobre cualquier captura o sobre la lupa para verla ampliada.</p>
     </div>
-  </section>
+    <div class="arq-gallery"><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/wizard-hld-f0-f9.png" data-lightbox-caption="HLD · Wizard guiado">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: HLD · Wizard guiado">
+        <img loading="lazy" src="/assets/arq-studio/wizard-hld-f0-f9.png" alt="HLD · Wizard guiado">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>HLD · Wizard guiado</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-diagram-context.png" data-lightbox-caption="HLD · C4 System Context">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: HLD · C4 System Context">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-diagram-context.png" alt="HLD · C4 System Context">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>HLD · C4 System Context</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-diagram-containers.png" data-lightbox-caption="HLD · C4 Containers">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: HLD · C4 Containers">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-diagram-containers.png" alt="HLD · C4 Containers">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>HLD · C4 Containers</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-diagram-logical.png" data-lightbox-caption="HLD · Vista lógica">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: HLD · Vista lógica">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-diagram-logical.png" alt="HLD · Vista lógica">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>HLD · Vista lógica</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-diagram-physical.png" data-lightbox-caption="HLD · Vista física">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: HLD · Vista física">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-diagram-physical.png" alt="HLD · Vista física">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>HLD · Vista física</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/hld-governance.png" data-lightbox-caption="HLD · Gobierno y versionado">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: HLD · Gobierno y versionado">
+        <img loading="lazy" src="/assets/arq-studio/current/hld-governance.png" alt="HLD · Gobierno y versionado">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>HLD · Gobierno y versionado</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/lld-wizard-network.png" data-lightbox-caption="LLD · Red y direccionamiento">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: LLD · Red y direccionamiento">
+        <img loading="lazy" src="/assets/arq-studio/current/lld-wizard-network.png" alt="LLD · Red y direccionamiento">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>LLD · Red y direccionamiento</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/lld-build-plan.png" data-lightbox-caption="LLD · Build plan">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: LLD · Build plan">
+        <img loading="lazy" src="/assets/arq-studio/current/lld-build-plan.png" alt="LLD · Build plan">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>LLD · Build plan</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/current/lld-diagram-refined.png" data-lightbox-caption="LLD · Diagrama refinado">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: LLD · Diagrama refinado">
+        <img loading="lazy" src="/assets/arq-studio/current/lld-diagram-refined.png" alt="LLD · Diagrama refinado">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>LLD · Diagrama refinado</figcaption>
+    </figure></div>
+    <details class="arq-more-gallery">
+      <summary>Ver más pantallas de Arq Studio <span>→</span></summary>
+      <div class="arq-gallery"><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/dashboard-arquitectura.png" data-lightbox-caption="Dashboard de arquitectura">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Dashboard de arquitectura">
+        <img loading="lazy" src="/assets/arq-studio/dashboard-arquitectura.png" alt="Dashboard de arquitectura">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Dashboard de arquitectura</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/catalogo-hld.png" data-lightbox-caption="Catálogo HLD">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Catálogo HLD">
+        <img loading="lazy" src="/assets/arq-studio/catalogo-hld.png" alt="Catálogo HLD">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Catálogo HLD</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/clientes-arquitectura.png" data-lightbox-caption="Clientes y arquitectura">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Clientes y arquitectura">
+        <img loading="lazy" src="/assets/arq-studio/clientes-arquitectura.png" alt="Clientes y arquitectura">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Clientes y arquitectura</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/proyectos-arquitectura.png" data-lightbox-caption="Proyectos de arquitectura">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Proyectos de arquitectura">
+        <img loading="lazy" src="/assets/arq-studio/proyectos-arquitectura.png" alt="Proyectos de arquitectura">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Proyectos de arquitectura</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/resumen-hld-completitud.png" data-lightbox-caption="Resumen HLD y completitud">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Resumen HLD y completitud">
+        <img loading="lazy" src="/assets/arq-studio/resumen-hld-completitud.png" alt="Resumen HLD y completitud">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Resumen HLD y completitud</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/documentacion-generada.png" data-lightbox-caption="Documentación generada">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Documentación generada">
+        <img loading="lazy" src="/assets/arq-studio/documentacion-generada.png" alt="Documentación generada">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Documentación generada</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/diagramas-catalogo.png" data-lightbox-caption="Catálogo de diagramas">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Catálogo de diagramas">
+        <img loading="lazy" src="/assets/arq-studio/diagramas-catalogo.png" alt="Catálogo de diagramas">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Catálogo de diagramas</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/edicion-drawio.png" data-lightbox-caption="Edición de diagramas">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Edición de diagramas">
+        <img loading="lazy" src="/assets/arq-studio/edicion-drawio.png" alt="Edición de diagramas">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Edición de diagramas</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/gobernanza-version.png" data-lightbox-caption="Gobernanza y versión">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Gobernanza y versión">
+        <img loading="lazy" src="/assets/arq-studio/gobernanza-version.png" alt="Gobernanza y versión">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Gobernanza y versión</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/repositorio-documental.png" data-lightbox-caption="Repositorio documental">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Repositorio documental">
+        <img loading="lazy" src="/assets/arq-studio/repositorio-documental.png" alt="Repositorio documental">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>Repositorio documental</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/lld-readiness.png" data-lightbox-caption="LLD readiness">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: LLD readiness">
+        <img loading="lazy" src="/assets/arq-studio/lld-readiness.png" alt="LLD readiness">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>LLD readiness</figcaption>
+    </figure><figure class="arq-gallery-card" data-lightbox-item data-lightbox-src="/assets/arq-studio/lld-red-direccionamiento.png" data-lightbox-caption="LLD · Red y direccionamiento">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: LLD · Red y direccionamiento">
+        <img loading="lazy" src="/assets/arq-studio/lld-red-direccionamiento.png" alt="LLD · Red y direccionamiento">
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+      <figcaption>LLD · Red y direccionamiento</figcaption>
+    </figure></div>
+    </details>
+  </div>
+</section>
 
-  <section class="arq-ai">
-    <div class="arq-ai-icon">AI</div>
-    <div><span class="eyebrow">ROADMAP</span><h2>Arquitecto IA · pendiente</h2><p>El módulo de IA está previsto como asistencia al arquitecto para revisar coherencia, requisitos, riesgos, decisiones y documentación. <strong>No está presentado como funcionalidad disponible actualmente</strong> y cualquier futura recomendación requerirá validación humana.</p></div>
-    <span class="arq-pending">EN DESARROLLO</span>
-  </section>
+<section class="arq-final">
+  <div class="container arq-final-inner">
+    <div>
+      <p class="arq-kicker">LANZAMIENTO PREVISTO · Q1 2027</p>
+      <h2>Deja que el modelo haga más trabajo que el diagrama.</h2>
+      <p>Arq Studio está orientado a convertir el diseño de arquitectura en un activo estructurado, documentable y reutilizable.</p>
+    </div>
+    <div class="arq-final-actions">
+      <a class="btn btn-primary" href="mailto:macarriazo@opentrust.group?subject=Acceso%20anticipado%20Arq%20Studio">Solicitar acceso anticipado →</a>
+      <a href="/apps/">Volver a aplicaciones</a>
+    </div>
+  </div>
+</section>
 
-  <section class="arq-docs" id="documentos-demo">
-    <div class="arq-section-head">
-      <span class="eyebrow">DOCUMENTACIÓN DE DEMOSTRACIÓN</span>
-      <h2>Un HLD y un LLD generados desde Arq Studio</h2>
-      <p>Los ejemplos actuales sustituyen a los anteriores y muestran la relación HLD → LLD sobre un escenario de migración SharePoint.</p>
-    </div>
-    <div class="arq-demo-warning"><strong>Importante:</strong> ambos documentos son <strong>ficticios, de demostración y no finalizados</strong>. No representan una arquitectura real, no deben utilizarse como diseño de producción y pueden contener estados, valores o decisiones propias de una PoC en evolución.</div>
-    <div class="arq-doc-tabs" role="tablist">
-      <button class="is-active" data-doc="hld" role="tab" aria-selected="true"><span>HLD</span><strong>Migración SharePoint 2019 → Subscription Edition</strong><small>Ejemplo demo · no finalizado · 50 páginas</small></button>
-      <button data-doc="lld" role="tab" aria-selected="false"><span>LLD</span><strong>Migración SharePoint 2019 → Subscription Edition</strong><small>Ejemplo demo · no finalizado · 28 páginas</small></button>
-    </div>
-    <div class="arq-doc-panel is-active" data-doc-panel="hld">
-      <div class="arq-doc-meta"><div><span class="arq-doc-type">HLD · DISEÑO DE ALTO NIVEL</span><h3>Arquitectura objetivo, transición, riesgos y gobierno</h3><p>Ejemplo de HLD que documenta alcance, actores, contenedores, requisitos, inventario, seguridad, decisiones, riesgos y diagramas. La propia muestra incorpora control documental y trazabilidad de versiones.</p></div><a class="button secondary" href="../assets/arq-studio/Arq-Studio-Demo-SharePoint-HLD-v1.0.pdf" target="_blank" rel="noopener">Abrir PDF demo</a></div>
-      <iframe class="arq-pdf" src="../assets/arq-studio/Arq-Studio-Demo-SharePoint-HLD-v1.0.pdf#view=FitH" title="HLD de demostración de Arq Studio"></iframe>
-    </div>
-    <div class="arq-doc-panel" data-doc-panel="lld" hidden>
-      <div class="arq-doc-meta"><div><span class="arq-doc-type">LLD · DISEÑO TÉCNICO DETALLADO</span><h3>Implementación, build, cutover y vuelta atrás</h3><p>Ejemplo de LLD derivado del HLD, con detalle de plataforma, red, identidad, continuidad, observabilidad, plan de construcción, change y rollback.</p></div><a class="button secondary" href="../assets/arq-studio/Arq-Studio-Demo-SharePoint-LLD-v1.0.pdf" target="_blank" rel="noopener">Abrir PDF demo</a></div>
-      <iframe class="arq-pdf" src="../assets/arq-studio/Arq-Studio-Demo-SharePoint-LLD-v1.0.pdf#view=FitH" title="LLD de demostración de Arq Studio"></iframe>
-    </div>
-  </section>
-
-  <section class="arq-bottom-strip">
-    <div><strong>Modelo único</strong><span>Fuente de verdad arquitectónica</span></div>
-    <div><strong>Diagramas automáticos</strong><span>Contexto · Contenedores · Lógica · Física</span></div>
-    <div><strong>HLD → LLD</strong><span>Trazabilidad entre niveles de diseño</span></div>
-    <div><strong>Gobierno</strong><span>Review · Versiones · Baselines</span></div>
-    <div><strong>Arquitecto IA</strong><span>Pendiente / en desarrollo</span></div>
-  </section>
 </main>
-<footer class="site-footer" id="site-footer"></footer>
-<dialog id="viewer" class="arq-viewer"><button aria-label="Cerrar" id="closeViewer">×</button><img alt="Vista ampliada de Arq Studio"></dialog>
-<script src="../js/apps/arq-studio-modern.js?v=20260904.2"></script>
-<script data-root=".." src="../js/site-shell.js?v=2.2"></script>
-</body>
-</html>
+
+<footer class="target-footer target-footer-clean" aria-label="Pie de página OpenTrust Group">
+  <div class="container target-footer-clean-main">
+    <div class="footer-brand-block">
+      <a class="footer-brand" href="/" aria-label="OpenTrust Group, inicio"><span class="footer-brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 19 6v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span>OpenTrust Group</span></a>
+      <strong>Conocimiento. Tecnología. Confianza.</strong>
+      <p>Un ecosistema independiente para compartir, desarrollar y aplicar conocimiento en arquitectura, ciberseguridad, gobierno, resiliencia e inteligencia artificial.</p>
+    </div>
+    <div class="footer-focus"><span>Arquitectura</span><span>Ciberseguridad</span><span>GRC</span><span>Resiliencia</span><span>IA segura</span></div>
+    <div class="footer-actions-clean"><a href="mailto:macarriazo@opentrust.group">Contacto →</a><a href="/security/">Seguridad</a><a href="/legal/">Legal</a></div>
+  </div>
+  <div class="footer-bottom-clean"><div class="container"><span>© 2026 OpenTrust Group</span><span>Experiencia · Conocimiento · Tecnología</span></div></div>
+</footer>
+
+
+<div class="app-lightbox" data-lightbox hidden>
+  <button class="app-lightbox-close" type="button" data-lightbox-close aria-label="Cerrar ampliación">×</button>
+  <button class="app-lightbox-nav app-lightbox-prev" type="button" data-lightbox-prev aria-label="Imagen anterior">‹</button>
+  <figure><img data-lightbox-image alt=""><figcaption data-lightbox-caption></figcaption></figure>
+  <button class="app-lightbox-nav app-lightbox-next" type="button" data-lightbox-next aria-label="Imagen siguiente">›</button>
+</div>
+<script src="/js/main.js" defer></script>
+</body></html>

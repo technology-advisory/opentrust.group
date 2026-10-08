@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 720" role="img" aria-labelledby="t d">
+<title id="t">OpenTrust corporate mountain architecture</title><desc id="d">Professional vector landscape with mountains and modern glass architecture.</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dff1ff"/><stop offset=".48" stop-color="#edf7ff"/><stop offset="1" stop-color="#f8fbff"/></linearGradient>
+  <radialGradient id="sun" cx="76%" cy="34%" r="35%"><stop offset="0" stop-color="#fff4d6" stop-opacity=".85"/><stop offset=".45" stop-color="#fff7e8" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="far" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b7cfe3"/><stop offset="1" stop-color="#6f91af"/></linearGradient>
+  <linearGradient id="mid" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7d9db9"/><stop offset="1" stop-color="#395c7c"/></linearGradient>
+  <linearGradient id="near" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2c5473"/><stop offset="1" stop-color="#173b59"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8efff"/><stop offset=".42" stop-color="#78bde8"/><stop offset="1" stop-color="#134a77"/></linearGradient>
+  <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4e6e8"/><stop offset="1" stop-color="#9ea8b0"/></linearGradient>
+  <linearGradient id="terrace" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#607f96"/><stop offset="1" stop-color="#263e51"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#062846" flood-opacity=".18"/></filter>
+  <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="18"/></filter>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#a8cbe2" stroke-opacity=".16" stroke-width="1"/></pattern>
+</defs>
+<rect width="1800" height="720" fill="url(#sky)"/>
+<rect width="1800" height="720" fill="url(#sun)"/>
+<path d="M0 410 130 350 248 398 365 320 490 380 625 286 758 376 890 312 1020 378 1144 292 1265 360 1395 308 1540 364 1665 322 1800 370V720H0Z" fill="#d5e4f0" opacity=".85"/>
+<path d="M0 485 120 420 250 452 402 380 548 438 676 355 825 446 984 382 1130 440 1290 362 1458 443 1610 385 1800 458V720H0Z" fill="url(#far)" opacity=".78"/>
+<path d="M0 545 160 468 320 512 486 430 655 520 790 448 943 534 1110 457 1284 530 1472 444 1640 520 1800 472V720H0Z" fill="url(#mid)" opacity=".76"/>
+<path d="M0 610 215 520 392 590 582 492 790 588 1002 505 1215 602 1450 512 1640 595 1800 548V720H0Z" fill="url(#near)" opacity=".86"/>
+<g opacity=".18" fill="#fff"><path d="M140 434 250 452 402 380 548 438 676 355 825 446l-32-18-115-99-92 75-83-48-101 58-90-24Z"/><path d="M1040 396 1130 440 1290 362 1458 443l-24-18-139-88-120 74-73-38Z"/></g>
+<g opacity=".23" filter="url(#soft)"><ellipse cx="450" cy="575" rx="430" ry="34" fill="#fff"/><ellipse cx="980" cy="525" rx="360" ry="22" fill="#fff"/></g>
+<rect x="0" y="0" width="1800" height="720" fill="url(#grid)" opacity=".18"/>
+<!-- modern building -->
+<g transform="translate(1260 92)">
+  <path d="M154 26h386v342H154z" fill="url(#stone)"/>
+  <path d="M192 64h310v264H192z" fill="#071e31"/>
+  <path d="M206 78h282v236H206z" fill="url(#glass)"/>
+  <g stroke="#d6f0ff" stroke-opacity=".58" stroke-width="3"><path d="M253 78v236M300 78v236M347 78v236M394 78v236M441 78v236"/><path d="M206 126h282M206 174h282M206 222h282M206 270h282"/></g>
+  <g fill="#f8fdff" opacity=".54"><rect x="219" y="92" width="21" height="8" rx="2"/><rect x="315" y="140" width="21" height="8" rx="2"/><rect x="411" y="188" width="21" height="8" rx="2"/><rect x="267" y="236" width="21" height="8" rx="2"/></g>
+  <path d="M84 346h456v54H84z" fill="#c6cacc"/>
+  <path d="M112 368h428v26H112z" fill="#89959e"/>
+  <path d="M0 396h540v120H0z" fill="#b5babe"/>
+  <path d="M0 414h540v20H0z" fill="#e3e5e6"/>
+  <path d="M42 434h498v82H42z" fill="url(#terrace)"/>
+  <path d="M220 16h320v36H220z" fill="#c8cccf"/>
+  <path d="M220 52h320v14H220z" fill="#6d7881" opacity=".72"/>
+</g>
+<!-- terrace trees -->
+<g transform="translate(1165 385)">
+  <rect x="86" y="128" width="420" height="18" rx="4" fill="#8ea0ad" opacity=".65"/>
+  <g fill="#365d4b"><circle cx="118" cy="95" r="38"/><circle cx="155" cy="79" r="28"/><circle cx="193" cy="102" r="34"/></g>
+  <g fill="#274e3f"><circle cx="438" cy="93" r="31"/><circle cx="466" cy="105" r="26"/></g>
+  <g stroke="#315244" stroke-width="7"><path d="M154 82v54"/><path d="M452 96v42"/></g>
+</g>
+<!-- vector contour accents -->
+<g fill="none" stroke="#167bd7" stroke-opacity=".16" stroke-width="2"><path d="M815 176c90-50 203-58 294-16s163 43 247 7"/><path d="M782 205c100-41 203-42 306-3s177 39 272 1"/><path d="M750 236c121-39 235-27 337 6s177 26 269-12"/></g>
+</svg>

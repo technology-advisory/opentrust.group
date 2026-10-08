@@ -1,8 +1,11 @@
 {
   "version": 1,
   "include": [
-    "/data/*",
-    "/assets/arq-studio/*"
+    "/api/*",
+    "/data/certificaciones.json",
+    "/README.md",
+    "/.dev.vars.example",
+    "/.gitignore"
   ],
   "exclude": []
 }

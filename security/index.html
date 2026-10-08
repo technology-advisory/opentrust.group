@@ -1,135 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Política corporativa de seguridad y divulgación responsable de vulnerabilidades aplicable a los activos digitales gestionados por OpenTrust Group." name="description"/>
-<meta content="index,follow" name="robots"/>
-<meta content="#072631" name="theme-color"/>
-<link rel="canonical" href="https://opentrust.group/security/"/>
-<title>Seguridad y divulgación responsable · OpenTrust Group</title>
-<link href="../css/global.css?v=2.2" rel="stylesheet"/>
-<link href="../css/security.css?v=1.1" rel="stylesheet"/>
-<link href="../css/site.css?v=2.2" rel="stylesheet"/>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Seguridad · OpenTrust Group</title>
+  <meta name="description" content="Postura de seguridad, divulgación responsable y canales de reporte de OpenTrust Group.">
+  <meta name="robots" content="index,follow"><meta name="theme-color" content="#0b2a44">
+  <link rel="canonical" href="https://opentrust.group/security/">
+  <link rel="icon" href="/favicon.ico" sizes="any"><link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="security-page">
-<header class="site-header" id="site-header"></header>
-<main class="security-main">
-<section class="security-shell">
-  <div class="security-hero">
-    <div class="security-hero__copy">
-      <p class="security-eyebrow">Security Governance · Responsible Disclosure</p>
-      <h1>Política de <span>seguridad y divulgación responsable</span></h1>
-      <p class="security-lead">OpenTrust Group mantiene un marco corporativo para la recepción, análisis y gestión responsable de vulnerabilidades que puedan afectar a sus activos digitales. Agradecemos la colaboración de investigadores, profesionales y terceros que comuniquen hallazgos de buena fe, de forma proporcionada y conforme a esta política.</p>
-      <div class="security-actions">
-        <a class="security-btn security-btn--primary" href="mailto:security@opentrust.group?subject=Security%20Report%20-%20OpenTrust%20Group">Reportar una vulnerabilidad</a>
-        <a class="security-btn security-btn--secondary" href="../legal/">Información legal</a>
-      </div>
+<body class="home-target trust-security-page">
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header home-header">
+  <div class="container header-inner">
+    <a class="logo" href="/" aria-label="OpenTrust Group, inicio"><span class="logo-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 19 6v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span>OpenTrust Group</span></a>
+    <nav class="nav" data-main-nav aria-label="Navegación principal">
+      <a href="/">Inicio</a><a href="/conocimiento/">Conocimiento</a><a href="/apps/">Aplicaciones</a><a href="/sobre-mi/">Trayectoria</a><a href="https://status.opentrust.group" target="_blank" rel="noopener noreferrer">Estado</a><a href="/sobre-opentrust/">Sobre OpenTrust</a><a class="nav-legal-solid" href="/legal/">Legal</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search" aria-label="Buscar en OpenTrust"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input data-search type="search" placeholder="Buscar en OpenTrust..."><span class="key-hint">/</span></label>
+      <a class="btn btn-primary header-contact" href="mailto:macarriazo@opentrust.group">Contactar →</a>
     </div>
-    <aside class="security-contact" aria-label="Canal de seguridad">
-      <span class="security-contact__label">Canal corporativo de seguridad</span>
-      <strong>security@opentrust.group</strong>
-      <p>Incluye el activo y la URL afectados, una descripción clara del hallazgo, pasos mínimos de reproducción, impacto observado o potencial, fecha y hora aproximadas y las evidencias técnicas estrictamente necesarias.</p>
-      <span class="security-contact__hint">No remitas credenciales, secretos, datos personales ni información de terceros que no resulte imprescindible para la validación del hallazgo.</span>
-    </aside>
+    <button class="mobile-toggle" data-menu-toggle aria-label="Abrir menú" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
   </div>
-
-  <div class="security-trustbar" aria-label="Principios de la política">
-    <div><strong>Buena fe</strong><span>Actuación responsable, proporcionada y verificable.</span></div>
-    <div><strong>Impacto mínimo</strong><span>No degradar, alterar ni comprometer servicios o información.</span></div>
-    <div><strong>Coordinación</strong><span>Gestión y divulgación responsable del hallazgo.</span></div>
-  </div>
-
-  <section class="security-section" aria-labelledby="security-scope-title">
-    <div class="security-section__intro">
-      <p class="security-kicker">01 · Alcance</p>
-      <h2 id="security-scope-title">Qué cubre esta política</h2>
-      <p>Esta política se aplica a los sitios, aplicaciones y servicios administrados directamente por OpenTrust Group, incluidos los publicados bajo <strong>opentrust.group</strong>, sus subdominios y otros activos digitales que hagan referencia expresa a esta política mediante su correspondiente <strong>security.txt</strong>.</p>
-    </div>
-    <div class="security-grid security-grid--two">
-      <article class="security-card">
-        <span class="security-card__tag">Incluido</span>
-        <h3>Activos gestionados por OpenTrust</h3>
-        <p>Sitios web, aplicaciones, servicios y otros activos digitales administrados directamente por OpenTrust Group y vinculados expresamente a esta política mediante su correspondiente <strong>security.txt</strong>.</p>
-      </article>
-      <article class="security-card">
-        <span class="security-card__tag security-card__tag--muted">Fuera de alcance</span>
-        <h3>Infraestructura de terceros</h3>
-        <p>Servicios, plataformas o infraestructuras de terceros no administrados por OpenTrust Group. Quedan únicamente comprendidos los aspectos de configuración, integración o exposición que se encuentren bajo control efectivo de OpenTrust Group.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="security-section security-section--soft" aria-labelledby="security-rules-title">
-    <div class="security-section__intro">
-      <p class="security-kicker">02 · Investigación responsable</p>
-      <h2 id="security-rules-title">Reglas de buena fe</h2>
-      <p>Cualquier actividad de investigación deberá limitarse a lo estrictamente necesario para confirmar razonablemente la existencia, alcance e impacto del hallazgo, evitando acciones innecesarias o desproporcionadas.</p>
-    </div>
-    <div class="security-grid security-grid--three">
-      <article class="security-card security-card--compact">
-        <span class="security-card__num">01</span>
-        <h3>Detente ante acceso no previsto</h3>
-        <p>Si durante la validación se accede de forma accidental a datos, cuentas o funcionalidades no previstas, deberá cesarse inmediatamente cualquier exploración adicional y notificarse el hecho.</p>
-      </article>
-      <article class="security-card security-card--compact">
-        <span class="security-card__num">02</span>
-        <h3>Minimiza el impacto</h3>
-        <p>No se deberán alterar datos, mantener mecanismos de persistencia ni realizar pruebas que puedan afectar a la disponibilidad, integridad, confidencialidad o experiencia de los usuarios.</p>
-      </article>
-      <article class="security-card security-card--compact">
-        <span class="security-card__num">03</span>
-        <h3>Protege la información</h3>
-        <p>La recopilación, conservación o comunicación de información personal, credenciales, secretos o datos de terceros deberá limitarse al mínimo estrictamente imprescindible para documentar el hallazgo.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="security-section" aria-labelledby="security-limits-title">
-    <div class="security-section__intro">
-      <p class="security-kicker">03 · Límites</p>
-      <h2 id="security-limits-title">Actividades no autorizadas</h2>
-    </div>
-    <div class="security-prohibited">
-      <p>No están autorizados los ataques de denegación de servicio, pruebas destructivas, ingeniería social, phishing, acceso físico, explotación persistente, extracción masiva de información, modificación o eliminación de datos, instalación de malware ni el despliegue de herramientas de acceso o control remoto.</p>
-      <p>Tampoco están autorizados los escaneos automatizados agresivos, pruebas de carga o actividades que generen un volumen de tráfico susceptible de afectar a la estabilidad, disponibilidad o rendimiento de los servicios.</p>
-    </div>
-  </section>
-
-  <section class="security-section security-section--process" aria-labelledby="security-process-title">
-    <div class="security-section__intro">
-      <p class="security-kicker">04 · Gestión del reporte</p>
-      <h2 id="security-process-title">Qué ocurre después</h2>
-    </div>
-    <div class="security-process">
-      <article><span>01</span><h3>Recepción</h3><p>El reporte se registra y se verifica que contiene la información necesaria para identificar el activo y el hallazgo comunicado.</p></article>
-      <article><span>02</span><h3>Validación</h3><p>Cuando resulte viable, se valida técnicamente el hallazgo y se evalúan su alcance, impacto y exposición asociada.</p></article>
-      <article><span>03</span><h3>Tratamiento</h3><p>Se determinan y priorizan las medidas de mitigación o corrección atendiendo al riesgo, criticidad, complejidad técnica y dependencias existentes.</p></article>
-      <article><span>04</span><h3>Coordinación</h3><p>Cuando proceda, se mantiene la comunicación con la persona informante y se coordina cualquier divulgación posterior del hallazgo.</p></article>
-    </div>
-    <p class="security-process__note">Los plazos de análisis y resolución dependerán de la criticidad, complejidad técnica, disponibilidad de medidas de mitigación y posibles dependencias con terceros. Esta política no establece un compromiso de resolución dentro de un plazo determinado.</p>
-  </section>
-
-  <section class="security-section security-section--final" aria-labelledby="security-disclosure-title">
+</header>
+<main id="main">
+<section class="trust-security-hero">
+  <div class="trust-page-grid" aria-hidden="true"></div>
+  <div class="container trust-security-hero-grid">
     <div>
-      <p class="security-kicker">05 · Divulgación</p>
-      <h2 id="security-disclosure-title">Divulgación coordinada</h2>
-      <p>Solicitamos que cualquier divulgación pública relacionada con un hallazgo comunicado al amparo de esta política se coordine previamente con OpenTrust Group y se posponga hasta que exista una corrección, una mitigación razonable o un acuerdo sobre el momento y alcance de la publicación.</p>
+      <p class="trust-kicker">SECURITY · RESPONSIBLE DISCLOSURE</p>
+      <h1>Seguridad por diseño. <span>Divulgación responsable.</span></h1>
+      <p class="trust-lead">La seguridad forma parte de la arquitectura del ecosistema OpenTrust: reducción de superficie expuesta, endurecimiento, control de contenidos, publicación responsable y un canal claro para comunicar posibles vulnerabilidades.</p>
+      <div class="trust-security-actions"><a class="btn trust-btn-ghost" href="mailto:macarriazo@opentrust.group?subject=Security%20Report%20-%20OpenTrust" data-open-security-report>Reportar vulnerabilidad →</a></div>
     </div>
-    <div class="security-bounty">
-      <span>Bug bounty</span>
-      <strong>OpenTrust Group no mantiene actualmente un programa público de recompensas económicas por vulnerabilidades.</strong>
-      <p>La presentación de un reporte no genera por sí misma derecho a compensación, premio, reconocimiento público o contraprestación de ningún tipo, salvo acuerdo expreso y previo por escrito.</p>
-    </div>
-  </section>
+    <aside class="trust-security-status"><span>POSTURA PÚBLICA</span><strong>Security by Design</strong><p>Controles visibles, configuración endurecida y divulgación responsable sin exponer detalles operativos innecesarios.</p><a href="https://status.opentrust.group" target="_blank" rel="noopener noreferrer">Estado del ecosistema →</a></aside>
+  </div>
+</section>
 
-  <div class="security-footer-note">
-    <span>Política corporativa común de seguridad y divulgación responsable de OpenTrust Group.</span>
-    <strong>Última actualización: octubre de 2026</strong>
+<section class="trust-security-controls">
+  <div class="container">
+    <div class="trust-section-head"><div><p class="trust-kicker">CONTROLES VISIBLES</p><h2>Una superficie pública pequeña, explícita y controlada.</h2></div><p>La web evita publicar detalles internos que no aportan valor al usuario y combina endurecimiento del navegador, controles perimetrales, reducción de superficie expuesta y mecanismos de mitigación frente a tráfico anómalo o malicioso.</p></div>
+    <div class="trust-control-grid trust-control-grid-expanded">
+      <article><strong>HTTPS &amp; HSTS</strong><span>Transporte cifrado y política estricta de HTTPS para reducir downgrade y acceso no seguro.</span></article>
+      <article><strong>TLS en el perímetro</strong><span>Terminación segura de conexiones en la capa pública antes de alcanzar los servicios publicados.</span></article>
+      <article><strong>Web Application Firewall</strong><span>Filtrado perimetral de solicitudes web anómalas o maliciosas antes de llegar a la aplicación.</span></article>
+      <article><strong>Mitigación DDoS</strong><span>Protección distribuida en la capa perimetral frente a picos de tráfico y ataques de denegación de servicio.</span></article>
+      <article><strong>Rate limiting &amp; abuso</strong><span>Capacidad para limitar patrones de consumo anómalos, automatización agresiva y abuso de endpoints expuestos.</span></article>
+      <article><strong>Reducción de exposición del origen</strong><span>La publicación se concentra en la capa perimetral para minimizar exposición directa de componentes internos.</span></article>
+      <article><strong>Content Security Policy</strong><span>Restricción explícita de orígenes, scripts, estilos y recursos permitidos en el navegador.</span></article>
+      <article><strong>Anti-framing</strong><span>Protección frente a inclusión no autorizada en marcos y escenarios de clickjacking.</span></article>
+      <article><strong>Referrer Policy</strong><span>Reducción de información compartida entre orígenes durante la navegación.</span></article>
+      <article><strong>Permissions Policy</strong><span>Restricción de capacidades del navegador que no son necesarias para el funcionamiento del portal.</span></article>
+      <article><strong>Superficie estática reducida</strong><span>Arquitectura mayoritariamente estática para disminuir componentes dinámicos y vectores de ataque innecesarios.</span></article>
+      <article><strong>security.txt</strong><span>Canal normalizado y verificable para divulgación responsable y contacto de seguridad.</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="trust-security-visual" id="evidencias">
+  <div class="container">
+    <div class="trust-section-head">
+      <div>
+        <p class="trust-kicker">ESTADO Y SEGURIDAD</p>
+        <h2>Controles y actividad de seguridad.</h2>
+      </div>
+      <p>Vista pública y resumida de controles, evidencias y actividad. Se omiten datos operativos innecesarios y no se identifica la plataforma perimetral utilizada.</p>
+    </div>
+
+    <figure class="trust-security-dashboard" data-lightbox-item data-lightbox-src="/assets/security/opentrust-security-dashboard.webp" data-lightbox-caption="OpenTrust Group · Controles y actividad de seguridad">
+      <button class="app-shot-open" type="button" aria-label="Ampliar imagen: Controles y actividad de seguridad">
+        <picture>
+          <source type="image/webp" srcset="/assets/security/opentrust-security-dashboard.webp">
+          <img src="/assets/security/opentrust-security-dashboard.png"
+               width="1325" height="445"
+               alt="Panel público de estado y seguridad de OpenTrust Group con controles de seguridad, eventos y tráfico mitigado"
+               loading="lazy" decoding="async">
+        </picture>
+        <span class="app-shot-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Ampliar</span></span>
+      </button>
+    </figure>
+  </div>
+</section>
+
+<section class="trust-disclosure">
+  <div class="container trust-disclosure-grid">
+    <div><p class="trust-kicker">DIVULGACIÓN RESPONSABLE</p><h2>Si detectas un problema, necesito contexto suficiente para reproducirlo y corregirlo.</h2><p>Los reportes de buena fe son bienvenidos. La prioridad es comprender el impacto, reproducir de forma segura el hallazgo y reducir el riesgo sin ampliar innecesariamente la exposición.</p></div>
+    <div class="trust-report-steps">
+      <article><span>01</span><div><strong>Identifica el activo</strong><p>URL, aplicación o recurso público afectado.</p></div></article>
+      <article><span>02</span><div><strong>Describe el comportamiento</strong><p>Qué ocurre, qué esperabas y cuál podría ser el impacto.</p></div></article>
+      <article><span>03</span><div><strong>Aporta reproducción mínima</strong><p>Pasos y evidencia suficientes evitando acceso, extracción o modificación innecesaria de datos.</p></div></article>
+      <article><span>04</span><div><strong>Usa el canal publicado</strong><p>Utiliza el formulario seguro o consulta security.txt para verificar el canal vigente. No envíes credenciales, tokens, claves privadas ni datos de terceros.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="trust-security-boundaries">
+  <div class="container">
+    <div class="trust-section-head"><div><p class="trust-kicker">LÍMITES</p><h2>Un canal de reporte no equivale a autorización para realizar pruebas.</h2></div><p>La divulgación responsable exige minimizar impacto y actuar dentro de la autorización y de la normativa aplicable.</p></div>
+    <div class="trust-boundary-grid">
+      <article><strong>No realizar acciones destructivas</strong><span>No degradar disponibilidad, borrar, alterar o cifrar información.</span></article>
+      <article><strong>No acceder a datos ajenos</strong><span>Detener la prueba cuando la validación pueda implicar información de terceros.</span></article>
+      <article><strong>No persistencia</strong><span>No crear mecanismos de acceso, cuentas, puertas traseras o persistencia.</span></article>
+      <article><strong>No ingeniería social</strong><span>No contactar ni manipular a terceros como parte de una prueba no autorizada.</span></article>
+      <article><strong>No movimiento lateral</strong><span>No ampliar el alcance más allá de lo estrictamente necesario para describir el hallazgo.</span></article>
+      <article><strong>No publicación prematura</strong><span>Permitir tiempo razonable para analizar y corregir antes de divulgar detalles explotables.</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="trust-security-contact">
+  <div class="container trust-security-contact-inner">
+    <div><p class="trust-kicker">CONTACTO DE SEGURIDAD</p><h2>Canal único y verificable.</h2><p>Consulta siempre la versión publicada de <code>security.txt</code> para comprobar el contacto y las condiciones vigentes.</p></div>
+    <div><a class="btn btn-primary" href="/.well-known/security.txt" target="_blank" rel="noopener">Abrir security.txt →</a><a href="mailto:macarriazo@opentrust.group?subject=Security%20Report%20-%20OpenTrust" data-open-security-report>Abrir formulario seguro →</a></div>
   </div>
 </section>
 </main>
-<footer class="site-footer" id="site-footer"></footer>
-<script data-root=".." src="../js/site-shell.js?v=2.2"></script>
-</body>
-</html>
+<footer class="target-footer target-footer-clean" aria-label="Pie de página OpenTrust Group">
+  <div class="container target-footer-clean-main">
+    <div class="footer-brand-block">
+      <a class="footer-brand" href="/" aria-label="OpenTrust Group, inicio"><span class="footer-brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 19 6v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span>OpenTrust Group</span></a>
+      <strong>Conocimiento. Tecnología. Confianza.</strong>
+      <p>Un ecosistema independiente para compartir, desarrollar y aplicar conocimiento en arquitectura, ciberseguridad, gobierno, resiliencia e inteligencia artificial.</p>
+    </div>
+    <div class="footer-focus"><span>Arquitectura</span><span>Ciberseguridad</span><span>GRC</span><span>Resiliencia</span><span>IA segura</span></div>
+    <div class="footer-actions-clean"><a href="mailto:macarriazo@opentrust.group">Contacto →</a><a href="/security/">Seguridad</a><a href="/legal/">Legal</a></div>
+  </div>
+  <div class="footer-bottom-clean"><div class="container"><span>© 2026 OpenTrust Group</span><span>Experiencia · Conocimiento · Tecnología</span></div></div>
+</footer>
+
+<div class="app-lightbox" data-lightbox hidden>
+  <button class="app-lightbox-close" type="button" data-lightbox-close aria-label="Cerrar ampliación">×</button>
+  <figure><img data-lightbox-image alt=""><figcaption data-lightbox-caption></figcaption></figure>
+</div>
+<script src="/js/main.js" defer></script>
+</body></html>

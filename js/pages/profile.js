@@ -7,6 +7,19 @@
   const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
   })[char]);
+  const safeCredentialUrl = (value) => {
+    const raw = String(value ?? "").trim();
+    if (!raw) return "";
+    try {
+      const url = raw.startsWith("/") ? new URL(raw, window.location.origin) : new URL(raw);
+      if (!/^https?:$/.test(url.protocol)) return "";
+      if (raw.startsWith("/") && url.origin !== window.location.origin) return "";
+      return url.href;
+    } catch (_) {
+      return "";
+    }
+  };
+
 
   const formatDate = (value) => {
     const match = String(value ?? "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
@@ -44,7 +57,7 @@
             ${(grupo.certificaciones || []).map((cert) => `
               <li>
                 <span>${escapeHtml(cert.nombre)}</span>
-                ${cert.url ? `<a href="${escapeHtml(cert.url)}" target="_blank" rel="noopener noreferrer">Verificar <span aria-hidden="true">↗</span></a>` : ""}
+                ${safeCredentialUrl(cert.url) ? `<a href="${escapeHtml(safeCredentialUrl(cert.url))}" target="_blank" rel="noopener noreferrer">Verificar <span aria-hidden="true">↗</span></a>` : ""}
               </li>`).join("")}
           </ul>
         </article>`;

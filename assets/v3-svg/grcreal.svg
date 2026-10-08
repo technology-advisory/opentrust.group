@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" role="img" aria-label="Corporate governance architecture illustration">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dff3ff"/><stop offset="1" stop-color="#f7fbff"/></linearGradient><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8ed0f5"/><stop offset=".5" stop-color="#1e78ad"/><stop offset="1" stop-color="#0b375d"/></linearGradient><filter id="sh"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#0a3150" flood-opacity=".2"/></filter></defs>
+<rect width="520" height="220" fill="url(#s)"/><circle cx="424" cy="42" r="82" fill="#fff" opacity=".7"/><g><path d="M38 194V63L158 30v164Z" fill="#123f65"/><path d="M158 194V30l118 42v122Z" fill="url(#g)"/><path d="M282 194V48l174 33v113Z" fill="url(#g)"/></g>
+<g stroke="#dff4ff" stroke-opacity=".75"><path d="M64 65v122M92 57v130M120 49v138M188 50v137M220 61v126M250 72v115M309 60v127M341 66v121M373 72v115M405 78v109M437 84v103"/><path d="M38 91h120M38 121h120M38 151h120M158 92h118M158 122h118M158 152h118M282 102h174M282 130h174M282 158h174"/></g>
+<path d="M0 194h520v26H0z" fill="#d9e9f4"/><g fill="none" stroke="#0066cc" stroke-opacity=".22" stroke-width="2"><circle cx="441" cy="38" r="21"/><path d="m429 39 8 8 16-18"/></g>
+</svg>

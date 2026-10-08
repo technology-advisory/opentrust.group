@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">OpenTrust</title>
+  <desc id="desc">Símbolo OpenTrust</desc>
+  <defs>
+    <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1fb8ff"/>
+      <stop offset="100%" stop-color="#0057b8"/>
+    </linearGradient>
+    <linearGradient id="gB" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#19b5d1"/>
+      <stop offset="100%" stop-color="#0d7ad8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="18" r="10" fill="none" stroke="url(#gA)" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="20" cy="32" r="10" fill="none" stroke="url(#gB)" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="44" cy="32" r="10" fill="none" stroke="url(#gB)" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="32" cy="46" r="10" fill="none" stroke="url(#gA)" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="4.5" fill="#0f4aa4"/>
+</svg>

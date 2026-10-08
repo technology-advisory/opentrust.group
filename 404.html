@@ -1,78 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Página no encontrada en OpenTrust Group." name="description"/>
-<meta content="noindex,follow" name="robots"/>
-<meta content="#072631" name="theme-color"/>
-<title>Página no encontrada · OpenTrust Group</title>
-<link href="./css/global.css?v=2.2" rel="stylesheet"/>
-<link href="./css/security.css?v=1.1" rel="stylesheet"/>
-<link href="./css/site.css?v=2.2" rel="stylesheet"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>404 · Página no encontrada · OpenTrust Group</title>
+  <meta name="description" content="La página solicitada no existe o ha cambiado de ubicación.">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="security-page">
-<header class="site-header" id="site-header"></header>
+<body class="error-page">
+<a class="skip-link" href="#main">Saltar al contenido</a>
 
-<main class="security-main">
-  <section class="security-shell">
-    <div class="security-hero">
-      <div class="security-hero__copy">
-        <p class="security-eyebrow">OpenTrust Group · Error 404</p>
-        <h1>Página <span>no encontrada</span></h1>
-        <p class="security-lead">
-          La dirección solicitada no existe, ha cambiado o ya no se encuentra disponible.
-          Puedes volver al inicio o consultar nuestros canales corporativos.
-        </p>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="/" aria-label="OpenTrust Group, inicio">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3 19 6v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="m9 12 2 2 4-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>OpenTrust Group</span>
+    </a>
 
-        <div class="security-actions">
-          <a class="security-btn security-btn--primary" href="/">Volver al inicio</a>
-          <a class="security-btn security-btn--secondary" href="/security/">Seguridad</a>
+    <nav class="nav" data-main-nav aria-label="Navegación principal">
+      <a href="/">Inicio</a>
+      <a href="/ecosistema/">Ecosistema</a>
+      <a href="/sobre-mi/">Trayectoria</a>
+      <a href="/sobre-opentrust/">Sobre OpenTrust</a>
+      <a class="nav-legal-solid" href="/legal/">Legal</a>
+      <a class="nav-status-solid" href="/security/">Estado Webs/Apps</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary header-contact" href="mailto:macarriazo@opentrust.group">Contactar →</a>
+    </div>
+
+    <button class="mobile-toggle" data-menu-toggle aria-label="Abrir menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="error-hero" aria-labelledby="error-title">
+    <div class="container error-hero-grid">
+      <div class="error-copy">
+        <p class="error-kicker">ERROR 404</p>
+        <div class="error-code" aria-hidden="true">404</div>
+        <h1 id="error-title">Esta ruta no forma parte del ecosistema.</h1>
+        <p>La página que buscas no existe, ha cambiado de ubicación o la dirección introducida no es correcta.</p>
+        <div class="error-actions">
+          <a class="btn btn-primary" href="/">Volver al inicio →</a>
+          <a class="btn btn-secondary" href="/ecosistema/">Explorar el ecosistema</a>
         </div>
       </div>
 
-      <aside class="security-contact" aria-label="Información del error">
-        <span class="security-contact__label">Código de respuesta</span>
-        <strong>404 · Not Found</strong>
-        <p>
-          Si has llegado aquí desde un enlace de OpenTrust Group, puedes comunicarlo a nuestro equipo para que podamos revisarlo.
-        </p>
-        <span class="security-contact__hint">
-          Contacto: <a href="mailto:security@opentrust.group?subject=Broken%20link%20-%20OpenTrust%20Group">security@opentrust.group</a>
-        </span>
-      </aside>
-    </div>
-
-    <div class="security-trustbar" aria-label="Opciones disponibles">
-      <div><strong>Inicio</strong><span>Accede al portal principal de OpenTrust Group.</span></div>
-      <div><strong>Seguridad</strong><span>Consulta nuestra política de seguridad y divulgación responsable.</span></div>
-      <div><strong>Contacto</strong><span>Comunica enlaces rotos o incidencias relacionadas con el sitio.</span></div>
-    </div>
-
-    <section class="security-section security-section--final" aria-labelledby="error-help-title">
-      <div>
-        <p class="security-kicker">OpenTrust Group</p>
-        <h2 id="error-help-title">¿Qué puedes hacer ahora?</h2>
-        <p>
-          Revisa la dirección introducida o utiliza uno de los accesos anteriores.
-          No realizamos una redirección automática para preservar el código HTTP 404 y evitar ocultar errores de navegación.
-        </p>
+      <div class="error-visual" aria-hidden="true">
+        <div class="error-orbit error-orbit-a"></div>
+        <div class="error-orbit error-orbit-b"></div>
+        <div class="error-shield">
+          <svg viewBox="0 0 64 64">
+            <path d="M32 6 52 14v15c0 14-8.6 23.8-20 29-11.4-5.2-20-15-20-29V14L32 6Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M24 24 40 40M40 24 24 40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span>Ruta no encontrada</span>
       </div>
-      <div class="security-bounty">
-        <span>Estado</span>
-        <strong>El servicio está disponible.</strong>
-        <p>Este mensaje indica únicamente que el recurso solicitado no existe en esta ubicación.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="security-footer-note">
-      <span>OpenTrust Group · Seguridad, arquitectura y confianza digital.</span>
-      <strong>Error 404</strong>
+  <section class="error-links" aria-label="Accesos recomendados">
+    <div class="container">
+      <p class="error-links-title">Quizá buscabas una de estas áreas</p>
+      <div class="error-link-grid">
+        <a href="/ecosistema/">
+          <span>01</span>
+          <strong>Ecosistema</strong>
+          <small>Conocimiento y aplicaciones propias</small>
+        </a>
+        <a href="/sobre-mi/">
+          <span>02</span>
+          <strong>Trayectoria</strong>
+          <small>Experiencia, enfoque y certificaciones</small>
+        </a>
+        <a href="/conocimiento/">
+          <span>03</span>
+          <strong>Conocimiento</strong>
+          <small>Recursos especializados OpenTrust</small>
+        </a>
+        <a href="/apps/">
+          <span>04</span>
+          <strong>Aplicaciones</strong>
+          <small>Herramientas desarrolladas dentro del ecosistema</small>
+        </a>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="site-footer" id="site-footer"></footer>
-<script data-root="." src="./js/site-shell.js?v=2.2"></script>
+<footer class="error-footer">
+  <div class="container error-footer-inner">
+    <span>OpenTrust Group</span>
+    <nav aria-label="Enlaces legales">
+      <a href="/legal/">Legal</a>
+      <a href="/security/">Estado Webs/Apps</a>
+      <a href="mailto:macarriazo@opentrust.group">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
 </body>
 </html>

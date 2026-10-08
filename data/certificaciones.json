@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "version": "2026-10-01",
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-10-08",
   "owner": "Miguel Ángel Carriazo Álvarez",
   "canonical_source": "https://opentrust.group/data/certificaciones.json",
   "grupos": [
@@ -16,31 +16,31 @@
         },
         {
           "id": "ens-rd-311-2022",
-          "nombre": "Esquema Nacional de Seguridad (RD 311/2022, de 3 de mayo)"
+          "nombre": "Esquema Nacional de Seguridad (RD 311/2022, de 3 de mayo) – CCN-CERT"
         },
         {
           "id": "ccn-aproximacion-practica-ens",
-          "nombre": "Aproximación práctica al Esquema Nacional de Seguridad"
+          "nombre": "Aproximación práctica al Esquema Nacional de Seguridad – CCN-CERT"
         },
         {
           "id": "ccn-auditorias-ens",
-          "nombre": "Auditorías en el ENS"
+          "nombre": "Auditorías en el ENS – CCN-CERT"
         },
         {
           "id": "ccn-analisis-gestion-riesgos",
-          "nombre": "Análisis y Gestión de Riesgos de los Sistemas de Información"
+          "nombre": "Análisis y Gestión de Riesgos de los Sistemas de Información – CCN-CERT"
         },
         {
           "id": "ccn-muceens",
-          "nombre": "µCeENS"
+          "nombre": "µCeENS – CCN-CERT"
         },
         {
           "id": "ccn-gestion-incidentes",
-          "nombre": "Gestión de Incidentes de Ciberseguridad"
+          "nombre": "Gestión de Incidentes de Ciberseguridad – CCN-CERT"
         },
         {
           "id": "ccn-ingenieria-social",
-          "nombre": "Ingeniería Social. Descifrando el arte del engaño"
+          "nombre": "Ingeniería Social. Descifrando el arte del engaño – CCN-CERT"
         },
         {
           "id": "iso-27001-lead-auditor",
@@ -69,7 +69,8 @@
         },
         {
           "id": "lead-cybersecurity-professional",
-          "nombre": "Lead Cybersecurity Professional"
+          "nombre": "Lead Cybersecurity Professional",
+          "url": "https://www.credly.com/badges/508e2cff-847d-4d77-8b97-6ce7b778680b/public_url"
         }
       ]
     },
@@ -80,19 +81,23 @@
       "certificaciones": [
         {
           "id": "ethical-hacking-professional",
-          "nombre": "Ethical Hacking Professional"
+          "nombre": "Ethical Hacking Professional",
+          "url": "https://www.credly.com/badges/22e8cb1e-2827-438b-a61c-951944ead26d/public_url"
         },
         {
           "id": "cczt",
-          "nombre": "Certificate of Competence in Zero Trust (CCZT)"
+          "nombre": "Certificate of Competence in Zero Trust (CCZT)",
+          "url": "https://www.credly.com/badges/7a13694d-21e0-44b8-bc65-a9e1a2740205/public_url"
         },
         {
           "id": "crtom",
-          "nombre": "Certified Red Team Operations Management (CRTOM)"
+          "nombre": "Certified Red Team Operations Management (CRTOM)",
+          "url": "https://courses.redteamleaders.com/exam-completion/f80002dce6056deb"
         },
         {
           "id": "crpo",
-          "nombre": "Certified Ransomware Protection Officer (CRPO)"
+          "nombre": "Certified Ransomware Protection Officer (CRPO)",
+          "url": "/assets/certificaciones/crpo-certified-ransomware-protection-officer.jpg"
         }
       ]
     },
@@ -103,7 +108,8 @@
       "certificaciones": [
         {
           "id": "harvey-legal-engineer-l1",
-          "nombre": "Level 1 Legal Engineer — Harvey"
+          "nombre": "Level 1 Legal Engineer — Harvey",
+          "url": "https://www.credly.com/badges/7bd8b611-3470-47ad-892a-c92cd571d708/public_url"
         },
         {
           "id": "aigpc",
@@ -122,7 +128,8 @@
         },
         {
           "id": "cllmse",
-          "nombre": "Certified LLM Security Expert (CLLMSE)"
+          "nombre": "Certified LLM Security Expert (CLLMSE)",
+          "url": "https://courses.redteamleaders.com/exam-completion/d5a56fb19ac050e6"
         }
       ]
     },
@@ -133,39 +140,43 @@
       "certificaciones": [
         {
           "id": "google-cloud-ace",
-          "nombre": "Google Cloud Certified – Associate Cloud Engineer"
+          "nombre": "Google Cloud Certified – Associate Cloud Engineer",
+          "url": "https://www.credly.com/badges/29b56baf-9a1d-4c61-9e5b-9ecb5102b670/public_url"
         },
         {
           "id": "google-cloud-cybersecurity",
-          "nombre": "Google Cloud Cybersecurity Certificate"
+          "nombre": "Google Cloud Cybersecurity Certificate",
+          "url": "https://www.credly.com/badges/7aa72ba2-8d79-4dc4-b1cd-34705817a9d0/public_url"
         },
         {
           "id": "aviatrix-multicloud-network-associate",
-          "nombre": "Multicloud Network Associate (Aviatrix)"
+          "nombre": "Multicloud Network Associate (Aviatrix)",
+          "url": "https://www.credly.com/badges/827e4529-d1f4-43cd-99c0-9ae87916c347/public_url"
         },
         {
           "id": "fortinet-certified-associate",
-          "nombre": "Fortinet Certified Associate in Cybersecurity"
+          "nombre": "Fortinet Certified Associate in Cybersecurity",
+          "url": "https://www.credly.com/badges/7af1a302-dbb6-4f55-bdca-72aa4bf5ff6f/public_url"
         },
         {
           "id": "sonicwall-cse-advanced",
-          "nombre": "SonicWall Cloud Secure Edge (CSE) Advanced Accreditation"
+          "nombre": "SonicWall Cloud Secure Edge (CSE) Advanced Accreditation",
+          "url": "https://cf-us1.mindtickle.com/1887985117426979938/public-content/1774467379184appoutputcertificateIODzFD8ZjE.pngHi6W.webp"
         },
         {
           "id": "sonicwall-mpss-professional",
-          "nombre": "SonicWall Managed Protection Security Suite (MPSS) Professional Accreditation"
-        },
-        {
-          "id": "google-cloud-skill-badges",
-          "nombre": "Google Cloud Skill Badges (Networking, Security, Terraform, Load Balancing, App Dev)"
+          "nombre": "SonicWall Managed Protection Security Suite (MPSS) Professional Accreditation",
+          "url": "https://cf-us1.mindtickle.com/1887985117426979938/public-content/1790778019071appoutputcertificateyvDvIQznsY.pngYwoh.png"
         },
         {
           "id": "devops-advanced-professional",
-          "nombre": "DevOps Advanced Professional"
+          "nombre": "DevOps Advanced Professional",
+          "url": "https://www.credly.com/badges/c5798533-b116-44b4-b002-ca1889215c9c/public_url"
         },
         {
           "id": "agile-leader-professional",
-          "nombre": "Agile Leader Professional"
+          "nombre": "Agile Leader Professional",
+          "url": "https://www.credly.com/badges/6af8b89d-5265-451d-9bc0-15af262dd179/public_url"
         },
         {
           "id": "microsoft-migrate-modernize",

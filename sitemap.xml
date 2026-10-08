@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://opentrust.group/</loc></url>
+  <url><loc>https://opentrust.group/ecosistema/</loc></url>
+  <url><loc>https://opentrust.group/conocimiento/</loc></url>
+  <url><loc>https://opentrust.group/apps/</loc></url>
+  <url><loc>https://opentrust.group/security/</loc></url>
   <url><loc>https://opentrust.group/sobre-mi/</loc></url>
-  <url><loc>https://opentrust.group/security</loc></url>
+  <url><loc>https://opentrust.group/sobre-opentrust/</loc></url>
+  <url><loc>https://opentrust.group/legal/</loc></url>
   <url><loc>https://opentrust.group/apps/arq-studio.html</loc></url>
   <url><loc>https://opentrust.group/apps/audithub.html</loc></url>
   <url><loc>https://opentrust.group/apps/privacy-studio.html</loc></url>
-  <url>
-    <loc>https://opentrust.group/apps/cyber-attack-assessment-response-studio.html</loc>
-    <lastmod>2026-09-04</lastmod>
-  </url>
+  <url><loc>https://opentrust.group/apps/cyber-attack-assessment-response-studio.html</loc></url>
+  <url><loc>https://opentrust.group/apps/link-studio.html</loc></url>
+  <url><loc>https://opentrust.group/apps/lexradar.html</loc></url>
+  <url><loc>https://opentrust.group/apps/metadata-studio.html</loc></url>
 </urlset>

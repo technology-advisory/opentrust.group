@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Visual CyberLibrary AI">
+  <defs>
+    <linearGradient id="bgai" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#071f39"/><stop offset="58%" stop-color="#0a4a7b"/><stop offset="100%" stop-color="#0a2747"/></linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#90e7ff"/><stop offset="100%" stop-color="#2096e9"/></linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgai)"/>
+  <g stroke="#49d4ff" stroke-opacity=".35">
+    <path d="M0 92h640M0 178h640M0 266h640"/>
+    <path d="M89 0v360M178 0v360M267 0v360M356 0v360M445 0v360M534 0v360"/>
+  </g>
+  <path d="M427 76c-46-13-104 12-132 54-15 22-23 50-22 82 1 44 21 83 54 111 32 27 80 40 123 31 52-10 99-51 112-103-10 7-22 10-39 10-19 0-32-4-46-11-16 10-33 15-55 15-54 0-98-44-98-99s44-99 98-99c24 0 47 8 64 23 9-7 21-12 39-14-22-22-56-42-98-47Z" fill="url(#face)" opacity=".95"/>
+  <path d="M365 115c26 14 41 44 41 75 0 18-5 35-14 49M382 140h34M390 184h58M379 224h46" fill="none" stroke="#dff9ff" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="212" cy="112" r="8" fill="#38cfff"/><circle cx="246" cy="149" r="8" fill="#38cfff"/><circle cx="211" cy="204" r="8" fill="#38cfff"/><circle cx="177" cy="238" r="8" fill="#38cfff"/>
+  <path d="M212 112 246 149 211 204 177 238" fill="none" stroke="#38cfff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M103 289c49-28 92-40 143-39 31 1 57 7 90 24" fill="none" stroke="#6ee2ff" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+</svg>

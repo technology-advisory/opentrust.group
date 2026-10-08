@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-label="LexRadar · investigación jurídica">
+<defs><linearGradient id="l-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#142944"/><stop offset="1" stop-color="#263f5b"/></linearGradient><radialGradient id="l-r" cx=".5" cy=".5" r=".5"><stop stop-color="#d8b763" stop-opacity=".26"/><stop offset="1" stop-color="#d8b763" stop-opacity="0"/></radialGradient></defs>
+<rect width="960" height="620" rx="32" fill="url(#l-bg)"/>
+<circle cx="668" cy="290" r="230" fill="url(#l-r)"/>
+<circle cx="668" cy="290" r="184" fill="none" stroke="#bba463" stroke-width="2" opacity=".35"/>
+<circle cx="668" cy="290" r="120" fill="none" stroke="#bba463" stroke-width="2" opacity=".45"/>
+<circle cx="668" cy="290" r="58" fill="none" stroke="#bba463" stroke-width="2" opacity=".65"/>
+<path d="M668 290L795 177" stroke="#d6b661" stroke-width="5" stroke-linecap="round"/>
+<circle cx="734" cy="231" r="11" fill="#f1d989"/><circle cx="591" cy="225" r="9" fill="#f1d989"/><circle cx="612" cy="361" r="8" fill="#f1d989"/><circle cx="756" cy="368" r="10" fill="#f1d989"/>
+<rect x="78" y="76" width="420" height="468" rx="22" fill="#fbfaf6"/>
+<rect x="110" y="108" width="356" height="54" rx="12" fill="#fff" stroke="#d8d1bd"/>
+<circle cx="139" cy="135" r="11" fill="none" stroke="#385b77" stroke-width="3"/><path d="M147 143l10 10" stroke="#385b77" stroke-width="4" stroke-linecap="round"/>
+<rect x="174" y="125" width="236" height="10" rx="5" fill="#d7dddF"/>
+<rect x="110" y="190" width="356" height="86" rx="13" fill="#fff" stroke="#ded7c5"/>
+<text x="132" y="220" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#233b51">Jurisprudencia</text>
+<rect x="132" y="238" width="277" height="9" rx="4" fill="#d7dddF"/><rect x="132" y="255" width="214" height="9" rx="4" fill="#d7dddF"/>
+<rect x="110" y="294" width="356" height="86" rx="13" fill="#fff" stroke="#ded7c5"/>
+<text x="132" y="324" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#233b51">Normativa y criterios</text>
+<rect x="132" y="342" width="251" height="9" rx="4" fill="#d7dddF"/><rect x="132" y="359" width="288" height="9" rx="4" fill="#d7dddF"/>
+<rect x="110" y="398" width="356" height="114" rx="13" fill="#243f58"/>
+<text x="132" y="430" font-family="Arial" font-size="13" font-weight="700" fill="#e6cf8d">IA ASISTIDA · CON CONTROLES</text>
+<rect x="132" y="452" width="278" height="9" rx="4" fill="#688296"/><rect x="132" y="472" width="236" height="9" rx="4" fill="#688296"/>
+</svg>

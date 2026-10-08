@@ -1,0 +1,206 @@
+
+:root{
+  --ot-modal-navy:#082a46;
+  --ot-modal-blue:#0b74de;
+  --ot-modal-cyan:#44b8e8;
+  --ot-modal-text:#18344a;
+  --ot-modal-muted:#607487;
+  --ot-modal-border:#dbe5ec;
+  --ot-modal-bg:#f5f8fa;
+  --ot-modal-danger:#b42318;
+  --ot-modal-success:#16794a;
+}
+
+body.ot-modal-open{overflow:hidden}
+
+.ot-contact-dialog{
+  width:min(760px,calc(100vw - 32px));
+  max-height:min(92vh,920px);
+  padding:0;
+  border:0;
+  border-radius:16px;
+  background:#fff;
+  color:var(--ot-modal-text);
+  box-shadow:0 30px 90px rgba(5,31,51,.30);
+  overflow:hidden;
+}
+
+.ot-contact-dialog::backdrop{
+  background:rgba(4,24,39,.66);
+  backdrop-filter:blur(3px);
+}
+
+.ot-form-shell{display:flex;flex-direction:column;max-height:92vh}
+
+.ot-form-head{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  padding:24px 26px 20px;
+  background:
+    radial-gradient(circle at 88% 12%,rgba(68,184,232,.18),transparent 34%),
+    linear-gradient(135deg,#082a46,#0c4169);
+  color:#fff;
+}
+
+.ot-form-kicker{
+  margin:0 0 5px;
+  color:#74cef2;
+  font-size:11px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.ot-form-head h2{margin:0;font-size:25px;letter-spacing:-.025em}
+.ot-form-head p:last-child{margin:7px 0 0;color:#c5d8e4;font-size:13px;line-height:1.5}
+
+.ot-form-close{
+  flex:0 0 auto;
+  width:36px;height:36px;
+  border:1px solid rgba(255,255,255,.24);
+  border-radius:9px;
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  font-size:23px;
+  cursor:pointer;
+}
+
+.ot-form-close:hover{background:rgba(255,255,255,.16)}
+
+.ot-form-scroll{
+  overflow:auto;
+  padding:22px 26px 26px;
+}
+
+.ot-form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:15px 16px;
+}
+
+.ot-field{display:flex;flex-direction:column;gap:6px}
+.ot-field.ot-span-2{grid-column:1/-1}
+.ot-field label{font-size:12px;font-weight:800;color:#28475d}
+.ot-field label small{font-weight:500;color:#778b99}
+
+.ot-field-help{
+  display:block;
+  margin-top:0;
+  color:#6b7f8e;
+  font-size:11px;
+  line-height:1.4;
+  font-weight:500;
+}
+
+.ot-field input,
+.ot-field select,
+.ot-field textarea{
+  width:100%;
+  box-sizing:border-box;
+  border:1px solid #ccd9e2;
+  border-radius:9px;
+  background:#fff;
+  color:#18344a;
+  font:inherit;
+  font-size:14px;
+  padding:11px 12px;
+  outline:none;
+  transition:border-color .15s ease,box-shadow .15s ease;
+}
+
+.ot-field textarea{min-height:128px;resize:vertical;line-height:1.5}
+.ot-field input:focus,
+.ot-field select:focus,
+.ot-field textarea:focus{
+  border-color:#4aaee0;
+  box-shadow:0 0 0 3px rgba(74,174,224,.13);
+}
+
+.ot-honeypot{
+  position:absolute!important;
+  width:1px!important;height:1px!important;
+  overflow:hidden!important;
+  clip:rect(0 0 0 0)!important;
+  white-space:nowrap!important;
+}
+
+.ot-form-warning,
+.ot-privacy-layer{
+  grid-column:1/-1;
+  border-radius:10px;
+  padding:12px 14px;
+  font-size:12px;
+  line-height:1.55;
+}
+
+.ot-form-warning{
+  border:1px solid #f0d7aa;
+  background:#fff9ee;
+  color:#6f4b0c;
+}
+
+.ot-privacy-layer{
+  border:1px solid var(--ot-modal-border);
+  background:var(--ot-modal-bg);
+  color:#536b7c;
+}
+
+.ot-privacy-layer strong{color:#173a55}
+.ot-privacy-layer a{font-weight:800;color:#0b68bd}
+
+.ot-turnstile-wrap{
+  grid-column:1/-1;
+  min-height:68px;
+  border:1px dashed #cbd9e2;
+  border-radius:10px;
+  padding:10px;
+  background:#fbfcfd;
+}
+
+.ot-turnstile-status{margin:0;font-size:12px;color:#657d8e}
+
+.ot-form-footer{
+  grid-column:1/-1;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding-top:2px;
+}
+
+.ot-form-submit{
+  min-width:170px;
+  border:0;
+  border-radius:9px;
+  padding:12px 18px;
+  background:#0b74de;
+  color:#fff;
+  font-weight:800;
+  font-size:13px;
+  cursor:pointer;
+}
+
+.ot-form-submit:hover{background:#075fae}
+.ot-form-submit:disabled{opacity:.54;cursor:not-allowed}
+
+.ot-form-result{
+  margin:0;
+  min-height:20px;
+  font-size:12px;
+  line-height:1.45;
+  color:#5d7382;
+}
+.ot-form-result[data-state="error"]{color:var(--ot-modal-danger)}
+.ot-form-result[data-state="success"]{color:var(--ot-modal-success)}
+
+@media(max-width:640px){
+  .ot-contact-dialog{width:min(100vw - 18px,760px);max-height:95vh}
+  .ot-form-head{padding:20px}
+  .ot-form-scroll{padding:18px 20px 22px}
+  .ot-form-grid{grid-template-columns:1fr}
+  .ot-field.ot-span-2,.ot-form-warning,.ot-privacy-layer,.ot-turnstile-wrap,.ot-form-footer{grid-column:auto}
+  .ot-form-footer{align-items:stretch;flex-direction:column}
+  .ot-form-submit{width:100%}
+}

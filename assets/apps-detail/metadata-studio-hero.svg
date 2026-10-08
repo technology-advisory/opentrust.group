@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-label="Metadata Studio · análisis de metadatos">
+<defs><linearGradient id="m-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a2e4d"/><stop offset="1" stop-color="#173f5f"/></linearGradient><linearGradient id="m-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#edf5fa"/></linearGradient></defs>
+<rect width="960" height="620" rx="32" fill="url(#m-bg)"/>
+<path d="M0 92h960M0 184h960M0 276h960M0 368h960M0 460h960M128 0v620M256 0v620M384 0v620M512 0v620M640 0v620M768 0v620" stroke="#5d86a4" opacity=".09"/>
+<rect x="72" y="65" width="816" height="490" rx="24" fill="#fff" opacity=".98"/>
+<rect x="105" y="104" width="264" height="390" rx="18" fill="url(#m-card)" stroke="#c8dbe8"/>
+<path d="M164 145h122l43 43v219H164z" fill="#fff" stroke="#9fb8ca" stroke-width="3"/>
+<path d="M286 145v43h43" fill="none" stroke="#9fb8ca" stroke-width="3"/>
+<rect x="188" y="228" width="108" height="12" rx="6" fill="#d8e5ee"/>
+<rect x="188" y="256" width="84" height="12" rx="6" fill="#d8e5ee"/>
+<rect x="188" y="284" width="121" height="12" rx="6" fill="#d8e5ee"/>
+<circle cx="318" cy="360" r="42" fill="#eef8ff" stroke="#1d83c5" stroke-width="5"/>
+<path d="M346 390l34 34" stroke="#1d83c5" stroke-width="9" stroke-linecap="round"/>
+<rect x="408" y="104" width="441" height="174" rx="18" fill="#f4f8fb"/>
+<text x="438" y="143" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#123b59">METADATA FINDINGS</text>
+<rect x="438" y="166" width="134" height="31" rx="8" fill="#fff0dc"/><text x="452" y="187" font-family="Arial" font-size="13" font-weight="700" fill="#9b6114">Author</text>
+<rect x="586" y="166" width="116" height="31" rx="8" fill="#edf5ff"/><text x="600" y="187" font-family="Arial" font-size="13" font-weight="700" fill="#216ba5">Software</text>
+<rect x="716" y="166" width="103" height="31" rx="8" fill="#f3ecff"/><text x="729" y="187" font-family="Arial" font-size="13" font-weight="700" fill="#7051a8">GPS</text>
+<rect x="438" y="213" width="381" height="12" rx="6" fill="#d8e5ee"/><rect x="438" y="239" width="291" height="12" rx="6" fill="#d8e5ee"/>
+<rect x="408" y="302" width="441" height="192" rx="18" fill="#0d3150"/>
+<text x="438" y="343" font-family="Arial" font-size="18" font-weight="700" fill="#fff">SANITIZATION PLAN</text>
+<path d="M451 392h344" stroke="#75a5c7" stroke-width="6" stroke-linecap="round"/>
+<circle cx="475" cy="392" r="13" fill="#3ab27c"/><circle cx="604" cy="392" r="13" fill="#3ab27c"/><circle cx="733" cy="392" r="13" fill="#3ab27c"/>
+<text x="443" y="431" font-family="Arial" font-size="13" fill="#bcd4e4">Detect</text><text x="570" y="431" font-family="Arial" font-size="13" fill="#bcd4e4">Review</text><text x="699" y="431" font-family="Arial" font-size="13" fill="#bcd4e4">Clean</text>
+</svg>
