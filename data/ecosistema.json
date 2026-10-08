@@ -1,7 +1,7 @@
 [
   {
     "name": "GRCREAL",
-    "url": "https://grcreal.com/",
+    "url": "/conocimiento/grcreal.html",
     "tagline": "Conocimiento especializado en Gobernanza, Riesgo, Cumplimiento y Ciberseguridad.",
     "description": "Plataforma abierta con guías, marcos de referencia, comparativas, checklists, formación y recursos prácticos para profesionales de GRC, seguridad, cumplimiento normativo e inteligencia artificial.",
     "icon": "shield",
@@ -10,7 +10,7 @@
   },
   {
     "name": "FraudeDigital",
-    "url": "https://fraudedigital.es/",
+    "url": "/conocimiento/fraudedigital.html",
     "tagline": "Concienciación frente al fraude digital.",
     "description": "Información, alertas, simuladores y recursos para prevenir phishing, smishing, vishing, ingeniería social y otras estafas digitales.",
     "icon": "alert",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Technology Advisory",
-    "url": "https://technology-advisory.es/",
+    "url": "/conocimiento/technology-advisory.html",
     "tagline": "Arquitectura empresarial, infraestructura, cloud y ciberseguridad.",
     "description": "Arquitectura tecnológica, infraestructura, cloud, automatización, observabilidad, resiliencia y estrategia de ciberseguridad para organizaciones.",
     "icon": "network",
@@ -28,7 +28,7 @@
   },
   {
     "name": "CyberLibrary AI",
-    "url": "https://cyberlibrary-ai.es/",
+    "url": "/conocimiento/cyberlibrary-ai.html",
     "tagline": "Arquitectura, seguridad, auditoría y GRC de sistemas de inteligencia artificial.",
     "description": "Guías con criterio, artefactos descargables y herramientas que se pueden utilizar de verdad. Contenido especializado, práctico y sin humo: lo que una respuesta genérica de IA no te va a dar.",
     "icon": "ai",
